@@ -25,6 +25,10 @@ class: text-center
   Недвижимость, компании, стартапы, таксопарки, нефтебазы, авто — всё что имеет стоимость
 </div>
 
+<div class="abs-tr m-4">
+  <DeckQr :size="110" label="Открыть презентацию" />
+</div>
+
 <div class="abs-br m-6 text-sm opacity-50">
   Decentrathon · github.com/In-Da-Hack-Decentrathon/Slice
 </div>
@@ -36,9 +40,7 @@ class: section-investor
 
 # Часть 1
 
-## <span class="accent">Для инвесторов</span>
-
-<div class="opacity-60 mt-4">Проблема → Решение → Кейсы → Рынок</div>
+## <span class="accent">Проблема → Решение → Кейсы → Рынок</span>
 
 ---
 layout: cover
@@ -705,7 +707,7 @@ layout: center
 
 # Шаг 1 — только собственник
 
-```mermaid {scale: 0.75}
+```mermaid {scale: 0.6}
 flowchart LR
   Owner["👤 Собственник<br/>квартира $150k<br/>нужно $30k"]
   classDef new fill:#92c73e,stroke:#0e1830,color:#0e1830,stroke-width:3px
@@ -798,7 +800,7 @@ layout: two-cols
 
 # Шаг 2 — добавляется нотариус
 
-```mermaid {scale: 0.7}
+```mermaid {scale: 0.55}
 flowchart LR
   Owner["👤 Собственник"] --> Docs["📄 Документы<br/>BTI, ЦОН"]
   Docs --> Notary["⚖️ Нотариус<br/>проверка + кворум"]
@@ -991,20 +993,18 @@ layout: two-cols
 
 # Шаг 4 — добавляется рынок
 
-```mermaid {scale: 0.55}
+```mermaid {scale: 0.4}
 flowchart LR
-  Owner["👤 Собственник"] --> Docs["📄 Документы"]
-  Docs --> Notary["⚖️ Нотариус"]
+  Owner["👤 Собственник"] --> Notary["⚖️ Нотариус"]
   Notary --> Appraiser["💰 Оценщик"]
-  Appraiser --> Price["Цена $150k"]
-  Price --> Vault["🔒 Хранилище<br/>N фракций"]
-  Vault --> Funding["📊 Сбор средств<br/>2000 фракций"]
+  Appraiser --> Vault["🔒 Хранилище"]
+  Vault --> Funding["📊 Сбор средств"]
   Funding --> Investors["👥 Инвесторы"]
   Investors -.$30k.-> Owner
-  Investors --> Market["🔄 Вторичный<br/>рынок"]
+  Investors --> Market["🔄 Рынок"]
   classDef old fill:#152040,stroke:#92c73e,color:#ffffff
   classDef new fill:#92c73e,stroke:#0e1830,color:#0e1830,stroke-width:3px
-  class Owner,Docs,Notary,Appraiser,Price old
+  class Owner,Notary,Appraiser old
   class Vault,Funding,Investors,Market new
 ```
 
@@ -1198,23 +1198,24 @@ layout: two-cols
 
 # Шаг 6 — полная картина с SPV
 
-```mermaid {scale: 0.5}
+```mermaid {scale: 0.45}
 flowchart TB
   subgraph Legal ["Юридический контур"]
-    SPV["🏛 SPV<br/>юрлицо (ТОО)"]
-    SPV --- RealAsset["🏠 Квартира<br/>зарегистрирована на SPV"]
+    SPV["🏛 SPV (ТОО)"]
+    RealAsset["🏠 Квартира"]
+    SPV --- RealAsset
   end
   subgraph Chain ["В блокчейне"]
     Owner["👤 Собственник"] --> Notary["⚖️ Нотариус"]
     Notary --> Appraiser["💰 Оценщик"]
-    Appraiser --> Vault["🔒 Хранилище<br/>N фракций"]
+    Appraiser --> Vault["🔒 Хранилище"]
     Vault --> Lawyer["⚖️ Юрист"]
     Vault --> Funding["📊 Сбор средств"]
     Funding --> Investors["👥 Инвесторы"]
     Investors --> Market["🔄 Рынок"]
   end
   Lawyer -.оформляет.-> SPV
-  SPV -.== доли.-> Vault
+  SPV -.доли.-> Vault
   classDef new fill:#92c73e,stroke:#0e1830,color:#0e1830,stroke-width:3px
   classDef chain fill:#152040,stroke:#92c73e,color:#ffffff
   class SPV,RealAsset new
@@ -1506,7 +1507,7 @@ class: section-sub
 
 # Экономика транзакции
 
-```mermaid {scale: 0.7}
+```mermaid {scale: 0.55}
 flowchart TD
   A[Актив $100 000] --> P[Платформа 2%]
   A --> AP[Оценщики 5%]
@@ -1569,7 +1570,7 @@ layout: cover
 class: section-tech
 ---
 
-# Под капот
+# Под капотом
 
 ## <span class="accent">Как это работает на уровне блокчейна</span>
 
@@ -1628,7 +1629,7 @@ class: section-sub
 
 # Полная архитектура — шаг 1 · Клиент
 
-```mermaid {scale: 0.75}
+```mermaid {scale: 0.6}
 flowchart TB
   subgraph Client ["Клиент (браузер)"]
     Web[Next.js 16 · React 19 · Tailwind v4]
@@ -1652,14 +1653,14 @@ flowchart TB
 
 # Полная архитектура — шаг 2 · + бэкенд
 
-```mermaid {scale: 0.7}
+```mermaid {scale: 0.55}
 flowchart TB
   subgraph Client ["Клиент"]
     Web[Next.js 16]
   end
   subgraph Backend ["Бэкенд (вне блокчейна)"]
-    API[Elysia REST · Swagger · Bun]
-    DB[(PostgreSQL · Drizzle ORM)]
+    API[Elysia · Bun]
+    DB[(PostgreSQL)]
   end
   Web <--> API
   API <--> DB
@@ -1726,7 +1727,7 @@ flowchart TB
 
 # Полная архитектура — шаг 4 · + Ory Kratos
 
-```mermaid {scale: 0.7}
+```mermaid {scale: 0.55}
 flowchart LR
   Web[Next.js] <--> API[Бэкенд]
   API <--> Kr[Ory Kratos]
@@ -1919,8 +1920,8 @@ flowchart TB
 
 # 11 программ — шаг 2 · + ядро
 
-```mermaid {scale: 0.55}
-flowchart TB
+```mermaid {scale: 0.5}
+flowchart LR
   Router{{"Маршрутизатор"}}
   subgraph Core ["Identity & Assets"]
     Identity[identity]
@@ -1950,8 +1951,8 @@ flowchart TB
 
 # 11 программ — шаг 3 · + сделки
 
-```mermaid {scale: 0.5}
-flowchart TB
+```mermaid {scale: 0.4}
+flowchart LR
   Router{{"Маршрутизатор"}}
   subgraph Core ["Identity & Assets"]
     Identity[identity]
@@ -1986,8 +1987,8 @@ flowchart TB
 
 # 11 программ — шаг 4 · + токенизация
 
-```mermaid {scale: 0.45}
-flowchart TB
+```mermaid {scale: 0.35}
+flowchart LR
   Router{{"Маршрутизатор"}}
   subgraph Core ["Identity & Assets"]
     Identity[identity]
@@ -2090,27 +2091,29 @@ pub fn pre_validate(ctx: Context<PreValidate>) -> Result<()> {
 
 # identity — корень системы
 
-<div class="mt-4 text-sm">
+<div class="mt-2 text-xs grid grid-cols-2 gap-4">
+<div>
 
 **PDA аккаунты:**
-- `User [wallet]` — базовый профиль
-- `UserReputation [wallet, role]` — репутация на роль
-- `KycAttestation [wallet, provider]` — KYC от провайдера
-- `PublicKeyRecord [owner, key]` — ключи для подписей вне блокчейна
+- `User [wallet]` — профиль
+- `UserReputation [wallet, role]` — репутация
+- `KycAttestation [wallet, provider]` — KYC
+- `PublicKeyRecord [owner, key]` — ключи
+
+</div>
+<div>
 
 **6 ролей:**
 
 ```rust
 enum UserRole {
-  Regular,   // инвестор
-  Verifier,  // проверяет активы (Ed25519)
-  Appraiser, // оценивает (конверт и вскрытие)
-  Lawyer,    // SPV-документы
-  Notary,    // голосует, веса по репутации
-  Admin,     // конфиг платформы
+  Regular, Verifier,
+  Appraiser, Lawyer,
+  Notary, Admin,
 }
 ```
 
+</div>
 </div>
 
 <!--
@@ -2153,9 +2156,9 @@ enum UserRole {
 
 # validation — Ed25519 подписи
 
-<div class="mt-4 text-sm">
+<div class="mt-2 text-xs">
 
-Верификатор подписывает вне блокчейна (экономия комиссий), программа проверяет подпись в блокчейне через sysvar:
+Верификатор подписывает вне блокчейна, программа проверяет подпись через sysvar:
 
 ```rust
 pub fn verify_asset(ctx: Context<VerifyAsset>,
@@ -2295,13 +2298,13 @@ pub fn initialize_vault(ctx: Context<InitVault>,
 
 # Фракционное владение — внутри блокчейна
 
-```mermaid {scale: 0.6}
+```mermaid {scale: 0.5}
 flowchart LR
-  Mint[Эмитент Token-2022<br/>supply=N]
-  Vault[Хранилище<br/>держит запас]
-  TA1[Инвестор №1<br/>500 фракций]
-  TA2[Инвестор №2<br/>1500 фракций]
-  TA3[Собственник<br/>8000 фракций]
+  Mint[Эмитент<br/>Token-2022]
+  Vault[Хранилище]
+  TA1[Инвестор №1<br/>500]
+  TA2[Инвестор №2<br/>1500]
+  TA3[Собственник<br/>8000]
   Vault -.управляет.-> Mint
   Mint --> TA1
   Mint --> TA2
@@ -2327,12 +2330,12 @@ flowchart LR
 
 # Связь блокчейна с реальным миром
 
-```mermaid {scale: 0.65}
+```mermaid {scale: 0.55}
 flowchart LR
-  Asset[Asset PDA<br/>в блокчейне]
-  SPV[SPV — ТОО<br/>юрлицо]
+  Asset[Asset PDA<br/>блокчейн]
+  SPV[SPV · ТОО]
   Flat[🏠 Квартира]
-  Asset -.хеш документов.-> SPV
+  Asset -.хеш.-> SPV
   SPV --- Flat
   classDef new fill:#92c73e,stroke:#0e1830,color:#0e1830
   classDef dim fill:#152040,stroke:#92c73e,color:#ffffff
@@ -2470,7 +2473,7 @@ class: section-sub
 
 # Автомат состояний — фаза 1 · Верификация
 
-```mermaid {scale: 0.7}
+```mermaid {scale: 0.55}
 stateDiagram-v2
   [*] --> PendingVerification
   PendingVerification --> NotaryPreCheck: порог достигнут
@@ -2494,7 +2497,7 @@ stateDiagram-v2
 
 # Автомат состояний — фаза 2 · Оценка
 
-```mermaid {scale: 0.7}
+```mermaid {scale: 0.55}
 stateDiagram-v2
   Verified --> PendingEvaluation
   PendingEvaluation --> Evaluated: оценка завершена
@@ -2517,7 +2520,7 @@ stateDiagram-v2
 
 # Автомат состояний — фаза 3 · Сбор средств
 
-```mermaid {scale: 0.7}
+```mermaid {scale: 0.55}
 stateDiagram-v2
   Evaluated --> Funding: хранилище создано
   Funding --> InLegalPool: собрано
@@ -2540,7 +2543,7 @@ stateDiagram-v2
 
 # Автомат состояний — фаза 4 · Юридическое оформление
 
-```mermaid {scale: 0.7}
+```mermaid {scale: 0.55}
 stateDiagram-v2
   InLegalPool --> LegalProcessing: юрист взял в работу
   LegalProcessing --> LegallyBound: документы SPV загружены
@@ -2565,7 +2568,7 @@ stateDiagram-v2
 
 # Автомат состояний — фаза 5 · Рынок и выход
 
-```mermaid {scale: 0.7}
+```mermaid {scale: 0.55}
 stateDiagram-v2
   Fractionalized --> Dissolved: выкуп принят
   Dissolved --> [*]
@@ -2619,7 +2622,7 @@ stateDiagram-v2
 
 # Типичная временная шкала — 180 дней
 
-```mermaid {scale: 0.7}
+```mermaid {scale: 0.55}
 gantt
   title Жизненный цикл актива
   dateFormat YYYY-MM-DD
@@ -2660,7 +2663,7 @@ class: section-sub
 
 # Слепое двухфазное голосование — фаза 1 · Запечатывание
 
-```mermaid {scale: 0.75}
+```mermaid {scale: 0.6}
 sequenceDiagram
   participant A as Оценщик
   participant P as Программа
@@ -2688,7 +2691,7 @@ sequenceDiagram
 
 # Слепое двухфазное голосование — фаза 2 · Вскрытие
 
-```mermaid {scale: 0.75}
+```mermaid {scale: 0.6}
 sequenceDiagram
   participant A as Оценщик
   participant P as Программа
@@ -2718,7 +2721,7 @@ sequenceDiagram
 
 # Слепое двухфазное голосование — фаза 3 · Завершение
 
-```mermaid {scale: 0.75}
+```mermaid {scale: 0.6}
 sequenceDiagram
   participant P as Программа
   participant A as Оценщик
@@ -2746,7 +2749,7 @@ sequenceDiagram
 
 # Модель данных PDA — шаг 1 · Identity
 
-```mermaid {scale: 0.75}
+```mermaid {scale: 0.6}
 erDiagram
   User ||--o{ KycAttestation : has
   User ||--o{ UserReputation : has
@@ -2942,7 +2945,7 @@ flowchart LR
 
 # 3 · Оценка — медиана через «конверт и вскрытие»
 
-```mermaid {scale: 0.75}
+```mermaid {scale: 0.6}
 flowchart LR
   C[Запечатывание<br/>7 дней] --> R[Вскрытие<br/>7 дней]
   R --> M[Медиана цен]
@@ -3175,7 +3178,7 @@ class: section-sub
 
 # Процесс через координатор на бэкенде
 
-```mermaid {scale: 0.7}
+```mermaid {scale: 0.55}
 sequenceDiagram
   participant U as Пользователь (браузер)
   participant FE as Next.js
@@ -3208,7 +3211,7 @@ sequenceDiagram
 
 # Процесс кеширования — откуда бэкенд знает состояние
 
-```mermaid {scale: 0.7}
+```mermaid {scale: 0.55}
 flowchart LR
   SOL[Solana RPC] -->|подписка на логи| Idx[Индексатор]
   Idx -->|разобранные события| DB[(Postgres)]
@@ -3718,35 +3721,28 @@ class: section-sub
 
 # Ссылки и QR-коды
 
-<div class="mt-6 grid grid-cols-3 gap-6 text-xs">
+<div class="mt-8 grid grid-cols-2 gap-12 text-sm max-w-3xl mx-auto">
 <div class="text-center">
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/In-Da-Hack-Decentrathon/Slice" class="mx-auto rounded" />
-<div class="mt-2 font-semibold">GitHub</div>
-<div class="opacity-70">github.com/In-Da-Hack-Decentrathon/Slice</div>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://github.com/In-Da-Hack-Decentrathon/Slice" class="mx-auto rounded" />
+<div class="mt-3 font-semibold">GitHub</div>
+<div class="opacity-70 text-xs">github.com/In-Da-Hack-Decentrathon/Slice</div>
 </div>
 
 <div class="text-center">
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://explorer.solana.com/?cluster=devnet" class="mx-auto rounded" />
-<div class="mt-2 font-semibold">Solana Explorer (devnet)</div>
-<div class="opacity-70">explorer.solana.com/?cluster=devnet</div>
-</div>
-
-<div class="text-center">
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://localhost:2098" class="mx-auto rounded" />
-<div class="mt-2 font-semibold">Демо-приложение</div>
-<div class="opacity-70">localhost:2098 (на презентации)</div>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://explorer.solana.com/?cluster=devnet" class="mx-auto rounded" />
+<div class="mt-3 font-semibold">Solana Explorer (devnet)</div>
+<div class="opacity-70 text-xs">explorer.solana.com/?cluster=devnet</div>
 </div>
 </div>
 
-<div class="mt-6 text-xs opacity-70">
+<div class="mt-6 text-xs opacity-70 text-center">
 QR-код на GitHub ведёт в репозиторий с исходниками всех 11 контрактов, бэкенда и фронтенда. Solana Explorer позволяет посмотреть живые транзакции на devnet.
 </div>
 
 <!--
-- Три главных ссылки: код, блокчейн-обозреватель, демо.
+- Две главные ссылки: код и блокчейн-обозреватель.
 - GitHub: весь код открыт, аудиторы могут посмотреть контракты.
 - Solana Explorer devnet: живые транзакции, созданные во время демо.
-- Demo: localhost:2098, если не идёт презентация — можно запустить локально по инструкции из README.
 - Переход: спасибо, вопросы?
 -->
 

@@ -1,6 +1,6 @@
 ---
 theme: default
-title: Slice — 7 минут про токенизацию реальных активов
+title: Slice — Токенизация реальных активов
 colorSchema: auto
 fonts:
   sans: Ubuntu
@@ -25,8 +25,12 @@ class: text-center
   Недвижимость, бизнесы, стартапы, автопарки — любой актив превращается в торгуемые фракции
 </div>
 
+<div class="abs-tr m-4">
+  <DeckQr :size="110" label="Открыть презентацию" />
+</div>
+
 <div class="abs-br m-6 text-sm opacity-50">
-  7 минут · github.com/In-Da-Hack-Decentrathon/Slice
+  github.com/In-Da-Hack-Decentrathon/Slice
 </div>
 
 <!--
@@ -424,24 +428,18 @@ layout: center
 
 # Ссылки и QR-коды
 
-<div class="mt-6 grid grid-cols-3 gap-6 text-xs">
+<div class="mt-6 grid grid-cols-2 gap-12 text-sm max-w-2xl mx-auto">
 
 <div class="text-center">
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/In-Da-Hack-Decentrathon/Slice" class="mx-auto rounded" />
-<div class="mt-2 font-semibold">GitHub</div>
-<div class="opacity-70">github.com/In-Da-Hack-Decentrathon/Slice</div>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://github.com/In-Da-Hack-Decentrathon/Slice" class="mx-auto rounded" />
+<div class="mt-3 font-semibold">GitHub</div>
+<div class="opacity-70 text-xs">github.com/In-Da-Hack-Decentrathon/Slice</div>
 </div>
 
 <div class="text-center">
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://explorer.solana.com/?cluster=devnet" class="mx-auto rounded" />
-<div class="mt-2 font-semibold">Solana Explorer</div>
-<div class="opacity-70">explorer.solana.com/?cluster=devnet</div>
-</div>
-
-<div class="text-center">
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://localhost:2098" class="mx-auto rounded" />
-<div class="mt-2 font-semibold">Демо-приложение</div>
-<div class="opacity-70">live на презентации</div>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://explorer.solana.com/?cluster=devnet" class="mx-auto rounded" />
+<div class="mt-3 font-semibold">Solana Explorer</div>
+<div class="opacity-70 text-xs">explorer.solana.com/?cluster=devnet</div>
 </div>
 
 </div>

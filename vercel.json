@@ -7,7 +7,8 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/pitch", "destination": "/pitch/index.html" }
+    { "source": "/pitch/:path*", "destination": "/pitch/index.html" },
+    { "source": "/:path((?!pitch/|assets/|shots/|slice-logo).*)", "destination": "/index.html" }
   ],
   "headers": [
     {

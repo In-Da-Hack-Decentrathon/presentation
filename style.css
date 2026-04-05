@@ -33,6 +33,22 @@ html.dark {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Центрирование содержимого по вертикали и горизонтали для стандартного layout default */
+.slidev-layout.default {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.slidev-layout.default > * {
+  width: 100%;
+  max-width: 100%;
+}
+.slidev-layout.default h1 {
+  text-align: left;
+}
+
 .slidev-layout h1,
 .slidev-layout h2,
 .slidev-layout h3,
