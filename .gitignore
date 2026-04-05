@@ -11,6 +11,9 @@ dist/
 # Bun
 .bun/
 
+# Vercel
+.vercel/
+
 # Logs
 *.log
 npm-debug.log*
@@ -30,3 +33,4 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+.vercel

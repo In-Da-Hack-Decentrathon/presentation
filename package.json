@@ -4,7 +4,10 @@
   "type": "module",
   "scripts": {
     "dev": "slidev --open",
-    "build": "slidev build",
+    "dev:pitch": "slidev pitch.md --open --port 3031",
+    "build": "slidev build && slidev build pitch.md --base /pitch/ --out dist/pitch",
+    "build:full": "slidev build",
+    "build:pitch": "slidev build pitch.md --base /pitch/ --out dist/pitch",
     "export": "slidev export"
   },
   "dependencies": {
