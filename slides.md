@@ -25,7 +25,7 @@ class: text-center
   Недвижимость, компании, стартапы, таксопарки, нефтебазы, авто — всё что имеет стоимость
 </div>
 
-<div class="abs-tr m-4">
+<div class="abs-tl m-4">
   <DeckQr :size="110" label="Открыть презентацию" />
 </div>
 
