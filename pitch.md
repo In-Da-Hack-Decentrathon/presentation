@@ -171,7 +171,7 @@ layout: center
 - Фраза: «Превращаем любой реальный актив в N торгуемых фракций с полным юридическим оформлением».
 - Ключевое слово — «любой». Недвижимость — пример, не потолок.
 - N — количество фракций — задаётся при создании хранилища, не захардкожено.
-- SPV — это юрлицо-обёртка (в КЗ — ТОО), на которое оформлен актив. Токен = доля в SPV.
+- SPV — это юрлицо-обёртка (в КЗ — SPC, Special Purpose Company), на которое оформлен актив. Токен = доля в SPV.
 - Благодаря SPV фракции имеют юридическую силу, не просто цифры в блокчейне.
 - Переход: как это выглядит в виде процесса.
 -->
@@ -437,9 +437,9 @@ layout: center
 </div>
 
 <div class="text-center">
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://explorer.solana.com/?cluster=devnet" class="mx-auto rounded" />
-<div class="mt-3 font-semibold">Solana Explorer</div>
-<div class="opacity-70 text-xs">explorer.solana.com/?cluster=devnet</div>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://explorer.solana.com/address/EncUKRwbJNy2f9qfMi4xt6SLYppd3GvFNoiEuDpXCUQf?cluster=devnet" class="mx-auto rounded" />
+<div class="mt-3 font-semibold">Маршрутизатор в блокчейне</div>
+<div class="opacity-70 text-xs font-mono">EncUKRwbJNy2f9...Dpx<br/>devnet</div>
 </div>
 
 </div>
