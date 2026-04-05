@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" aria-label="Slice" role="img">
+  <path d="M 245 70.1 A 180 180 0 0 0 86.8 326.0 L 245 246.9 Z" fill="#ffffff" />
+  <path d="M 91.3 334.9 A 180 180 0 0 0 413.2 174.0 Z" fill="#92C73E" />
+  <path d="M 255 241.9 L 255 70.1 L 285 70.1 L 285 115 L 340 115 L 340 150 L 399.7 150 A 180 180 0 0 1 408.7 165.1 Z M 262 103 L 278 103 L 278 87 L 262 87 Z" fill="#92C73E" fill-rule="evenodd" />
+  <rect x="305" y="70" width="30" height="30" fill="#ffffff" />
+  <rect x="360" y="45" width="15" height="15" fill="#ffffff" />
+  <rect x="350" y="85" width="22" height="22" fill="#ffffff" />
+</svg>

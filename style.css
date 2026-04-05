@@ -1,0 +1,210 @@
+/* Decentraphon theme — mirrors frontend/src/app/globals.css */
+
+:root {
+  --slidev-theme-primary: #92c73e;
+
+  --df-primary: #92c73e;
+  --df-primary-foreground: #0e1830;
+  --df-solana: #14f195;
+
+  --df-background: #ffffff;
+  --df-foreground: #0e1830;
+  --df-card: #ffffff;
+  --df-muted: #f2f3f5;
+  --df-muted-foreground: #5a6378;
+  --df-border: #e2e4e9;
+  --df-radius: 0.5rem;
+}
+
+html.dark {
+  --df-background: #0e1830;
+  --df-foreground: #ffffff;
+  --df-card: #152040;
+  --df-muted: #1c2a4a;
+  --df-muted-foreground: #8b95ab;
+  --df-border: #2a3a5c;
+}
+
+.slidev-layout {
+  background: var(--df-background);
+  color: var(--df-foreground);
+  font-family: 'Ubuntu', ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout h4 {
+  color: var(--df-foreground);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.slidev-layout h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+.slidev-layout code {
+  font-family: 'Ubuntu Mono', ui-monospace, monospace;
+  background: var(--df-muted);
+  color: var(--df-foreground);
+  padding: 0.1em 0.35em;
+  border-radius: 0.3rem;
+  font-size: 0.9em;
+}
+
+.slidev-layout kbd {
+  font-family: 'Ubuntu Mono', ui-monospace, monospace;
+  background: var(--df-muted);
+  color: var(--df-foreground);
+  border: 1px solid var(--df-border);
+  border-radius: 0.3rem;
+  padding: 0.1em 0.4em;
+  font-size: 0.85em;
+}
+
+.slidev-layout a {
+  color: var(--df-primary);
+  text-decoration: none;
+}
+.slidev-layout a:hover {
+  text-decoration: underline;
+}
+
+.accent {
+  color: var(--df-primary);
+}
+
+.swatch {
+  border-radius: var(--df-radius);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 6rem;
+  box-shadow: 0 0 0 1px rgba(14, 24, 48, 0.05);
+}
+.swatch .name {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.swatch .hex {
+  font-family: 'Ubuntu Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+/* Hide Slidev's Goto dialog when inactive — its autocomplete list overflows
+   the off-screen offset and leaks into the top-right corner. Press `g` to open it. */
+#slidev-goto-dialog:has(#slidev-goto-input:disabled) {
+  display: none;
+}
+
+/* --- Section covers --- */
+.slidev-layout.section-investor,
+.slidev-layout.section-tech,
+.slidev-layout.section-sub,
+.slidev-layout.section-transition {
+  background: var(--df-background);
+  position: relative;
+}
+.slidev-layout.section-investor {
+  background: linear-gradient(135deg, #92c73e 0%, #7fb02f 100%);
+  color: #0e1830;
+}
+.slidev-layout.section-investor h1,
+.slidev-layout.section-investor h2 {
+  color: #0e1830;
+}
+.slidev-layout.section-investor .accent {
+  color: #0e1830;
+  text-decoration: underline;
+  text-decoration-color: rgba(14, 24, 48, 0.4);
+  text-underline-offset: 6px;
+}
+.slidev-layout.section-tech {
+  background: var(--df-muted);
+  color: var(--df-foreground);
+  border-left: 6px solid var(--df-primary);
+}
+.slidev-layout.section-tech h1,
+.slidev-layout.section-tech h2 {
+  color: var(--df-foreground);
+}
+.slidev-layout.section-tech .accent {
+  color: var(--df-primary);
+}
+.slidev-layout.section-sub {
+  background: var(--df-muted);
+  color: var(--df-foreground);
+  border-left: 6px solid var(--df-primary);
+}
+.slidev-layout.section-transition {
+  background: radial-gradient(ellipse at center, #92c73e 0%, #0e1830 100%);
+  color: #ffffff;
+}
+.slidev-layout.section-transition h1 {
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+/* --- Role cards (grid items) --- */
+.role-card {
+  padding: 1rem 1.25rem;
+  border-radius: var(--df-radius);
+  background: var(--df-card);
+  border: 1px solid var(--df-border);
+  transition: all 150ms ease;
+}
+.role-card:hover {
+  border-color: var(--df-primary);
+  transform: translateY(-2px);
+}
+.role-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.role-card p {
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+/* --- Big numbers on fact slides --- */
+.slidev-layout.fact h1 {
+  font-size: 5rem;
+  line-height: 1.05;
+  color: var(--df-primary);
+}
+
+/* --- Table polish --- */
+.slidev-layout table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+.slidev-layout th,
+.slidev-layout td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--df-border);
+}
+.slidev-layout th {
+  background: var(--df-muted);
+  font-weight: 600;
+}
+.slidev-layout tr:hover td {
+  background: var(--df-muted);
+}
+
+/* --- Make images on two-cols not overflow --- */
+.slidev-layout img[src^="/shots/"] {
+  max-width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+}
