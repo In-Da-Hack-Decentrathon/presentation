@@ -903,12 +903,11 @@ layout: two-cols
 
 # Шаг 3 — добавляется оценщик
 
-```mermaid {scale: 0.65}
+```mermaid {scale: 0.5}
 flowchart LR
-  Owner["👤 Собственник"] --> Docs["📄 Документы"]
-  Docs --> Notary["⚖️ Нотариус"]
-  Notary --> Appraiser["💰 Оценщик<br/>конверт и вскрытие"]
-  Appraiser --> Price["Медианная цена<br/>$150 000"]
+  Owner["👤 Собственник"] --> Notary["⚖️ Нотариус"]
+  Notary --> Appraiser["💰 Оценщик"]
+  Appraiser --> Price["Медиана<br/>$150 000"]
   classDef old fill:#152040,stroke:#92c73e,color:#ffffff
   classDef new fill:#92c73e,stroke:#0e1830,color:#0e1830,stroke-width:3px
   class Owner,Docs,Notary old

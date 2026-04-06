@@ -719,12 +719,12 @@ Starting point: one person, one asset, one need for liquidity. Cannot sell the a
 </div>
 
 <!--
-- Meet Айша — a situation any Almaty resident can relate to.
+- Meet Aisha — a situation any Almaty resident can relate to.
 - She has a $150k apartment but no cash. She needs $30k: renovation, business, wedding, child's tuition — anything.
 - Today's options: (1) a loan at 15–20%, pay back double over 5 years, (2) sell and move, (3) rent out and wait years.
 - All three options are bad. Either overpaying, losing the home, or a long wait.
 - Analogy: you own a large painting worth $150k, but you cannot sell a corner for $30k.
-- Our task: let Айша sell 20% of the apartment, stay living there, avoid a loan.
+- Our task: let Aisha sell 20% of the apartment, stay living there, avoid a loan.
 - Transition: for investors to trust the deal, we need to prove the apartment is really hers.
 -->
 
@@ -732,7 +732,7 @@ Starting point: one person, one asset, one need for liquidity. Cannot sell the a
 layout: two-cols
 ---
 
-# Айша — the Owner
+# Aisha — the Owner
 
 <div class="mt-4 text-sm">
 
@@ -762,7 +762,7 @@ layout: two-cols
 - The owner only decides: sell entirely or retain a share.
 - The number of fractions is determined automatically by the contract based on the final auction price.
 - Documents go to Irys; the hash is written on-chain in the asset registry.
-- Transition: for Айша's investors to trust the deal, the documents must be verified by a neutral party.
+- Transition: for Aisha's investors to trust the deal, the documents must be verified by a neutral party.
 -->
 
 ---
@@ -819,14 +819,14 @@ The notary confirms document authenticity. Not one notary alone — a quorum of 
 - A quorum is needed at two stages: before appraisal (document verification by notaries) and before fractionalization (SPV verification by notaries after the lawyer).
 - Vote weight: `1000 + rating_score × 10`. A top notary weighs 15,000; a low-rated one — 1,000.
 - A single notary's vote means nothing. Only the aggregated weighted consensus matters.
-- Transition: let us meet the person who votes — Марат.
+- Transition: let us meet the person who votes — Marat.
 -->
 
 ---
 layout: two-cols
 ---
 
-# Марат — the Notary
+# Marat — the Notary
 
 <div class="mt-4 text-sm">
 
@@ -847,7 +847,7 @@ layout: two-cols
 <img src="/shots/notary-ballots.png" class="rounded-lg shadow-xl" />
 
 <!--
-- Марат is the bridge between the traditional legal world and the crypto economy.
+- Marat is the bridge between the traditional legal world and the crypto economy.
 - He does not need to understand blockchain — the notary interface looks like a standard case management system.
 - Weight formula: `max(1000, 10000 + rating_score × 10)`. Reputation genuinely affects income.
 - If he systematically votes against the majority — reputation drops, stake gets slashed.
@@ -896,19 +896,18 @@ Independent appraisal is needed. One appraiser = one point of collusion. Therefo
 - Analogy: imagine an eBay auction where the seller and buyer are the same person. Self-bought for $1.
 - Then resells the same token at market price — a 150,000x profit. Heard of wash trading? That is exactly it.
 - Defense: independent appraisers. Not one, because they can be bribed. Several, because colluding with all of them is expensive.
-- Transition: how a specific appraiser works — Динара.
+- Transition: how a specific appraiser works — Dinara.
 -->
 
 ---
 
 # Step 3 — The Appraiser Joins
 
-```mermaid {scale: 0.65}
+```mermaid {scale: 0.5}
 flowchart LR
-  Owner["👤 Owner"] --> Docs["📄 Documents"]
-  Docs --> Notary["⚖️ Notary"]
-  Notary --> Appraiser["💰 Appraiser<br/>commit-reveal"]
-  Appraiser --> Price["Median price<br/>$150 000"]
+  Owner["👤 Owner"] --> Notary["⚖️ Notary"]
+  Notary --> Appraiser["💰 Appraiser"]
+  Appraiser --> Price["Median<br/>$150 000"]
   classDef old fill:#152040,stroke:#92c73e,color:#ffffff
   classDef new fill:#92c73e,stroke:#0e1830,color:#0e1830,stroke-width:3px
   class Owner,Docs,Notary old
@@ -926,14 +925,14 @@ Not one appraiser, but 11 — using a blind commit-reveal scheme. The median fil
 - No one sees others' valuations until the reveal — coordination or collusion is not possible.
 - 11 appraisers is not a magic number. It is enough for the median to be resilient to outliers.
 - If an appraiser does not reveal — they lose their stake. If their price deviates significantly — they also lose part of it.
-- Transition: meet Динара — she will appraise Айша's apartment.
+- Transition: meet Dinara — she will appraise Aisha's apartment.
 -->
 
 ---
 layout: two-cols
 ---
 
-# Динара — the Appraiser
+# Dinara — the Appraiser
 
 <div class="mt-4 text-sm">
 
@@ -1024,7 +1023,7 @@ The vault turns the asset into N Token-2022 fractions. The fundraising campaign 
 layout: two-cols
 ---
 
-# Рустам — Investor (Primary Market)
+# Rustam — Investor (Primary Market)
 
 <div class="mt-4 text-sm">
 
@@ -1045,7 +1044,7 @@ layout: two-cols
 <img src="/shots/auctions.png" class="rounded-lg shadow-xl" />
 
 <!--
-- Рустам is the profile of the retail investor the platform is built for.
+- Rustam is the profile of the retail investor the platform is built for.
 - A $100 entry point bridges the gap between equities ($1) and direct real estate ($100k+).
 - KYC is mandatory — without an attestation on the wallet, the compliance hook blocks the `invest()` call.
 - 5 different assets — genuine diversification by geography, type, and size.
@@ -1056,7 +1055,7 @@ layout: two-cols
 layout: two-cols
 ---
 
-# Назерке — Secondary Market
+# Nazerke — Secondary Market
 
 <div class="mt-4 text-sm">
 
@@ -1128,7 +1127,7 @@ The investor bought 100 fractions. They have 100 Token-2022 tokens in their wall
 - Keys = tokens. Whoever holds more tokens has more votes in managing the SPC.
 - Each apartment gets its own SPC. Never mixed: different apartments, different liabilities, different issues.
 - The lawyer registers the SPC, prepares documents, records the hash on-chain — so everyone can verify.
-- Transition: meet the lawyer — Айдар.
+- Transition: meet the lawyer — Aidar.
 -->
 
 ---
@@ -1160,14 +1159,14 @@ The lawyer prepares SPV documents in parallel with the fundraise. Deadline — 3
 - Without an SPV, the token is a pretty picture. With an SPV — real ownership rights via a share in the legal entity.
 - The lawyer picks up the task — 30 days to complete — uploads the SPV document hash on-chain.
 - Economic incentive: commission plus the slashing penalty for missing the deadline goes to the pool for the next lawyer.
-- Transition: who does this — Айдар.
+- Transition: who does this — Aidar.
 -->
 
 ---
 layout: two-cols
 ---
 
-# Айдар — the Lawyer
+# Aidar — the Lawyer
 
 <div class="mt-4 text-sm">
 
@@ -1188,7 +1187,7 @@ layout: two-cols
 <img src="/shots/legal.png" class="rounded-lg shadow-xl" />
 
 <!--
-- Айдар is a traditional lawyer, but with transparent on-chain accountability.
+- Aidar is a traditional lawyer, but with transparent on-chain accountability.
 - He is not signing a blank page: he sees the document hash, the appraisal, the owner, and the investors.
 - 30 days is a realistic timeframe for SPC registration in Kazakhstan.
 - The stake is slashed not for errors, but for missing the deadline. Errors are caught at the notary PostCheck.
@@ -1374,7 +1373,7 @@ flowchart TB
 <div class="mt-6 text-sm grid grid-cols-2 gap-8">
 <div>
 
-**Scenario:** Айша has passed away. She holds 80% of fractions in her wallet. The heir does not know the seed phrase.
+**Scenario:** Aisha has passed away. She holds 80% of fractions in her wallet. The heir does not know the seed phrase.
 
 **What breaks:**
 - Fractions are permanently locked in the wallet
@@ -1401,7 +1400,7 @@ The forced transfer is implemented via Token-2022 transfer hooks + administrativ
 
 <!--
 - The most common question from skeptics: "what happens to the tokens if the owner dies?"
-- Imagine: Айша has passed away, and 80% of the apartment sits in her wallet. The heir does not know the seed phrase.
+- Imagine: Aisha has passed away, and 80% of the apartment sits in her wallet. The heir does not know the seed phrase.
 - Without a mechanism — the fractions are dead forever. The apartment is "frozen." No one can initiate a buyout.
 - Solution: the heir presents a death certificate and will in court → receives a court order.
 - The court forwards the order to the oracle (notaries) → quorum confirms → tokens are transferred to a new wallet.
