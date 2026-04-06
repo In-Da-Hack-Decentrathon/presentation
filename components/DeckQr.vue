@@ -14,9 +14,11 @@ const deckUrl = ref('')
 
 onMounted(() => {
   if (typeof window === 'undefined') return
-  // Берём корень текущей деки: /pitch/ или /
   const path = window.location.pathname
-  const base = path.startsWith('/pitch') ? '/pitch/' : '/'
+  let base = '/'
+  if (path.startsWith('/en/pitch')) base = '/en/pitch/'
+  else if (path.startsWith('/en')) base = '/en/'
+  else if (path.startsWith('/pitch')) base = '/pitch/'
   const url = window.location.origin + base
   deckUrl.value = url
   qrSrc.value = `https://api.qrserver.com/v1/create-qr-code/?size=${props.size * 2}x${props.size * 2}&data=${encodeURIComponent(url)}`
