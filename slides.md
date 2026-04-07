@@ -1326,29 +1326,23 @@ class: section-sub
 
 # Шаг 7 — добавляется оракул
 
-```mermaid {scale: 0.45}
-flowchart TB
-  subgraph Trusted ["Доверенные исполнители"]
+```mermaid {scale: 0.35}
+flowchart LR
+  subgraph Oracle ["🔮 Оракул"]
+    Genesis["10 стартовых"]
+    Quorum["Кворум 3+"]
+  end
+  subgraph Trusted ["Доверенные"]
     Notary["⚖️ Нотариусы"]
     Appraiser["💰 Оценщики"]
     Lawyer["⚖️ Юристы"]
   end
-  subgraph Oracle ["🔮 Оракул — мост с реальным миром"]
-    Genesis["10 стартовых нотариусов"]
-    Quorum["Добавление новых:<br/>кворум 3+ голосов"]
-    Heartbeat["Контроль активности<br/>(90 дней → неактивен)"]
-    Emergency["Заморозка<br/>если активных &lt; 3"]
-  end
-  subgraph Future ["Будущее"]
-    State["🏛 Госорганы<br/>Минюст / AIFC / ЕГРП"]
-  end
+  State["🏛 Госорганы"] -.-> Oracle
   Oracle --> Trusted
-  State -.-> Oracle
   classDef new fill:#92c73e,stroke:#0e1830,color:#0e1830,stroke-width:3px
   classDef old fill:#152040,stroke:#92c73e,color:#ffffff
-  class Notary,Appraiser,Lawyer old
-  class Genesis,Quorum,Heartbeat,Emergency new
-  class State old
+  class Genesis,Quorum new
+  class Notary,Appraiser,Lawyer,State old
 ```
 
 <div class="mt-3 text-xs opacity-70">
@@ -1757,7 +1751,7 @@ flowchart LR
 ```mermaid {scale: 0.65}
 flowchart LR
   API[Бэкенд] <--> Ir[Irys / Arweave]
-  API <--> KYC[Провайдеры KYC<br/>(не реализовано)]
+  API <--> KYC["Провайдеры KYC"]
   API <--> Chain[Solana]
   classDef old fill:#152040,stroke:#92c73e,color:#ffffff
   classDef new fill:#92c73e,stroke:#0e1830,color:#0e1830,stroke-width:3px
@@ -1862,27 +1856,37 @@ class: section-sub
 
 ---
 
-# Как читать архитектуру программ
+# Паттерн «маршрутизатор + модули»
 
-<div class="mt-4 text-sm grid grid-cols-2 gap-6">
-<div>
+<div class="mt-6 text-sm">
 
-**Паттерн «маршрутизатор + модули» (EIP-2535 на Solana):**
 - Единая точка входа — маршрутизатор
 - Программы-модули регистрируются в маршрутизаторе
-- Обновление — замена адреса в маршрутизаторе без миграции данных
-- Аккаунты PDA остаются на своих местах
+- Обновление — замена адреса без миграции данных
+- Аналог EIP-2535 (Diamond) из Ethereum, адаптированный под Solana
 
 </div>
-<div>
 
-**Модель PDA:**
-- Каждое состояние — программно-производный адрес
-- Детерминированные seeds: `[program, entity, id]`
+<!--
+- Паттерн «маршрутизатор + модули» даёт нам путь обновления без форков и миграций.
+- Как торговый центр: одна входная дверь, за ней десять магазинов. Закрылся один — заменили, остальные не трогаем.
+- Переход: второй кирпич архитектуры — PDA.
+-->
+
+---
+
+# Модель PDA — программно-производные адреса
+
+<div class="mt-6 text-sm">
+
+- Каждое состояние — адрес, вычисляемый из набора ключей: `[program, entity, id]`
 - Клиент сам вычисляет адрес, не нужно читать индексы
-- Никаких глобальных списков в цепочке
+- Никаких глобальных списков в блокчейне — всё детерминированно
 
 </div>
+
+<div class="mt-6 text-xs opacity-70">
+Аналогия: номер квартиры в доме. Зная дом, подъезд, этаж — вычисляешь квартиру без справочника.
 </div>
 
 <!--
@@ -2298,17 +2302,12 @@ pub fn initialize_vault(ctx: Context<InitVault>,
 
 # Фракционное владение — внутри блокчейна
 
-```mermaid {scale: 0.5}
+```mermaid {scale: 0.4}
 flowchart LR
-  Mint[Эмитент<br/>Token-2022]
-  Vault[Хранилище]
-  TA1[Инвестор №1<br/>500]
-  TA2[Инвестор №2<br/>1500]
-  TA3[Собственник<br/>8000]
-  Vault -.-> Mint
-  Mint --> TA1
-  Mint --> TA2
-  Mint --> TA3
+  Vault[Хранилище] -.-> Mint[Эмитент]
+  Mint --> TA1[Инвестор №1]
+  Mint --> TA2[Инвестор №2]
+  Mint --> TA3[Собственник]
   classDef dim fill:#152040,stroke:#92c73e,color:#ffffff
   class Mint,Vault,TA1,TA2,TA3 dim
 ```

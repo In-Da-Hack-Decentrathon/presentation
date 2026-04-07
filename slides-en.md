@@ -1757,7 +1757,7 @@ flowchart LR
 ```mermaid {scale: 0.65}
 flowchart LR
   API[Backend] <--> Ir[Irys / Arweave]
-  API <--> KYC[KYC providers<br/>(not implemented)]
+  API <--> KYC["KYC providers"]
   API <--> Chain[Solana]
   classDef old fill:#152040,stroke:#92c73e,color:#ffffff
   classDef new fill:#92c73e,stroke:#0e1830,color:#0e1830,stroke-width:3px
