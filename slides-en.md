@@ -1214,8 +1214,8 @@ flowchart TB
     Funding --> Investors["👥 Investors"]
     Investors --> Market["🔄 Market"]
   end
-  Lawyer -.registers.-> SPV
-  SPV -.shares.-> Vault
+  Lawyer -->|registers| SPV
+  SPV -->|shares| Vault
   classDef new fill:#92c73e,stroke:#0e1830,color:#0e1830,stroke-width:3px
   classDef chain fill:#152040,stroke:#92c73e,color:#ffffff
   class SPV,RealAsset new
@@ -1343,7 +1343,7 @@ flowchart TB
     State["🏛 Government agencies<br/>Ministry of Justice / AIFC / ЕГРП"]
   end
   Oracle --> Trusted
-  State -.federated connection.-> Oracle
+  State -.-> Oracle
   classDef new fill:#92c73e,stroke:#0e1830,color:#0e1830,stroke-width:3px
   classDef old fill:#152040,stroke:#92c73e,color:#ffffff
   class Notary,Appraiser,Lawyer old
@@ -1704,7 +1704,7 @@ flowchart TB
   Web <--> API
   API <--> DB
   API <--> R
-  Web -.wallet signature.-> Prog
+  Web -.-> Prog
   classDef old fill:#152040,stroke:#92c73e,color:#ffffff
   classDef new fill:#92c73e,stroke:#0e1830,color:#0e1830,stroke-width:3px
   class Web,API,DB old
@@ -2305,7 +2305,7 @@ flowchart LR
   TA1[Investor #1<br/>500]
   TA2[Investor #2<br/>1500]
   TA3[Owner<br/>8000]
-  Vault -.controls.-> Mint
+  Vault -.-> Mint
   Mint --> TA1
   Mint --> TA2
   Mint --> TA3
@@ -2335,7 +2335,7 @@ flowchart LR
   Asset[Asset PDA<br/>on-chain]
   SPV[SPV · SPC]
   Flat[🏠 Apartment]
-  Asset -.hash.-> SPV
+  Asset -.-> SPV
   SPV --- Flat
   classDef new fill:#92c73e,stroke:#0e1830,color:#0e1830
   classDef dim fill:#152040,stroke:#92c73e,color:#ffffff
@@ -3217,7 +3217,7 @@ flowchart LR
   Idx -->|parsed events| DB[(Postgres)]
   DB --> API[Elysia API]
   API --> FE[Next.js UI]
-  SOL -.fallback direct read.-> API
+  SOL -.-> API
   classDef ok fill:#92c73e,stroke:#0e1830,color:#0e1830
   class SOL,Idx,DB,API,FE ok
 ```
@@ -3715,6 +3715,146 @@ Possible approach: a dedicated governance program with proposal types, different
 - Different decision types require different thresholds: renovation 51%, sale 75%, manager change 66%.
 - Possible solution: a governance module with configurable rules per asset.
 - Transition: the final roadmap — how we plan to address all of this.
+-->
+
+---
+
+# Irys — Immutable Document Storage
+
+<div class="mt-4 text-sm grid grid-cols-2 gap-6">
+<div>
+
+**Problem:** where to store contracts, photos, SPV documents? On a regular server they can be tampered with.
+
+**Solution:** Irys — decentralized storage on top of Arweave. Like S3, but immutable.
+
+</div>
+<div>
+
+**How it works:**
+1. Upload a document → receive a unique identifier
+2. The identifier is recorded on-chain
+3. Tampering is impossible — the identifier won't match
+
+</div>
+</div>
+
+<!--
+- Irys is like a digital time capsule. Once a document is stored, it stays forever.
+- Arweave is a blockchain designed specifically for permanent data storage.
+- We do not store files on Solana — it's expensive. Only the hash (fingerprint).
+- If someone tampers with the document, the hash won't match what's on-chain. Immediately visible.
+- Analogy: like a notarized copy. The original is in the archive; you hold a stamped receipt.
+- Transition: SPV — the bridge between blockchain and the real world.
+-->
+
+---
+
+# SPV — Bridge Between Blockchain and the Real World
+
+<div class="mt-4 text-sm">
+
+SPV (Special Purpose Vehicle) is a legal entity that holds title to the asset. Token = share in the SPV = real ownership right.
+
+</div>
+
+<div class="mt-4 text-sm grid grid-cols-2 gap-4">
+<div class="role-card">
+<div class="accent font-semibold">Kazakhstan</div>
+<div class="text-xs mt-1">SPC (Special Purpose Company) via AIFC</div>
+</div>
+<div class="role-card">
+<div class="accent font-semibold">UAE</div>
+<div class="text-xs mt-1">LLC via VARA / DIFC</div>
+</div>
+<div class="role-card">
+<div class="accent font-semibold">United Kingdom</div>
+<div class="text-xs mt-1">Limited Company</div>
+</div>
+<div class="role-card">
+<div class="accent font-semibold">Germany</div>
+<div class="text-xs mt-1">GmbH</div>
+</div>
+</div>
+
+<div class="mt-4 text-xs opacity-70">
+Every country has its own legal entity format. Slice works with any jurisdiction — the document hash is recorded on-chain the same way everywhere.
+</div>
+
+<!--
+- SPV is the key bridge. Without it, a token is just a picture. With it, it is a document with legal force.
+- Every country has its own format. Kazakhstan — SPC via AIFC, Dubai — LLC, Germany — GmbH.
+- Slice is not tied to one jurisdiction. The mechanism is universal: create a legal entity, transfer the asset, record the hash on-chain.
+- This is the core differentiator from "just tokens": every token is backed by a real legal document.
+- Transition: what we plan to build next.
+-->
+
+---
+
+# What's Next — Key Modules in Development
+
+<div class="mt-4 text-sm grid grid-cols-3 gap-4">
+
+<div class="role-card">
+<div class="accent font-semibold">📊 Reporting & Dividends</div>
+<div class="text-xs mt-2">An asset generates income (rent, revenue). The system automatically distributes profits among fraction holders.</div>
+</div>
+
+<div class="role-card">
+<div class="accent font-semibold">🗳️ Board of Directors</div>
+<div class="text-xs mt-2">Holders vote on key decisions: profit distribution, repairs, changing the manager, selling — directly on-chain.</div>
+</div>
+
+<div class="role-card">
+<div class="accent font-semibold">🌐 Government Registry Integration</div>
+<div class="text-xs mt-2">Automated verification via government databases, fractional rental, expansion to international markets.</div>
+</div>
+
+</div>
+
+<!--
+- Three key modules needed for a full-fledged product.
+- Dividends: the asset generates rent; the system calculates and distributes automatically. Where to direct funds — payouts or repairs?
+- Board of directors: holders vote without meetings or minutes. Everything on-chain: transparent, irreversible, quorum-based.
+- Government registries: initially manual verification (notaries). Eventually — automated via Ministry of Justice, property registry APIs.
+- Transition: an honest look at risks.
+-->
+
+---
+
+# Risks — We See Them and Don't Hide
+
+<div class="mt-4 text-xs grid grid-cols-2 gap-4">
+
+<div class="role-card">
+<div class="accent font-semibold">⚖️ Regulation</div>
+<div class="mt-1">IPOs and asset markets are complex for a reason. Government regulation is necessary. Every jurisdiction has its own rules: what can be tokenized, how to protect buyers, who is liable in disputes.</div>
+</div>
+
+<div class="role-card">
+<div class="accent font-semibold">📜 Legal Precedent</div>
+<div class="mt-1">SPVs work, but case law for tokenized property is still minimal. Legislation is being formed right now — the rules will change.</div>
+</div>
+
+<div class="role-card">
+<div class="accent font-semibold">📉 Liquidity</div>
+<div class="mt-1">At launch, the secondary market will be thin. Until a critical mass of participants is reached, selling a fraction quickly will be difficult.</div>
+</div>
+
+<div class="role-card">
+<div class="accent font-semibold">🔒 Technology Risk</div>
+<div class="mt-1">An external contract audit is required before public launch. We understand this and are building the system so that each risk is addressed as we grow.</div>
+</div>
+
+</div>
+
+<!--
+- An honest slide for judges and investors. We do not hide problems.
+- Regulation: when we give retail investors access to large assets, we take on IPO-level responsibility.
+- Legal precedent: SPVs have worked for decades in traditional finance, but in the context of tokenization there are few cases so far.
+- Liquidity: the classic chicken-and-egg problem. Solved by market makers and partnerships.
+- Technology risk: external audit is mandatory. Planning Trail of Bits or OtterSec.
+- Transition: links and contacts.
 -->
 
 ---
