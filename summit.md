@@ -21,7 +21,9 @@ class: text-left
     <span>Slice</span>
   </div>
 
-  <div class="eyebrow mb-4">Revenue-Based Financing · Kazakhstan</div>
+  <div class="eyebrow mb-3">Revenue-Based Financing · Kazakhstan</div>
+
+  <p class="hook-proverb g mb-5">Little drops of water make a mighty ocean.</p>
 
   <div class="flex items-center gap-6 mb-4">
     <div class="no-wrap">
@@ -35,7 +37,7 @@ class: text-left
 </pre>
       <div class="no-strike"></div>
     </div>
-    <p class="hook-cap">One bank. One form. One <span class="down">&ldquo;no&rdquo;</span> &mdash; and <strong>$5.7 trillion</strong> of growth capital never arrives.</p>
+    <p class="hook-cap">One bank. One form. One <span class="down">&ldquo;no&rdquo;</span> &mdash; and <strong>small and medium businesses</strong> never get to grow.</p>
   </div>
 
   <pre class="ascii-yes g" v-pre>
@@ -51,8 +53,6 @@ yesyes                  yesyes   yesyesyesyesyesyesyes   yesyesyesyesyesyesyes
 </pre>
 
   <p class="hook-cap mt-3">A thousand people, each a small <span class="up">&ldquo;yes&rdquo;</span> &mdash; the crowd that funds instead.</p>
-
-  <p class="hook-proverb g mt-3">Little drops of water make a mighty ocean.</p>
 
 </div>
 
