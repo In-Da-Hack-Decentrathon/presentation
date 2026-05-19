@@ -383,6 +383,8 @@ layout: default
   </div>
 </div>
 
+<p class="mt-4" style="font-size:.6rem;line-height:1.5;color:#5a657c">Sources: IFC / World Bank — MSME Finance Gap (2025) · Bureau of National Statistics of the Republic of Kazakhstan · Kaspi.kz 9M 2025 results · The Astana Times.</p>
+
 <style>
 .slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
 .slidev-layout h1{color:#e8ecf4 !important;font-weight:600;font-size:1.85rem;letter-spacing:-.015em;margin-bottom:.5rem}
@@ -630,20 +632,40 @@ SAY: "The plan is staged, and each step earns the next. First, validate demand �
 layout: default
 ---
 
-# The team
+# Use of funds — what a pre-seed funds
 
-<div class="grid grid-cols-2 gap-6 mt-2">
-  <div class="card">
-    <div class="lbl">In Da Hack — a startup-grade engineering team</div>
-    <p class="mt-2 text-sm"><strong>Four full-stack engineers from Kazakhstan.</strong> The product you've just seen — the marketplace, the scoring, the yield calculator, the compliance tracker — we designed and built it ourselves. <strong>We don't pitch slides, we ship.</strong></p>
+<p class="muted mt-1">Slice isn't raising capital today — this is the financial model: what a pre-seed round would fund, and how it splits.</p>
+
+<div class="grid grid-cols-[1fr_1.85fr] gap-6 mt-4 items-center">
+
+  <div class="card acc">
+    <div class="lbl">Pre-seed · realistic scenario</div>
+    <div class="kpi g mt-1.5">~$400k</div>
+    <p class="text-sm muted mt-2"><strong>12–18 months</strong> of runway to product launch and first revenue. Modelled as <strong>$200k–700k</strong> across three scenarios — pessimistic, realistic, optimistic.</p>
   </div>
-  <div class="card">
-    <div class="lbl">Honest about the gap</div>
-    <p class="mt-2 text-sm">We're engineers, not lawyers. So legal, compliance and underwriting come in as <strong>external specialists</strong>, and an <strong>advisory board</strong> — DeFi, financial regulation, MFCA law — is our first move, not an afterthought.</p>
+
+  <div>
+    <div class="stack">
+      <div class="seg" style="width:42%;background:#1d4ed8"></div>
+      <div class="seg" style="width:14%;background:#3b6ef0"></div>
+      <div class="seg" style="width:13%;background:#4f9bf5"></div>
+      <div class="seg" style="width:11%;background:#38bdf8"></div>
+      <div class="seg" style="width:10%;background:#6cc6f0"></div>
+      <div class="seg" style="width:10%;background:#9ad8f5"></div>
+    </div>
+    <div class="grid grid-cols-2 gap-x-6 gap-y-2 mt-3">
+      <div class="leg"><span class="dot" style="background:#1d4ed8"></span><span class="leg-name">Engineering — core team</span><strong>42%</strong></div>
+      <div class="leg"><span class="dot" style="background:#3b6ef0"></span><span class="leg-name">External specialists</span><strong>14%</strong></div>
+      <div class="leg"><span class="dot" style="background:#4f9bf5"></span><span class="leg-name">Marketing &amp; growth</span><strong>13%</strong></div>
+      <div class="leg"><span class="dot" style="background:#38bdf8"></span><span class="leg-name">Smart-contract audit</span><strong>11%</strong></div>
+      <div class="leg"><span class="dot" style="background:#6cc6f0"></span><span class="leg-name">AFSA licensing</span><strong>10%</strong></div>
+      <div class="leg"><span class="dot" style="background:#9ad8f5"></span><span class="leg-name">Infrastructure &amp; overhead</span><strong>10%</strong></div>
+    </div>
   </div>
+
 </div>
 
-<p class="mt-5">Lean by design: a compact core team means a low burn rate — and a realistic path to break-even, not a moonshot.</p>
+<p class="muted text-sm mt-5">Engineering is the core cost — the team builds revenue verification, campaign mechanics, dashboards and the secondary market in-house. Staged: each tranche unlocks only when the previous milestone is delivered.</p>
 
 <style>
 .slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
@@ -684,10 +706,83 @@ td.c,th.c{text-align:center}
 .yes{color:#16c784;font-weight:700}
 .no{color:#5a657c}
 .deck-qr-label{color:#8b95a9}
+.stack{display:flex;width:100%;height:1.65rem;border-radius:8px;overflow:hidden;border:1px solid #1e2638}
+.seg{height:100%;box-sizing:border-box;border-right:2px solid #0a0e1a}
+.leg{display:flex;align-items:center;gap:.5rem;font-size:.8rem}
+.leg-name{flex:1}
+.dot{width:.72rem;height:.72rem;border-radius:3px;flex:0 0 auto}
 </style>
 
 <!--
-SAY: "Who are we — four full-stack engineers from Kazakhstan, team In Da Hack. The product you've just seen — the marketplace, the scoring, the calculator — we designed and built it ourselves. We don't pitch slides, we ship. And we're honest about what we lack: we're engineers, not finance lawyers — so legal, compliance and underwriting come in as external specialists, and an advisory board is our first move. Lean by design means a low burn and a realistic path to break-even."
+SAY: "Use of funds — and to be clear, we're not raising today; this is the financial model. A realistic pre-seed is around four hundred thousand dollars — modelled from two hundred to seven hundred K across three scenarios — for twelve to eighteen months of runway. Where does it go? Engineering is the core cost at forty-two percent: we build everything in-house. The rest splits across external specialists, marketing, the smart-contract audit, the AFSA licence and infrastructure. And it's staged — each tranche unlocks only when the previous milestone is delivered."
+-->
+
+---
+layout: default
+---
+
+# The team
+
+<div class="card acc mt-2">
+  <div class="eyebrow">Our mission</div>
+  <p class="g text-xl font-semibold mt-1">Make investing in a business as simple as buying something online.</p>
+  <p class="muted text-sm mt-1.5">And give small businesses growth capital — without giving up equity, without posting collateral.</p>
+</div>
+
+<div class="lbl mt-5">Our development team</div>
+<div class="grid grid-cols-4 gap-4 mt-2">
+  <div class="card text-center"><div class="avatar">NB</div><div class="font-semibold mt-2">Nikita Bulygin</div><div class="muted text-sm mt-0.5">@Bulygin_Nik</div></div>
+  <div class="card text-center"><div class="avatar">AK</div><div class="font-semibold mt-2">Almat Kismet</div><div class="muted text-sm mt-0.5">@almatkismet</div></div>
+  <div class="card text-center"><div class="avatar">MS</div><div class="font-semibold mt-2">Muslim Shady</div><div class="muted text-sm mt-0.5">@musl1m_shady</div></div>
+  <div class="card text-center"><div class="avatar">F</div><div class="font-semibold mt-2">Fekiss</div><div class="muted text-sm mt-0.5">@fek1ss</div></div>
+</div>
+
+<p class="muted mt-5">In Da Hack — four engineers from Kazakhstan who design, build and ship the product end-to-end: smart contracts, backend, frontend and integrations.</p>
+
+<style>
+.slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
+.slidev-layout h1{color:#e8ecf4 !important;font-weight:600;font-size:1.85rem;letter-spacing:-.015em;margin-bottom:.5rem}
+.slidev-layout h3{color:#e8ecf4 !important;font-weight:600;margin:.15rem 0}
+.slidev-layout p{line-height:1.5;margin:0}
+.slidev-layout strong{color:#e8ecf4;font-weight:600}
+.eyebrow{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#38bdf8;font-weight:600}
+.lbl{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#8b95a9;font-weight:600}
+.g{background:linear-gradient(120deg,#60a5fa,#38bdf8);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.muted{color:#8b95a9}
+.up{color:#16c784 !important}
+.down{color:#f1626b !important}
+.card{background:#111726;border:1px solid #1e2638;border-radius:13px;padding:.85rem 1rem}
+.card.acc{border-color:#38bdf8;background:linear-gradient(160deg,rgba(29,78,216,.15),rgba(17,23,38,.55))}
+.chip{display:inline-block;background:#161d2e;border:1px solid #2a3550;border-radius:999px;padding:.13rem .62rem;font-size:.72rem;color:#c4ccda}
+.kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
+.brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
+.phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
+.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
+.arrow{color:#38bdf8;font-weight:700}
+.hook-mark{display:flex;align-items:center;gap:.5rem;font-size:1.05rem;font-weight:600;color:#e8ecf4}
+.hook-logo{width:30px;height:30px}
+.hook-h{color:#e8ecf4;font-weight:600;font-size:2.5rem;line-height:1.13;letter-spacing:-.02em}
+.hook-lead{font-size:1.02rem;line-height:1.55;color:#c4ccda;max-width:47rem}
+.hook-rule{height:1px;width:100%;background:linear-gradient(90deg,#1e2638,rgba(30,38,56,0))}
+.hook-turn{font-size:1.12rem;line-height:1.5;color:#e8ecf4;font-weight:500;max-width:45rem}
+.hook-proverb{font-size:1.5rem;font-weight:600;letter-spacing:-.01em}
+.flow-track{display:flex;align-items:stretch;gap:.4rem}
+.flow-side{display:flex;align-items:center;justify-content:center;background:#0d1320;border:1px solid #1e2638;border-radius:10px;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:#8b95a9;font-weight:700;padding:0 .6rem;flex:0 0 5rem;text-align:center}
+.flow-step{display:flex;align-items:center;gap:.5rem;background:#111726;border:1px solid #1e2638;border-radius:10px;padding:.5rem .7rem;font-size:.78rem;flex:1;line-height:1.28}
+.flow-step.acc{border-color:#38bdf8;background:linear-gradient(160deg,rgba(29,78,216,.18),rgba(17,23,38,.55))}
+.flow-sep{display:flex;align-items:center;color:#38bdf8;font-weight:700;flex:0 0 auto;font-size:.9rem}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
+th{color:#8b95a9;font-weight:600;background:#0d1320}
+td.c,th.c{text-align:center}
+.yes{color:#16c784;font-weight:700}
+.no{color:#5a657c}
+.deck-qr-label{color:#8b95a9}
+.avatar{width:2.7rem;height:2.7rem;border-radius:50%;display:grid;place-items:center;margin:0 auto;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-weight:700;font-size:.95rem}
+</style>
+
+<!--
+SAY: "The team. Our mission — make investing in a business as simple as buying something online, and give small businesses capital without giving up equity or posting collateral. Our development team is four engineers from Kazakhstan — team In Da Hack. We designed and built the product you've just seen end-to-end: smart contracts, backend, frontend, integrations. Reach any of us on Telegram."
 -->
 
 ---
