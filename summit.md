@@ -189,22 +189,22 @@ layout: default
 
 # The solution — Slice RBF
 
-<p class="muted mt-1">A Web3 marketplace where a small business raises growth capital from a crowd of retail investors — in exchange for a share of its future revenue.</p>
+<p class="muted mt-1">A marketplace where a business raises capital from a crowd — for a <strong>share of its revenue</strong>.</p>
 
 <div class="grid grid-cols-[1.55fr_1fr] gap-6 mt-3 items-center">
 
 <div class="flex flex-col gap-2.5">
   <div class="card">
     <div class="chip mb-1.5">Business</div>
-    <p class="text-sm">Raises from a crowd, repays a <strong>% of revenue</strong> under a Revenue Sharing Agreement — not a loan, not equity. Weak month, smaller payment; no collateral, 100% ownership kept.</p>
+    <p class="text-sm">Repays a <strong>% of revenue</strong> — a Revenue Sharing Agreement, not a loan or equity. No collateral, 100% ownership kept.</p>
   </div>
   <div class="card acc">
     <div class="chip mb-1.5" style="border-color:#38bdf8;color:#7cc6f5">Slice</div>
-    <p class="text-sm">Scores and verifies the business, wraps the deal in an <strong>RSA</strong>, and routes every revenue-share payout automatically, on-chain.</p>
+    <p class="text-sm">Scores the business, wraps the deal in an <strong>RSA</strong>, and routes every payout on-chain.</p>
   </div>
   <div class="card">
     <div class="chip mb-1.5">Investor</div>
-    <p class="text-sm">Enters from a <strong>small ticket</strong> and earns a share of real revenue — more in strong months, less in weak ones, nothing if revenue is zero. Can exit early on the secondary market.</p>
+    <p class="text-sm">Earns a <strong>share of real revenue</strong> from a small ticket — and can exit early on the secondary market.</p>
   </div>
 </div>
 
@@ -215,7 +215,7 @@ layout: default
 
 </div>
 
-<p class="muted text-sm mt-4">Honest on risk: returns rise and fall with the business — a weak or zero-revenue month pays little or nothing, and bankruptcy can lose the principal. That's why every ticket stays small — <strong>a risk no one would feel alone; capital a business can build on.</strong></p>
+<p class="muted text-sm mt-4">Honest on risk: returns track real revenue — zero revenue pays nothing, and bankruptcy can lose the principal. Small tickets keep it <strong>a risk no one would feel alone</strong>.</p>
 
 <style>
 .slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
