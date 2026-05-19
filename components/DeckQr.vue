@@ -19,6 +19,7 @@ onMounted(() => {
   if (path.startsWith('/en/pitch')) base = '/en/pitch/'
   else if (path.startsWith('/en')) base = '/en/'
   else if (path.startsWith('/pitch')) base = '/pitch/'
+  else if (path.startsWith('/summit')) base = '/summit/'
   const url = window.location.origin + base
   deckUrl.value = url
   qrSrc.value = `https://api.qrserver.com/v1/create-qr-code/?size=${props.size * 2}x${props.size * 2}&data=${encodeURIComponent(url)}`

@@ -17,7 +17,7 @@ class: text-left
 <div class="grid grid-cols-[1.45fr_1fr] gap-9 items-center h-full">
 
 <div>
-  <div class="eyebrow mb-3">Strategic Memorandum · Pivot Architecture</div>
+  <div class="eyebrow mb-3">Investor Brief · Kazakhstan</div>
   <div class="text-3xl font-semibold g mb-2">Slice</div>
   <div class="brandbar mb-4"></div>
   <h1 class="!text-4xl !leading-tight">Revenue-Based Financing<br/>for the businesses <span class="g">banks ignore</span></h1>
@@ -53,18 +53,19 @@ class: text-left
 .kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
 .brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
 .phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
-.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700}
+.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
 .arrow{color:#38bdf8;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:.3rem}
-th,td{border:1px solid #1e2638;padding:.4rem .6rem;text-align:left}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
 th{color:#8b95a9;font-weight:600;background:#0d1320}
+td.c,th.c{text-align:center}
 .yes{color:#16c784;font-weight:700}
 .no{color:#5a657c}
 </style>
 
 <!--
-OPENER — ~8 seconds, then pause on the phone.
-SAY: "Two out of three businesses in Kazakhstan that ask a bank for a loan get a 'no'. Slice funds them instead — from a crowd of investors, repaid as a share of their revenue. And it's backed by real collateral. This is the strategic blueprint for how."
+OPENER — ~8 seconds, with energy, then pause on the phone.
+SAY: "Two out of three businesses in Kazakhstan that ask a bank for a loan get a 'no'. Slice funds them instead — from a crowd of investors, repaid as a share of revenue, and backed by real collateral. The product is already built — here it is."
 -->
 
 ---
@@ -109,44 +110,47 @@ layout: default
 .kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
 .brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
 .phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
-.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700}
+.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
 .arrow{color:#38bdf8;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:.3rem}
-th,td{border:1px solid #1e2638;padding:.4rem .6rem;text-align:left}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
 th{color:#8b95a9;font-weight:600;background:#0d1320}
+td.c,th.c{text-align:center}
 .yes{color:#16c784;font-weight:700}
 .no{color:#5a657c}
 </style>
 
 <!--
-SAY: "The SMB funding gap is 5.7 trillion dollars globally. In Kazakhstan, two thirds of loan applications are rejected outright. The two classic options each fail this segment: a bank loan demands rigid payments and hard collateral; venture capital takes your company. Slice is the missing instrument in between."
+SAY: "The SMB funding gap is 5.7 trillion dollars globally; in Kazakhstan two thirds of loan applications are rejected. The two classic options each fail this segment — a bank loan demands rigid payments and hard collateral, venture capital takes your company. There is no instrument in between. That's the gap."
 -->
 
 ---
 layout: default
 ---
 
-# The pivot — from MVP to a focused product
+# The solution — Slice RBF
 
-<div class="grid grid-cols-2 gap-6 mt-2">
+<p class="muted mt-1">A marketplace for revenue-based financing: the business keeps its equity, the investor earns from real revenue, and every deal is secured.</p>
 
-<div class="card">
-  <div class="lbl">Before — hackathon MVP</div>
-  <h3 class="!mt-1">Tokenize any asset</h3>
-  <p class="mt-1.5 text-sm muted">A universal asset-tokenization platform. No focus, no clear buyer, and a very high regulatory barrier for "any asset".</p>
+<div class="grid grid-cols-3 gap-4 mt-4">
+  <div class="card">
+    <div class="chip mb-2">Business</div>
+    Raises from a crowd of investors. Repays a <strong>% of revenue</strong> — not a fixed loan, not equity. Weak month, smaller payment. Keeps 100% ownership.
+  </div>
+  <div class="card acc">
+    <div class="chip mb-2" style="border-color:#38bdf8;color:#7cc6f5">Slice</div>
+    Verifies revenue on Kazakhstan's payment rails. Wraps each deal in a <strong>tokenized SPV as collateral</strong>. Routes the revenue-share payouts automatically.
+  </div>
+  <div class="card">
+    <div class="chip mb-2">Investor</div>
+    Enters from ~$100. Earns a floating yield from real revenue, with a principal-protection floor — and can exit early on the secondary market.
+  </div>
 </div>
 
-<div class="card acc">
-  <div class="eyebrow">After — the focused product</div>
-  <h3 class="!mt-1">Slice RBF 2.0 = RBF + a security layer</h3>
-  <p class="mt-1.5 text-sm muted">Revenue-based financing as the product; tokenization repurposed as the <strong>collateral mechanism</strong> — a tokenized SPV behind every deal.</p>
-</div>
-
-</div>
-
-<div class="grid grid-cols-2 gap-6 mt-5">
-  <div class="card"><div class="lbl">For the business</div><p class="mt-1 text-sm">Capital for a share of revenue — <strong>no equity lost, no rigid schedule</strong>.</p></div>
-  <div class="card"><div class="lbl">For the investor</div><p class="mt-1 text-sm">A floating yield from <strong>verified</strong> revenue, plus a protected secondary market.</p></div>
+<div class="grid grid-cols-3 gap-4 mt-4 text-sm muted">
+  <div>→ Three deal terms: revenue share, deferral, minimum period.</div>
+  <div>→ Backed by a tokenized SPV — real, enforceable collateral.</div>
+  <div>→ A built-in secondary market for liquidity.</div>
 </div>
 
 <style>
@@ -167,17 +171,18 @@ layout: default
 .kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
 .brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
 .phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
-.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700}
+.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
 .arrow{color:#38bdf8;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:.3rem}
-th,td{border:1px solid #1e2638;padding:.4rem .6rem;text-align:left}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
 th{color:#8b95a9;font-weight:600;background:#0d1320}
+td.c,th.c{text-align:center}
 .yes{color:#16c784;font-weight:700}
 .no{color:#5a657c}
 </style>
 
 <!--
-SAY: "We started as a hackathon MVP that tokenized any asset — too broad, no focus, a regulatory minefield. We pivoted: revenue-based financing is now the product, and tokenization became the security layer — a collateral SPV behind every deal. The business keeps its equity; the investor gets a floating yield from verified revenue."
+SAY: "Slice is a marketplace for revenue-based financing. The business raises from a crowd and repays a fixed percentage of revenue — slow month, smaller payment, and it never gives up equity. The investor earns a floating yield from that real revenue. And every campaign is secured by a tokenized SPV — that collateral is the whole point, and I'll show you why next."
 -->
 
 ---
@@ -206,7 +211,7 @@ layout: default
 <div class="card acc">
   <div class="eyebrow">Perfect synchronization</div>
   <p class="mt-1.5 text-sm">The payment is a fixed <strong>% of revenue</strong> — the effective cost of capital adapts to the business's reality.</p>
-  <p class="mt-2.5 text-sm muted"><strong style="color:#16c784">Strong month</strong> — the payment rises, the term closes faster. <strong style="color:#f1626b">Weak month</strong> — the <strong style="color:#e8ecf4">principal-protection floor</strong> kicks in: the term simply extends until the principal is returned.</p>
+  <p class="mt-2.5 text-sm muted"><strong style="color:#16c784">Strong month</strong> — the payment rises, the term closes faster. <strong style="color:#f1626b">Weak month</strong> — the <strong style="color:#e8ecf4">principal-protection floor</strong> kicks in: the term extends until the principal is returned.</p>
 </div>
 
 </div>
@@ -229,74 +234,25 @@ layout: default
 .kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
 .brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
 .phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
-.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700}
+.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
 .arrow{color:#38bdf8;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:.3rem}
-th,td{border:1px solid #1e2638;padding:.4rem .6rem;text-align:left}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
 th{color:#8b95a9;font-weight:600;background:#0d1320}
+td.c,th.c{text-align:center}
 .yes{color:#16c784;font-weight:700}
 .no{color:#5a657c}
 </style>
 
 <!--
-SAY: "Unlike a bank loan with a flat, rigid payment, an RBF payment is a fixed percentage of revenue. Strong month — you pay more and finish faster. Weak month — you pay less, and a principal-protection floor extends the term until the investor's principal is returned. The cost of capital synchronizes with the real business."
+SAY: "A bank loan is a flat, rigid payment. An RBF payment is a percentage of revenue — strong month, you pay more and finish faster; weak month, you pay less, and a principal-protection floor extends the term until the investor's principal is returned. The cost of capital synchronizes with the real business."
 -->
 
 ---
 layout: default
 ---
 
-# The market lesson — why pure RBF dies
-
-<div class="grid grid-cols-3 gap-4 mt-1">
-  <div class="card"><div class="lbl">Pipe</div><p class="mt-1 text-sm muted">$2B valuation in 2021 → pivoted to white-label "capital-as-a-service". Revenue ~$7M against ~$47M burned.</p></div>
-  <div class="card"><div class="lbl">Uncapped</div><p class="mt-1 text-sm muted">Moved away from pure RBF toward a flexible loan — the lending model simply doesn't scale the same way.</p></div>
-  <div class="card"><div class="lbl">Clearco</div><p class="mt-1 text-sm muted">Cut ~72% of staff, repeated restructurings, retreat from the classic RBF model.</p></div>
-</div>
-
-<div class="card mt-4" style="border-color:#f1626b">
-  <div class="lbl" style="color:#f1626b">The critical flaw</div>
-  <p class="mt-1.5 text-sm">Pure RBF has <strong>no collateral</strong>. When a business defaults, the investor is left with nothing — so the model never scaled globally.</p>
-</div>
-
-<p class="mt-4"><span class="eyebrow">Slice's answer</span> &nbsp;RBF needs real collateral. A bare "revenue marketplace" did not survive — so we secure every deal.</p>
-
-<style>
-.slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
-.slidev-layout h1{color:#e8ecf4 !important;font-weight:600;font-size:1.85rem;letter-spacing:-.015em;margin-bottom:.5rem}
-.slidev-layout h3{color:#e8ecf4 !important;font-weight:600;margin:.15rem 0}
-.slidev-layout p{line-height:1.5;margin:0}
-.slidev-layout strong{color:#e8ecf4;font-weight:600}
-.eyebrow{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#38bdf8;font-weight:600}
-.lbl{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#8b95a9;font-weight:600}
-.g{background:linear-gradient(120deg,#60a5fa,#38bdf8);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.muted{color:#8b95a9}
-.up{color:#16c784 !important}
-.down{color:#f1626b !important}
-.card{background:#111726;border:1px solid #1e2638;border-radius:13px;padding:.85rem 1rem}
-.card.acc{border-color:#38bdf8;background:linear-gradient(160deg,rgba(29,78,216,.15),rgba(17,23,38,.55))}
-.chip{display:inline-block;background:#161d2e;border:1px solid #2a3550;border-radius:999px;padding:.13rem .62rem;font-size:.72rem;color:#c4ccda}
-.kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
-.brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
-.phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
-.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700}
-.arrow{color:#38bdf8;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:.3rem}
-th,td{border:1px solid #1e2638;padding:.4rem .6rem;text-align:left}
-th{color:#8b95a9;font-weight:600;background:#0d1320}
-.yes{color:#16c784;font-weight:700}
-.no{color:#5a657c}
-</style>
-
-<!--
-SAY: "Every big pure-RBF player — Pipe, Uncapped, Clearco — pivoted away or collapsed. The root cause is the same: no collateral. When a business defaults, the investor recovers nothing. That's the critical flaw. Our answer is simple — RBF must be secured. So every Slice deal has real collateral."
--->
-
----
-layout: default
----
-
-# Our answer — the tokenized SPV
+# Tokenized SPV — the collateral
 
 <div class="grid grid-cols-[1.4fr_1fr] gap-6 mt-2">
 
@@ -308,8 +264,8 @@ layout: default
 
 <div class="flex flex-col gap-3">
   <div class="card">
-    <div class="lbl">Secondary market</div>
-    <p class="mt-1 text-sm muted">Token fractions let an investor enter from ~$100 and trade micro-shares freely.</p>
+    <div class="lbl">Real, enforceable collateral</div>
+    <p class="mt-1 text-sm muted">Owning a fraction = a share in the SPV that legally holds the revenue contract.</p>
   </div>
   <div class="card" style="border-color:#f1626b">
     <div class="lbl" style="color:#f1626b">The nuclear option</div>
@@ -339,29 +295,30 @@ layout: default
 .phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
 .num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
 .arrow{color:#38bdf8;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:.3rem}
-th,td{border:1px solid #1e2638;padding:.4rem .6rem;text-align:left}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
 th{color:#8b95a9;font-weight:600;background:#0d1320}
+td.c,th.c{text-align:center}
 .yes{color:#16c784;font-weight:700}
 .no{color:#5a657c}
 </style>
 
 <!--
-SAY: "Three layers. The operating company at the bottom. Above it, a special-purpose vehicle — an SPV — that owns the revenue contract and ring-fences the risk. On top, Token-2022 shares on Solana: a right to revenue plus a stake in the SPV. And the enforcement: on default, the smart contract votes through a forced sale of the SPV and returns proceeds to investors."
+SAY: "This is what the failed RBF players lacked. Three layers: the operating company; a special-purpose vehicle — an SPV — that owns the revenue contract and ring-fences the risk; and Token-2022 shares on Solana on top. The enforcement: on default, the smart contract votes through a forced sale of the SPV and returns the proceeds to investors. Real collateral, not a promise."
 -->
 
 ---
 layout: default
 ---
 
-# Trust engineering I — revenue cross-verification
+# Trust I — revenue cross-verification
 
 <div class="grid grid-cols-[1fr_auto_1fr_auto_1fr] gap-3 items-center mt-4">
 
 <div class="flex flex-col gap-2">
   <div class="card !py-2 text-sm">Bank / Kaspi — inflows</div>
   <div class="card !py-2 text-sm">Acquiring — card transactions</div>
-  <div class="card !py-2 text-sm">OFD — fiscal register data</div>
+  <div class="card !py-2 text-sm">CRF — Common Reporting Format</div>
   <div class="card !py-2 text-sm">e-Invoicing (ESF) — tax data</div>
 </div>
 
@@ -401,24 +358,25 @@ layout: default
 .kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
 .brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
 .phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
-.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700}
+.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
 .arrow{color:#38bdf8;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:.3rem}
-th,td{border:1px solid #1e2638;padding:.4rem .6rem;text-align:left}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
 th{color:#8b95a9;font-weight:600;background:#0d1320}
+td.c,th.c{text-align:center}
 .yes{color:#16c784;font-weight:700}
 .no{color:#5a657c}
 </style>
 
 <!--
-SAY: "Revenue is never taken on the business's word. We triangulate four independent data rails — bank and Kaspi inflows, card acquiring, fiscal register data, and state e-invoicing. They must agree; a systematic divergence flags manipulation. Once verified, a Direct Debit converts the revenue share to USDC and distributes it on-chain."
+SAY: "Revenue is never taken on the business's word. We triangulate four independent rails — bank and Kaspi inflows, card acquiring, Common Reporting Format fiscal data, and state e-invoicing. They must agree; a systematic divergence flags manipulation. Once verified, a Direct Debit converts the revenue share to USDC and distributes it on-chain."
 -->
 
 ---
 layout: default
 ---
 
-# Trust engineering II — fraud protection
+# Trust II — fraud protection
 
 <div class="grid grid-cols-2 gap-4 mt-2">
   <div class="card"><div class="flex items-center gap-2"><span class="num">01</span><strong>Tranched disbursement</strong></div><p class="mt-2 text-sm muted">All-or-nothing escrow, released in milestones — a fraudster never receives the whole sum at once.</p></div>
@@ -447,124 +405,23 @@ layout: default
 .phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
 .num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
 .arrow{color:#38bdf8;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:.3rem}
-th,td{border:1px solid #1e2638;padding:.4rem .6rem;text-align:left}
-th{color:#8b95a9;font-weight:600;background:#0d1320}
-.yes{color:#16c784;font-weight:700}
-.no{color:#5a657c}
-</style>
-
-<!--
-SAY: "Fraud is engineered out in four layers. Money sits in escrow and is released in tranches — all-or-nothing. Machine learning and Benford's law audit the numbers for fabricated transactions. KYC and KYB screen the real beneficiaries against sanctions and straw-borrower patterns. And on-chain transfer hooks mean a token can only ever move to a KYC-cleared wallet, with an anti-whale cap."
--->
-
----
-layout: default
----
-
-# Secondary market — liquidity
-
-<div class="grid grid-cols-[1fr_auto_1.15fr_auto_1fr] gap-3 items-center mt-4">
-  <div class="card"><div class="lbl">Investor A</div><p class="mt-1.5 text-sm muted">Wants to exit early and lock in the profit already earned.</p></div>
-  <div class="arrow text-3xl">&rarr;</div>
-  <div class="card acc"><div class="eyebrow">Atomic settlement · Solana</div><p class="mt-1.5 text-sm">~400 ms finality · ~$0.00025 fee. Token ↔ payment swap in one transaction.</p></div>
-  <div class="arrow text-3xl">&rarr;</div>
-  <div class="card"><div class="lbl">Investor B</div><p class="mt-1.5 text-sm muted">KYC-cleared, ready to buy into the revenue stream.</p></div>
-</div>
-
-<div class="grid grid-cols-3 gap-4 mt-6">
-  <div class="card"><div class="lbl">Liquidity before term</div><p class="mt-1.5 text-sm muted">An investor isn't locked in for years — micro-shares trade freely.</p></div>
-  <div class="card"><div class="lbl">Dynamic pricing</div><p class="mt-1.5 text-sm muted">Market price ≈ payouts received, revenue forecast and protection-floor status.</p></div>
-  <div class="card"><div class="lbl">Honest caveat</div><p class="mt-1.5 text-sm muted">At launch the market is thin — liquidity builds as the investor base grows.</p></div>
-</div>
-
-<style>
-.slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
-.slidev-layout h1{color:#e8ecf4 !important;font-weight:600;font-size:1.85rem;letter-spacing:-.015em;margin-bottom:.5rem}
-.slidev-layout h3{color:#e8ecf4 !important;font-weight:600;margin:.15rem 0}
-.slidev-layout p{line-height:1.5;margin:0}
-.slidev-layout strong{color:#e8ecf4;font-weight:600}
-.eyebrow{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#38bdf8;font-weight:600}
-.lbl{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#8b95a9;font-weight:600}
-.g{background:linear-gradient(120deg,#60a5fa,#38bdf8);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.muted{color:#8b95a9}
-.up{color:#16c784 !important}
-.down{color:#f1626b !important}
-.card{background:#111726;border:1px solid #1e2638;border-radius:13px;padding:.85rem 1rem}
-.card.acc{border-color:#38bdf8;background:linear-gradient(160deg,rgba(29,78,216,.15),rgba(17,23,38,.55))}
-.chip{display:inline-block;background:#161d2e;border:1px solid #2a3550;border-radius:999px;padding:.13rem .62rem;font-size:.72rem;color:#c4ccda}
-.kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
-.brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
-.phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
-.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700}
-.arrow{color:#38bdf8;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:.3rem}
-th,td{border:1px solid #1e2638;padding:.4rem .6rem;text-align:left}
-th{color:#8b95a9;font-weight:600;background:#0d1320}
-.yes{color:#16c784;font-weight:700}
-.no{color:#5a657c}
-</style>
-
-<!--
-SAY: "Investors aren't locked in. The position is a token, so it trades on a secondary market — settled atomically on Solana in 400 milliseconds for a fraction of a cent. Pricing is dynamic, tied to payouts and the protection floor. Honestly: at launch the market is thin — liquidity builds with the investor base."
--->
-
----
-layout: default
----
-
-# Comparison matrix — the synthesis
-
-<table>
-  <thead><tr><th>Capability</th><th>Slice</th><th>Global RBF<br/>(Pipe / Wayflyer)</th><th>KZ crowdfunding</th><th>RWA tokenization</th></tr></thead>
-  <tbody>
-    <tr><td>RBF mechanics — % of revenue</td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td><td><span class="no">—</span></td><td><span class="no">—</span></td></tr>
-    <tr><td>Collateral — tokenized SPV</td><td><span class="yes">✓</span></td><td><span class="no">—</span></td><td><span class="no">—</span></td><td><span class="yes">✓</span></td></tr>
-    <tr><td>Retail investor access</td><td><span class="yes">✓</span></td><td><span class="no">—</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
-    <tr><td>Secondary market — liquidity</td><td><span class="yes">✓</span></td><td><span class="no">—</span></td><td><span class="no">—</span></td><td><span class="muted">partial</span></td></tr>
-    <tr><td>Multi-source revenue verification</td><td><span class="yes">✓</span></td><td><span class="muted">partial</span></td><td><span class="no">—</span></td><td><span class="no">—</span></td></tr>
-  </tbody>
-</table>
-
-<p class="muted text-sm mt-4">Slice doesn't reinvent the wheel — it combines the proven elements of DeFi, RBF and crowdfunding into one secured product.</p>
-
-<style>
-.slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
-.slidev-layout h1{color:#e8ecf4 !important;font-weight:600;font-size:1.85rem;letter-spacing:-.015em;margin-bottom:.5rem}
-.slidev-layout h3{color:#e8ecf4 !important;font-weight:600;margin:.15rem 0}
-.slidev-layout p{line-height:1.5;margin:0}
-.slidev-layout strong{color:#e8ecf4;font-weight:600}
-.eyebrow{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#38bdf8;font-weight:600}
-.lbl{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#8b95a9;font-weight:600}
-.g{background:linear-gradient(120deg,#60a5fa,#38bdf8);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.muted{color:#8b95a9}
-.up{color:#16c784 !important}
-.down{color:#f1626b !important}
-.card{background:#111726;border:1px solid #1e2638;border-radius:13px;padding:.85rem 1rem}
-.card.acc{border-color:#38bdf8;background:linear-gradient(160deg,rgba(29,78,216,.15),rgba(17,23,38,.55))}
-.chip{display:inline-block;background:#161d2e;border:1px solid #2a3550;border-radius:999px;padding:.13rem .62rem;font-size:.72rem;color:#c4ccda}
-.kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
-.brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
-.phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
-.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700}
-.arrow{color:#38bdf8;font-weight:700}
 table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
-th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
 th{color:#8b95a9;font-weight:600;background:#0d1320}
-td:not(:first-child),th:not(:first-child){text-align:center}
+td.c,th.c{text-align:center}
 .yes{color:#16c784;font-weight:700}
 .no{color:#5a657c}
 </style>
 
 <!--
-SAY: "We're not inventing from scratch. Look across the row: only Slice combines all five — RBF mechanics, tokenized-SPV collateral, retail access, a secondary market, and multi-source verification. Each piece is proven elsewhere; the moat is assembling them into one secured product."
+SAY: "Fraud is engineered out in four layers. Money sits in escrow, released in tranches — all-or-nothing. Machine learning and Benford's law audit the numbers for fabricated transactions. KYC and KYB screen the real beneficiaries against sanctions. And on-chain transfer hooks mean a token can only move to a KYC-cleared wallet, with an anti-whale cap."
 -->
 
 ---
 layout: default
 ---
 
-# Transparency in action
+# Built &amp; transparent
 
 <div class="grid grid-cols-[1fr_1fr_1.15fr] gap-5 mt-2 items-center">
 
@@ -581,7 +438,7 @@ layout: default
 <div class="card acc">
   <div class="eyebrow">Risk is never hidden</div>
   <p class="mt-1.5 text-sm">Every projected yield is shown <strong>next to its risk score</strong> — pessimistic / base / optimistic scenarios, principal-recovery month, integral risk.</p>
-  <p class="mt-2.5 text-sm muted">All numbers come from machine-read API data, not the business's self-declaration.</p>
+  <p class="mt-2.5 text-sm muted">All numbers come from machine-read API data, not the business's self-declaration. The product is real and running today.</p>
 </div>
 
 </div>
@@ -604,35 +461,143 @@ layout: default
 .kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
 .brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
 .phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
-.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700}
+.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
 .arrow{color:#38bdf8;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:.3rem}
-th,td{border:1px solid #1e2638;padding:.4rem .6rem;text-align:left}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
 th{color:#8b95a9;font-weight:600;background:#0d1320}
+td.c,th.c{text-align:center}
 .yes{color:#16c784;font-weight:700}
 .no{color:#5a657c}
 </style>
 
 <!--
-SAY: "This is the live product. A yield calculator that models pessimistic, base and optimistic scenarios — and shows the risk score right next to every projected return. A compliance tracker that follows where the capital actually went. Crucially, the numbers are machine-read from APIs, not self-reported by the business."
+SAY: "And this is not a mockup — it's the live product. A yield calculator that models pessimistic, base and optimistic scenarios, with the risk score shown right next to every return. A compliance tracker that follows where the capital actually went. The numbers are machine-read from APIs, not self-reported."
 -->
 
 ---
 layout: default
 ---
 
-# Unit economics — the deal lifecycle
+# Who pays us — and who already pays
+
+<div class="grid grid-cols-2 gap-6 mt-2">
+
+<div class="card">
+  <div class="lbl">Our paying customer</div>
+  <h3 class="!mt-0">The small business</h3>
+  <p class="mt-2 text-sm">It pays an <strong>origination fee</strong> when its raise succeeds, and a <strong>servicing fee</strong> on every payout. Investors join for free — the business pays for the capital it receives.</p>
+</div>
+
+<div class="card acc">
+  <div class="lbl">Demand is already proven — at scale</div>
+  <div class="kpi g mt-1">8.6T ₸</div>
+  <p class="mt-2 text-sm">of finance value at Kaspi — where <strong>Merchant Finance is the fastest-growing product</strong>, around 19% of the total.</p>
+  <p class="muted text-sm mt-2">Kazakhstan's small businesses already pay — well — for working capital. We give it a better deal and open it to retail investors.</p>
+</div>
+
+</div>
+
+<style>
+.slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
+.slidev-layout h1{color:#e8ecf4 !important;font-weight:600;font-size:1.85rem;letter-spacing:-.015em;margin-bottom:.5rem}
+.slidev-layout h3{color:#e8ecf4 !important;font-weight:600;margin:.15rem 0}
+.slidev-layout p{line-height:1.5;margin:0}
+.slidev-layout strong{color:#e8ecf4;font-weight:600}
+.eyebrow{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#38bdf8;font-weight:600}
+.lbl{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#8b95a9;font-weight:600}
+.g{background:linear-gradient(120deg,#60a5fa,#38bdf8);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.muted{color:#8b95a9}
+.up{color:#16c784 !important}
+.down{color:#f1626b !important}
+.card{background:#111726;border:1px solid #1e2638;border-radius:13px;padding:.85rem 1rem}
+.card.acc{border-color:#38bdf8;background:linear-gradient(160deg,rgba(29,78,216,.15),rgba(17,23,38,.55))}
+.chip{display:inline-block;background:#161d2e;border:1px solid #2a3550;border-radius:999px;padding:.13rem .62rem;font-size:.72rem;color:#c4ccda}
+.kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
+.brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
+.phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
+.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
+.arrow{color:#38bdf8;font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
+th{color:#8b95a9;font-weight:600;background:#0d1320}
+td.c,th.c{text-align:center}
+.yes{color:#16c784;font-weight:700}
+.no{color:#5a657c}
+</style>
+
+<!--
+SAY: "Who pays us? The business does — an origination fee on a successful raise, a servicing fee on every payout. Investors pay nothing to join. And this demand is not hypothetical: at Kaspi, merchant financing is the fastest-growing credit product, a large share of an 8.6-trillion-tenge book. Businesses already pay for capital — we just offer a better instrument."
+-->
+
+---
+layout: default
+---
+
+# Why now
+
+<div class="card acc mt-2">
+  <div class="eyebrow">January 2026 — the unlock</div>
+  <h3 class="!mt-1">Kazakhstan makes B2B e-invoicing mandatory.</h3>
+  <p class="mt-2 text-sm">RBF lives or dies on one thing — can you <strong>trust the revenue number</strong>. From 2026, business revenue runs through mandatory state fiscal data: independent, tamper-resistant, verifiable. The hardest problem in RBF just got solved — by law, in our market.</p>
+</div>
+
+<div class="grid grid-cols-3 gap-4 mt-4">
+  <div class="card"><div class="kpi !text-2xl">&gt;85%</div><div class="muted text-sm mt-1">of payments cashless — traceable rails</div></div>
+  <div class="card"><div class="kpi !text-2xl up">+19%</div><div class="muted text-sm mt-1">e-commerce growth, year on year</div></div>
+  <div class="card"><div class="kpi !text-2xl g">AFSA</div><div class="muted text-sm mt-1">MFCA fintech sandbox ready for licensing</div></div>
+</div>
+
+<style>
+.slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
+.slidev-layout h1{color:#e8ecf4 !important;font-weight:600;font-size:1.85rem;letter-spacing:-.015em;margin-bottom:.5rem}
+.slidev-layout h3{color:#e8ecf4 !important;font-weight:600;margin:.15rem 0}
+.slidev-layout p{line-height:1.5;margin:0}
+.slidev-layout strong{color:#e8ecf4;font-weight:600}
+.eyebrow{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#38bdf8;font-weight:600}
+.lbl{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#8b95a9;font-weight:600}
+.g{background:linear-gradient(120deg,#60a5fa,#38bdf8);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.muted{color:#8b95a9}
+.up{color:#16c784 !important}
+.down{color:#f1626b !important}
+.card{background:#111726;border:1px solid #1e2638;border-radius:13px;padding:.85rem 1rem}
+.card.acc{border-color:#38bdf8;background:linear-gradient(160deg,rgba(29,78,216,.15),rgba(17,23,38,.55))}
+.chip{display:inline-block;background:#161d2e;border:1px solid #2a3550;border-radius:999px;padding:.13rem .62rem;font-size:.72rem;color:#c4ccda}
+.kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
+.brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
+.phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
+.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
+.arrow{color:#38bdf8;font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
+th{color:#8b95a9;font-weight:600;background:#0d1320}
+td.c,th.c{text-align:center}
+.yes{color:#16c784;font-weight:700}
+.no{color:#5a657c}
+</style>
+
+<!--
+SAY: "Why hasn't this been done before? Because RBF depends on trusting the revenue figure — and until now you couldn't. From January 2026, Kazakhstan makes B2B e-invoicing mandatory: revenue flows through independent state data we verify against. Add over 85% cashless payments, 19% e-commerce growth, and a regulatory sandbox ready for us. The window opened this year."
+-->
+
+---
+layout: default
+---
+
+# The business model
+
+<p class="muted mt-1">Three fee streams — origination once, servicing on every payout (the recurring core), and a cut of secondary trades.</p>
 
 <div class="grid grid-cols-4 gap-3 mt-3 items-stretch">
   <div class="card text-center"><div class="lbl">Average raise</div><div class="kpi !text-2xl mt-1.5">~$62k</div><div class="text-xs muted mt-1">an SMB request ≈ 30M ₸</div></div>
-  <div class="card text-center"><div class="lbl">Origination fee</div><div class="kpi !text-2xl g mt-1.5">~$6.2k</div><div class="text-xs muted mt-1">one-off · 10% on a closed raise</div></div>
-  <div class="card text-center"><div class="lbl">Servicing fee</div><div class="kpi !text-2xl g mt-1.5">~$1.5k</div><div class="text-xs muted mt-1">recurring · 2% of every payout</div></div>
+  <div class="card text-center"><div class="lbl">Origination · 10%</div><div class="kpi !text-2xl g mt-1.5">~$6.2k</div><div class="text-xs muted mt-1">one-off, on a closed raise</div></div>
+  <div class="card text-center"><div class="lbl">Servicing · 2%</div><div class="kpi !text-2xl g mt-1.5">~$1.5k</div><div class="text-xs muted mt-1">recurring · plus 1% on secondary trades</div></div>
   <div class="card acc text-center"><div class="lbl">Net per deal</div><div class="kpi !text-2xl up mt-1.5">~$5.8k</div><div class="text-xs muted mt-1">≈ 9% net take-rate</div></div>
 </div>
 
-<div class="grid grid-cols-2 gap-5 mt-5">
+<div class="grid grid-cols-2 gap-5 mt-4">
   <div class="card"><div class="lbl">Variable cost per deal</div><p class="mt-1.5 text-sm muted">~$1.9k — business appraisal and the legal SPV check, subtracted from the gross fee.</p></div>
-  <div class="card"><div class="lbl">Scalability</div><p class="mt-1.5 text-sm muted">Operational break-even ≈ <strong style="color:#e8ecf4">5 deals a month</strong>. The first manual pilot already earns a fee.</p></div>
+  <div class="card"><div class="lbl">We earn from day one</div><p class="mt-1.5 text-sm muted">Break-even ≈ <strong style="color:#e8ecf4">5 deals a month</strong>. The first manual pilot — one deal, no app — already pays a fee.</p></div>
 </div>
 
 <style>
@@ -653,81 +618,40 @@ layout: default
 .kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
 .brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
 .phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
-.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700}
+.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
 .arrow{color:#38bdf8;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:.3rem}
-th,td{border:1px solid #1e2638;padding:.4rem .6rem;text-align:left}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
 th{color:#8b95a9;font-weight:600;background:#0d1320}
+td.c,th.c{text-align:center}
 .yes{color:#16c784;font-weight:700}
 .no{color:#5a657c}
 </style>
 
 <!--
-SAY: "The economics. An average raise is about sixty-two thousand dollars. We take a 10% origination fee up front and a 2% servicing fee on every payout — the recurring core. Minus about nineteen-hundred dollars of appraisal and legal cost, the net contribution is roughly five-thousand-eight-hundred per deal: a nine-percent take-rate. Break-even is about five deals a month, and the very first pilot already earns."
+SAY: "Three fee streams: 10% origination when a raise closes, 2% servicing on every payout — the recurring engine — and 1% on secondary trades. An average sixty-two-thousand-dollar deal nets about five-thousand-eight-hundred dollars after appraisal and legal cost: a nine-percent take-rate. Break-even is roughly five deals a month — and the first manual pilot already earns. We make money tomorrow, not in year three."
 -->
 
 ---
 layout: default
 ---
 
-# Regulatory integration — building inside the rules
+# Competitors &amp; our moat
 
-<div class="grid grid-cols-2 gap-4 mt-2">
-  <div class="card acc"><div class="eyebrow">MFCA (AIFC) · English law</div><p class="mt-2 text-sm">An AFSA crowdfunding-platform licence; a regulator opinion on the revenue-share qualification before launch.</p></div>
-  <div class="card"><div class="lbl">FinTech Lab sandbox</div><p class="mt-2 text-sm muted">A regulatory sandbox — reduced fees and staged authorization while the product is built.</p></div>
-  <div class="card"><div class="lbl">Smart contracts</div><p class="mt-2 text-sm muted">Anchor programs on Solana; the position modeled as a security token with compliance in the transfer hook.</p></div>
-  <div class="card"><div class="lbl">Institutional AML / KYC</div><p class="mt-2 text-sm muted">Sanctions and beneficiary screening built in from day one, not bolted on later.</p></div>
-</div>
-
-<p class="mt-5"><span class="eyebrow">The principle</span> &nbsp;We don't bypass the rules — we build the trust architecture <strong>inside</strong> them.</p>
-
-<style>
-.slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
-.slidev-layout h1{color:#e8ecf4 !important;font-weight:600;font-size:1.85rem;letter-spacing:-.015em;margin-bottom:.5rem}
-.slidev-layout h3{color:#e8ecf4 !important;font-weight:600;margin:.15rem 0}
-.slidev-layout p{line-height:1.5;margin:0}
-.slidev-layout strong{color:#e8ecf4;font-weight:600}
-.eyebrow{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#38bdf8;font-weight:600}
-.lbl{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#8b95a9;font-weight:600}
-.g{background:linear-gradient(120deg,#60a5fa,#38bdf8);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.muted{color:#8b95a9}
-.up{color:#16c784 !important}
-.down{color:#f1626b !important}
-.card{background:#111726;border:1px solid #1e2638;border-radius:13px;padding:.85rem 1rem}
-.card.acc{border-color:#38bdf8;background:linear-gradient(160deg,rgba(29,78,216,.15),rgba(17,23,38,.55))}
-.chip{display:inline-block;background:#161d2e;border:1px solid #2a3550;border-radius:999px;padding:.13rem .62rem;font-size:.72rem;color:#c4ccda}
-.kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
-.brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
-.phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
-.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700}
-.arrow{color:#38bdf8;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:.3rem}
-th,td{border:1px solid #1e2638;padding:.4rem .6rem;text-align:left}
-th{color:#8b95a9;font-weight:600;background:#0d1320}
-.yes{color:#16c784;font-weight:700}
-.no{color:#5a657c}
-</style>
-
-<!--
-SAY: "Regulation is a feature, not an obstacle. We enter through the AIFC — English common law — and the AFSA crowdfunding licence, with a regulator opinion on the revenue-share structure before launch, using the FinTech Lab sandbox to build. AML and KYC are institutional-grade from day one. We don't route around the rules — we build inside them."
--->
-
----
-layout: default
----
-
-# An honest look at the risks
+<p class="text-sm mt-1"><strong>Pure RBF failed globally</strong> — Pipe, Uncapped and Clearco all pivoted away or restructured. The critical flaw: <strong class="down">no collateral</strong> — on default the investor recovers nothing.</p>
 
 <table>
-  <thead><tr><th style="width:36%">Risk</th><th>How we mitigate it</th></tr></thead>
+  <thead><tr><th>Capability</th><th class="c">Slice</th><th class="c">Global RBF<br/>(Pipe / Wayflyer)</th><th class="c">KZ crowdfunding</th><th class="c">RWA tokenization</th></tr></thead>
   <tbody>
-    <tr><td><strong>Business default</strong><br/><span class="muted">— investor loss</span></td><td>Principal-protection floor extends the term to return the principal; on a hard default, the forced sale of the SPV shell recovers value.</td></tr>
-    <tr><td><strong>Shadow economy</strong><br/><span class="muted">— cash bypasses bank APIs</span></td><td>Target businesses with ~100% online revenue; multi-source reconciliation across OFD fiscal data and state e-invoicing.</td></tr>
-    <tr><td><strong>Regulatory</strong><br/><span class="muted">— revenue-share seen as a security</span></td><td>An individual AFSA opinion is obtained before launch; the token is structured and licensed as a security token.</td></tr>
+    <tr><td>RBF mechanics — % of revenue</td><td class="c"><span class="yes">✓</span></td><td class="c"><span class="yes">✓</span></td><td class="c"><span class="no">—</span></td><td class="c"><span class="no">—</span></td></tr>
+    <tr><td>Collateral — tokenized SPV</td><td class="c"><span class="yes">✓</span></td><td class="c"><span class="no">—</span></td><td class="c"><span class="no">—</span></td><td class="c"><span class="yes">✓</span></td></tr>
+    <tr><td>Retail investor access</td><td class="c"><span class="yes">✓</span></td><td class="c"><span class="no">—</span></td><td class="c"><span class="yes">✓</span></td><td class="c"><span class="yes">✓</span></td></tr>
+    <tr><td>Secondary market — liquidity</td><td class="c"><span class="yes">✓</span></td><td class="c"><span class="no">—</span></td><td class="c"><span class="no">—</span></td><td class="c"><span class="muted">partial</span></td></tr>
+    <tr><td>Multi-source revenue verification</td><td class="c"><span class="yes">✓</span></td><td class="c"><span class="muted">partial</span></td><td class="c"><span class="no">—</span></td><td class="c"><span class="no">—</span></td></tr>
   </tbody>
 </table>
 
-<p class="muted text-sm mt-4">Every weakness of the model is named openly — and the system is designed so each one is closed by a concrete mechanism.</p>
+<p class="muted text-sm mt-3"><strong>The moat is the combination</strong> — only Slice has all five together. Collateral and verification are exactly what killed pure RBF abroad, and they are hardest to copy where the revenue data is local.</p>
 
 <style>
 .slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
@@ -747,24 +671,25 @@ layout: default
 .kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
 .brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
 .phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
-.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700}
+.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
 .arrow{color:#38bdf8;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:.84rem;margin-top:.4rem}
-th,td{border:1px solid #1e2638;padding:.5rem .75rem;text-align:left;vertical-align:top}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
 th{color:#8b95a9;font-weight:600;background:#0d1320}
+td.c,th.c{text-align:center}
 .yes{color:#16c784;font-weight:700}
 .no{color:#5a657c}
 </style>
 
 <!--
-SAY: "We name the risks openly. Business default — covered by the principal floor and, ultimately, the forced SPV sale. The shadow economy — we target online-revenue businesses and reconcile across fiscal and e-invoicing data. Regulatory classification — handled by an AFSA opinion before launch. No risk is hidden; each has a concrete mechanism."
+SAY: "Globally, the pure-RBF names — Pipe, Uncapped, Clearco — all pivoted away. The reason is always the same: no collateral. Across this matrix, only Slice combines all five — RBF mechanics, tokenized-SPV collateral, retail access, a secondary market, and multi-source verification. The moat isn't one feature; it's the combination — and it's hardest to copy where the data is local."
 -->
 
 ---
 layout: default
 ---
 
-# Roadmap & the ask
+# Roadmap — staged, each step earns the next
 
 <div class="grid grid-cols-4 gap-3 mt-2">
   <div class="card acc"><div class="flex items-center gap-2"><span class="num">1</span><strong class="text-sm">Pilot</strong></div><p class="mt-2 text-xs muted">Waitlist + LOIs, then one manual revenue-share deal. No app — first fee earned.</p></div>
@@ -773,17 +698,122 @@ layout: default
   <div class="card"><div class="flex items-center gap-2"><span class="num">4</span><strong class="text-sm">Global</strong></div><p class="mt-2 text-xs muted">Replicate the architecture — swap the SPV form and regulatory wrapper.</p></div>
 </div>
 
-<div class="grid grid-cols-[1.05fr_1.95fr] gap-5 mt-5 items-stretch">
-  <div class="card acc">
-    <div class="eyebrow">The ask</div>
-    <p class="mt-2 text-sm">At this stage we are looking for <strong>expert feedback</strong> — an advisory board in crypto / MFCA law and fintech — not just capital.</p>
+<div class="lbl mt-5">Risks, named honestly</div>
+<div class="grid grid-cols-3 gap-3 mt-2">
+  <div class="card"><p class="text-xs"><strong>Business default</strong> — principal-protection floor, then a forced sale of the SPV shell.</p></div>
+  <div class="card"><p class="text-xs"><strong>Shadow economy</strong> — target online-revenue SMBs; multi-source reconciliation.</p></div>
+  <div class="card"><p class="text-xs"><strong>Regulatory</strong> — an AFSA opinion on the revenue-share before launch.</p></div>
+</div>
+
+<p class="muted text-sm mt-3">Each stage is funded only after the previous one delivers — the risk drops at every step.</p>
+
+<style>
+.slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
+.slidev-layout h1{color:#e8ecf4 !important;font-weight:600;font-size:1.85rem;letter-spacing:-.015em;margin-bottom:.5rem}
+.slidev-layout h3{color:#e8ecf4 !important;font-weight:600;margin:.15rem 0}
+.slidev-layout p{line-height:1.5;margin:0}
+.slidev-layout strong{color:#e8ecf4;font-weight:600}
+.eyebrow{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#38bdf8;font-weight:600}
+.lbl{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#8b95a9;font-weight:600}
+.g{background:linear-gradient(120deg,#60a5fa,#38bdf8);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.muted{color:#8b95a9}
+.up{color:#16c784 !important}
+.down{color:#f1626b !important}
+.card{background:#111726;border:1px solid #1e2638;border-radius:13px;padding:.85rem 1rem}
+.card.acc{border-color:#38bdf8;background:linear-gradient(160deg,rgba(29,78,216,.15),rgba(17,23,38,.55))}
+.chip{display:inline-block;background:#161d2e;border:1px solid #2a3550;border-radius:999px;padding:.13rem .62rem;font-size:.72rem;color:#c4ccda}
+.kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
+.brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
+.phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
+.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
+.arrow{color:#38bdf8;font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
+th{color:#8b95a9;font-weight:600;background:#0d1320}
+td.c,th.c{text-align:center}
+.yes{color:#16c784;font-weight:700}
+.no{color:#5a657c}
+</style>
+
+<!--
+SAY: "The plan is staged. A manual pilot earns the first fee with no app. Pre-seed builds and licenses the product. Then go-to-market in Kazakhstan, then replicate globally. The risks are named openly — default, the shadow economy, regulatory classification — each with a concrete mechanism. Every stage is funded only once the previous one delivers."
+-->
+
+---
+layout: default
+---
+
+# The team — builders who ship
+
+<div class="grid grid-cols-2 gap-6 mt-2">
+  <div class="card">
+    <div class="lbl">A startup-grade engineering team</div>
+    <p class="mt-2 text-sm"><strong>Four full-stack engineers</strong> from Kazakhstan. We have already shipped a working Solana MVP — smart contracts, tokenization, 160+ test assets. <strong>We don't pitch slides — we ship code.</strong></p>
   </div>
-  <div>
-    <div class="lbl mb-2">Pre-Seed scenarios · runway 12–18 mo · team up to 5 devs</div>
-    <div class="grid grid-cols-3 gap-3">
-      <div class="card text-center"><div class="kpi !text-xl">$200k</div><div class="text-xs muted mt-1.5">pessimistic — organic growth</div></div>
-      <div class="card acc text-center"><div class="kpi !text-xl g">$400k</div><div class="text-xs muted mt-1.5">realistic — payback ~2–2.5 yr</div></div>
-      <div class="card text-center"><div class="kpi !text-xl">$700k</div><div class="text-xs muted mt-1.5">optimistic — fast scale-up</div></div>
+  <div class="card">
+    <div class="lbl">Honest about the gap</div>
+    <p class="mt-2 text-sm">We're engineers, not lawyers. So legal, compliance and underwriting are <strong>external specialists</strong>, and an <strong>advisory board</strong> — DeFi, financial regulation, MFCA law — is our first move, not an afterthought.</p>
+  </div>
+</div>
+
+<p class="muted mt-5">Lean by design: a compact core team means a low burn rate — and a realistic path to break-even, not a moonshot.</p>
+
+<style>
+.slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
+.slidev-layout h1{color:#e8ecf4 !important;font-weight:600;font-size:1.85rem;letter-spacing:-.015em;margin-bottom:.5rem}
+.slidev-layout h3{color:#e8ecf4 !important;font-weight:600;margin:.15rem 0}
+.slidev-layout p{line-height:1.5;margin:0}
+.slidev-layout strong{color:#e8ecf4;font-weight:600}
+.eyebrow{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#38bdf8;font-weight:600}
+.lbl{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#8b95a9;font-weight:600}
+.g{background:linear-gradient(120deg,#60a5fa,#38bdf8);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.muted{color:#8b95a9}
+.up{color:#16c784 !important}
+.down{color:#f1626b !important}
+.card{background:#111726;border:1px solid #1e2638;border-radius:13px;padding:.85rem 1rem}
+.card.acc{border-color:#38bdf8;background:linear-gradient(160deg,rgba(29,78,216,.15),rgba(17,23,38,.55))}
+.chip{display:inline-block;background:#161d2e;border:1px solid #2a3550;border-radius:999px;padding:.13rem .62rem;font-size:.72rem;color:#c4ccda}
+.kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
+.brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
+.phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
+.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
+.arrow{color:#38bdf8;font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
+th{color:#8b95a9;font-weight:600;background:#0d1320}
+td.c,th.c{text-align:center}
+.yes{color:#16c784;font-weight:700}
+.no{color:#5a657c}
+</style>
+
+<!--
+SAY: "Who are we — four full-stack engineers from Kazakhstan. We've already shipped a working MVP on Solana: smart contracts, tokenization, over a hundred and sixty test assets. We build. And we're honest about what we lack — we're engineers, not finance lawyers, so compliance and underwriting are external specialists and an advisory board is our first hire. Lean by design means a low burn and a realistic path to break-even."
+-->
+
+---
+layout: default
+class: text-left
+---
+
+<div class="h-full flex flex-col justify-center">
+  <div class="brandbar mb-4"></div>
+  <h1 class="!text-3xl !font-semibold !leading-tight">A real market. A real trigger.<br/>A plan that earns <span class="g">tomorrow</span>.</h1>
+
+  <div class="grid grid-cols-4 gap-3 mt-5">
+    <div class="card"><strong class="text-sm">Proven demand</strong><div class="muted text-xs mt-1">SMBs already pay for capital</div></div>
+    <div class="card"><strong class="text-sm">2026 unlock</strong><div class="muted text-xs mt-1">mandatory revenue data</div></div>
+    <div class="card"><strong class="text-sm">Defensible moat</strong><div class="muted text-xs mt-1">a 5-part combo, KZ-rooted</div></div>
+    <div class="card"><strong class="text-sm">Fees from the pilot</strong><div class="muted text-xs mt-1">no app needed to earn</div></div>
+  </div>
+
+  <div class="grid grid-cols-[1.7fr_1fr] gap-6 mt-6 items-center">
+    <div class="card acc">
+      <div class="eyebrow">The ask</div>
+      <p class="mt-1.5 text-sm">We're not here for a cheque. What we want today is <strong>sharp expert feedback</strong> — an advisory board in fintech, Web3 and MFCA law.</p>
+      <p class="muted text-sm mt-2">Slice — revenue-based financing for the businesses banks ignore.</p>
+    </div>
+    <div class="flex justify-center">
+      <DeckQr :size="120" label="Open the deck" />
     </div>
   </div>
 </div>
@@ -808,14 +838,16 @@ layout: default
 .phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
 .num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
 .arrow{color:#38bdf8;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:.3rem}
-th,td{border:1px solid #1e2638;padding:.4rem .6rem;text-align:left}
+table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
+th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
 th{color:#8b95a9;font-weight:600;background:#0d1320}
+td.c,th.c{text-align:center}
 .yes{color:#16c784;font-weight:700}
 .no{color:#5a657c}
+.deck-qr-label{color:#8b95a9}
 </style>
 
 <!--
-CLOSING — slow down, land it.
-SAY: "The path is staged: a manual pilot that earns the first fee, then a pre-seed to build and license, then go-to-market in Kazakhstan, then replicate globally. Our ask today is not a cheque — it's sharp expert feedback, an advisory board in MFCA law and fintech. The financial model is here; the scenarios are modeled. Slice — revenue-based financing for the businesses banks ignore. Thank you."
+CLOSING — slow down, land each phrase. This is the drop-mic.
+SAY: "Let's be concrete. A market where demand is already proven. A regulatory trigger that fired this year. A moat of five things no competitor combines. And a plan that earns a fee from the very first pilot. We're not here to ask for a cheque — what we want today is sharp expert feedback from the fintech and Web3 builders in this room. Slice — revenue-based financing for the businesses banks ignore. Thank you."
 -->
