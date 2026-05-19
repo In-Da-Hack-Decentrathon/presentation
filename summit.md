@@ -147,10 +147,17 @@ layout: default
   </div>
 </div>
 
-<div class="grid grid-cols-3 gap-4 mt-4 text-sm muted">
-  <div>→ Three deal terms: revenue share, deferral, minimum period.</div>
-  <div>→ Backed by a tokenized SPV — real, enforceable collateral.</div>
-  <div>→ A built-in secondary market for liquidity.</div>
+<div class="card acc mt-4">
+  <div class="grid grid-cols-[1.25fr_1fr] gap-6 items-center">
+    <div>
+      <div class="eyebrow">From the crowd</div>
+      <div class="g text-lg font-semibold mt-1">"Little drops of water make a mighty ocean."</div>
+      <p class="mt-1.5 text-sm muted">Hundreds of investors each chip in a <strong>small, non-critical sum</strong> — pooled, it becomes <strong>real growth capital</strong> for one business.</p>
+    </div>
+    <div class="text-sm muted">
+      For each investor: a <strong style="color:#e8ecf4">capped downside</strong> — the principal-protection floor — and an <strong class="up">uncapped upside</strong>. A tiny ticket, an outsized potential return.
+    </div>
+  </div>
 </div>
 
 <style>
@@ -182,7 +189,9 @@ td.c,th.c{text-align:center}
 </style>
 
 <!--
-SAY: "Slice is a marketplace for revenue-based financing. The business raises from a crowd and repays a fixed percentage of revenue — slow month, smaller payment, and it never gives up equity. The investor earns a floating yield from that real revenue. And every campaign is secured by a tokenized SPV — that collateral is the whole point, and I'll show you why next."
+SAY: "Slice is a marketplace for revenue-based financing. The business raises from a crowd and repays a fixed percentage of revenue — slow month, smaller payment, and it never gives up equity. The investor earns a floating yield from real revenue, secured by a tokenized SPV.
+
+And the model is simple — every little bit helps. Each investor chips in a small sum they can comfortably risk; together the crowd becomes real growth capital for the business. Little drops of water make a mighty ocean — capped downside, uncapped upside. That's the deal."
 -->
 
 ---
