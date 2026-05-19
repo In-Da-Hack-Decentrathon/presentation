@@ -16,21 +16,43 @@ class: text-left
 
 <div class="h-full flex flex-col justify-center">
 
-  <div class="hook-mark mb-6">
+  <div class="hook-mark mb-3">
     <img src="/slice-logo-cyan.svg" class="hook-logo" alt="Slice" />
     <span>Slice</span>
   </div>
 
-  <div class="eyebrow mb-3">Revenue-Based Financing · Kazakhstan</div>
+  <div class="eyebrow mb-4">Revenue-Based Financing · Kazakhstan</div>
 
-  <div class="hook-h">One <span class="down">&ldquo;no&rdquo;</span> shouldn't end<br/>a profitable business.</div>
+  <div class="flex items-center gap-6 mb-4">
+    <div class="no-wrap">
+      <pre class="ascii-no" v-pre>
+██   ██   █████ 
+███  ██  ██   ██
+████ ██  ██   ██
+██ ████  ██   ██
+██  ███  ██   ██
+██   ██   █████ 
+</pre>
+      <div class="no-strike"></div>
+    </div>
+    <p class="hook-cap">One bank. One form. One <span class="down">&ldquo;no&rdquo;</span> &mdash; and <strong>$5.7 trillion</strong> of growth capital never arrives.</p>
+  </div>
 
-  <p class="hook-lead mt-5">It takes one bank, one form, one rejection — and the capital never comes. Multiply it worldwide: <strong class="g">$5.7 trillion</strong> of growth capital that never reaches the businesses that earned it.</p>
+  <pre class="ascii-yes g" v-pre>
+yesyes                  yesyes   yesyesyesyesyesyesyes   yesyesyesyesyesyesyes
+   yesyes            yesyes      yesyes                  yesyes               
+      yesyes      yesyes         yesyes                  yesyes               
+         yesyesyesyes            yesyes                  yesyes               
+            yesyes               yesyesyesyesyesyesyes   yesyesyesyesyesyesyes
+            yesyes               yesyes                                 yesyes
+            yesyes               yesyes                                 yesyes
+            yesyes               yesyes                                 yesyes
+            yesyes               yesyesyesyesyesyesyes   yesyesyesyesyesyesyes
+</pre>
 
-  <div class="hook-rule mt-7 mb-6"></div>
+  <p class="hook-cap mt-3">A thousand people, each a small <span class="up">&ldquo;yes&rdquo;</span> &mdash; the crowd that funds instead.</p>
 
-  <p class="hook-turn">But a crowd doesn't say &ldquo;no.&rdquo; A thousand people, each saying a small <span class="up">&ldquo;yes&rdquo;</span> — a drop apiece.</p>
-  <p class="hook-proverb g mt-2">Little drops of water make a mighty ocean.</p>
+  <p class="hook-proverb g mt-3">Little drops of water make a mighty ocean.</p>
 
 </div>
 
@@ -73,10 +95,15 @@ td.c,th.c{text-align:center}
 .yes{color:#16c784;font-weight:700}
 .no{color:#5a657c}
 .deck-qr-label{color:#8b95a9}
+.ascii-no{font-family:'Geist Mono',ui-monospace,monospace;font-size:1.12rem;line-height:1;margin:0;color:#f1626b;opacity:.55;font-weight:700;white-space:pre}
+.no-wrap{position:relative;display:inline-block;flex:0 0 auto}
+.no-strike{position:absolute;left:-9%;right:-9%;top:50%;height:3px;background:#f1626b;border-radius:2px;transform:rotate(-8deg);opacity:.92}
+.ascii-yes{font-family:'Geist Mono',ui-monospace,monospace;font-size:1.12rem;line-height:1.08;margin:0;font-weight:700;white-space:pre}
+.hook-cap{font-size:.92rem;line-height:1.5;color:#8b95a9;max-width:33rem}
 </style>
 
 <!--
-OPENER — ~12 seconds. Slow, deliberate. Let the word "no" land, then the turn.
+OPENER — ~12 seconds. Slow. Let the big NO land, then let the YES build.
 SAY: "Picture a profitable business — a café, an online store. It walks into a bank, and hears one word: no. And that's it — the capital never comes. Now multiply that worldwide: five point seven trillion dollars of growth capital that never reaches the businesses that earned it. But here's the thing — a crowd doesn't say no. A thousand people, each chipping in a small 'yes', a drop apiece. Little drops of water make a mighty ocean. That's Slice."
 -->
 
