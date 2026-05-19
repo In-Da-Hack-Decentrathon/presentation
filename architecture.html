@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Slice — System Architecture</title>
+<style>
+  html,body{margin:0;height:100%;background:#0a0e1a;overflow:hidden}
+  body{
+    display:flex;align-items:center;justify-content:center;
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+  .mermaid{
+    width:100vw;height:100vh;
+    display:flex;align-items:center;justify-content:center;
+  }
+  /* the rendered SVG always fits one landscape screen — no scroll, no scale hacks */
+  .mermaid svg{
+    max-width:98vw !important;
+    max-height:96vh !important;
+    height:auto !important;
+  }
+</style>
+</head>
+<body>
+
+<pre class="mermaid">
+flowchart LR
+  APP["Client — Next.js 16<br/>solana/wallet-adapter — user signs own tx"]
+  INTEG["Integrations<br/>Ory Kratos · Irys/Arweave<br/>KYC Sumsub/Binance/Civic · bank/Kaspi/ESF"]
+
+  subgraph BACKEND["Backend · Coordinator"]
+    COORD["Coordinator + event indexer<br/>Bun · Elysia · Drizzle"]
+    DB[("PostgreSQL<br/>rebuildable cache")]
+    OB["Off-chain order book"]
+  end
+
+  ORACLE["Oracles<br/>verified revenue published on-chain<br/>Direct Debit — weekly revenue-share pull"]
+
+  subgraph SOLANA["Solana · source of truth"]
+    ROUTER{{"Diamond Router<br/>single entry · KYC gate<br/>EIP-2535-style · hot-swap modules"}}
+    G1["Identity and Assets<br/>identity · asset_registry · validation"]
+    G2["Deals — P2P<br/>agreement · execution"]
+    G3["Tokens — raise and vault<br/>appraisal · vault · auction"]
+    G4["Compliance and Market<br/>compliance · market"]
+    G5["Notary Governance<br/>propose · confirm · heartbeat"]
+  end
+
+  EX["Exchange — Secondary Market<br/>off-chain matching + atomic on-chain settlement<br/>KYC enforced in the token transfer hook"]
+
+  APP -->|sign and submit| COORD
+  APP -.->|direct fallback| ROUTER
+  INTEG --> COORD
+  INTEG -.->|revenue data| ORACLE
+  COORD -->|submit tx| ROUTER
+  ROUTER -.->|logs and events| COORD
+  COORD --- DB
+  ORACLE -->|publish on-chain| ROUTER
+  ROUTER --> G1
+  ROUTER --> G2
+  ROUTER --> G3
+  ROUTER --> G4
+  ROUTER --> G5
+  OB -->|matched orders| EX
+  G4 -.->|market settles| EX
+
+  classDef grp fill:#0f1626,stroke:#243049,color:#c4ccda;
+  classDef acc fill:#13233f,stroke:#38bdf8,stroke-width:2.5px,color:#e8ecf4;
+  classDef side fill:#111726,stroke:#2a3550,color:#e8ecf4;
+  class G1,G2,G3,G4,G5 grp
+  class EX acc
+  class APP,ORACLE,INTEG side
+  style ROUTER fill:#1d4ed8,stroke:#7cc6f5,stroke-width:2.5px,color:#ffffff
+</pre>
+
+<script src="mermaid.min.js"></script>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    securityLevel: "loose",
+    theme: "base",
+    themeVariables: {
+      darkMode: true,
+      fontFamily: "ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+      fontSize: "15px",
+      background: "#0a0e1a",
+      primaryColor: "#111726",
+      primaryBorderColor: "#2a3550",
+      primaryTextColor: "#e8ecf4",
+      secondaryColor: "#0d1320",
+      tertiaryColor: "#0d1320",
+      mainBkg: "#111726",
+      nodeBorder: "#2a3550",
+      nodeTextColor: "#e8ecf4",
+      textColor: "#e8ecf4",
+      lineColor: "#46557a",
+      edgeLabelBackground: "#10172a",
+      clusterBkg: "#0d1320",
+      clusterBorder: "#243049",
+      titleColor: "#e8ecf4"
+    },
+    flowchart: {
+      htmlLabels: true,
+      curve: "basis",
+      nodeSpacing: 40,
+      rankSpacing: 58,
+      padding: 12
+    }
+  });
+</script>
+</body>
+</html>

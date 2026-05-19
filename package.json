@@ -7,7 +7,8 @@
     "dev:pitch": "slidev pitch.md --open --port 3031",
     "dev:en": "slidev slides-en.md --open --port 3032",
     "dev:pitch-en": "slidev pitch-en.md --open --port 3033",
-    "build": "slidev build && slidev build pitch.md --base /pitch/ --out dist/pitch && slidev build slides-en.md --base /en/ --out dist/en && slidev build pitch-en.md --base /en/pitch/ --out dist/en/pitch",
+    "dev:summit": "slidev summit.md --open --port 3034",
+    "build": "slidev build && slidev build pitch.md --base /pitch/ --out dist/pitch && slidev build slides-en.md --base /en/ --out dist/en && slidev build pitch-en.md --base /en/pitch/ --out dist/en/pitch && slidev build summit.md --base /summit/ --out dist/summit",
     "build:ru": "slidev build && slidev build pitch.md --base /pitch/ --out dist/pitch",
     "build:en": "slidev build slides-en.md --base /en/ --out dist/en && slidev build pitch-en.md --base /en/pitch/ --out dist/en/pitch",
     "export": "slidev export"

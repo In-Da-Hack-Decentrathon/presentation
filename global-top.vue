@@ -1,6 +1,9 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
+import { configs } from '@slidev/client'
 const lang = ref('')
+// pitch-summit deck — cyan Slice RBF brand; detected by its title
+const isSummit = computed(() => (configs.title || '').includes('Revenue-Based'))
 onMounted(() => {
   if (typeof window !== 'undefined') {
     lang.value = window.location.pathname.startsWith('/en') ? 'EN' : 'RU'
@@ -10,10 +13,13 @@ onMounted(() => {
 
 <template>
   <div class="slice-header">
-    <img src="/slice-logo.svg" class="slice-header-logo dark:hidden" alt="Slice" />
-    <img src="/slice-logo-dark.svg" class="slice-header-logo hidden dark:block" alt="Slice" />
+    <img v-if="isSummit" src="/slice-logo-cyan.svg" class="slice-header-logo" alt="Slice" />
+    <template v-else>
+      <img src="/slice-logo.svg" class="slice-header-logo dark:hidden" alt="Slice" />
+      <img src="/slice-logo-dark.svg" class="slice-header-logo hidden dark:block" alt="Slice" />
+    </template>
     <div class="slice-header-text">
-      <div class="slice-header-brand">Slice <span v-if="lang" class="slice-header-lang">{{ lang }}</span></div>
+      <div class="slice-header-brand">Slice <span v-if="lang && !isSummit" class="slice-header-lang">{{ lang }}</span></div>
       <div class="slice-header-team">In Da Hack</div>
     </div>
   </div>
