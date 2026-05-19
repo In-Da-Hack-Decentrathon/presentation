@@ -103,8 +103,14 @@ td.c,th.c{text-align:center}
 </style>
 
 <!--
-OPENER — ~12 seconds. Slow. Let the big NO land, then let the YES build.
-SAY: "Picture a profitable business — a café, an online store. It walks into a bank, and hears one word: no. And that's it — the capital never comes. Now multiply that worldwide: five point seven trillion dollars of growth capital that never reaches the businesses that earned it. But here's the thing — a crowd doesn't say no. A thousand people, each chipping in a small 'yes', a drop apiece. Little drops of water make a mighty ocean. That's Slice."
+**Delivery** — very slow. Let the NO sit in silence a beat before the YES builds.
+
+Add (not on the slide):
+- This slide sets the emotional frame for the whole deck — don't explain the model yet, just the feeling.
+- The "small yes": each person risks a sum they won't miss — that asymmetry is the whole idea.
+- One rejection vs a thousand small approvals — that's the pitch in a single image.
+
+**Next** → "so what is that 'no', really?"
 -->
 
 ---
@@ -177,7 +183,14 @@ td.c,th.c{text-align:center}
 </style>
 
 <!--
-SAY: "The gap has two sides. On one side, the business — a profitable company that doesn't fit the bank's form. A loan wants fixed payments whatever the revenue, and hard collateral; equity wants a permanent piece of the company. Two in three loan applications in Kazakhstan are rejected. On the other side — ordinary people with money and nowhere good to put it: a deposit loses to inflation, crowdfunding hands back a t-shirt. Real demand on both sides, and nothing in between to connect them."
+**Delivery** — brisk, factual. This is the setup; don't linger.
+
+Add (not on the slide):
+- The non-obvious point: it's one gap with two sides — matched demand sitting unconnected.
+- A bank's "no" isn't a verdict on the business — it's a format mismatch: no collateral, too young, seasonal.
+- Our region was the only one where formal SME credit supply was shrinking — the gap is widening, not closing.
+
+**Next** → "so we connect the two sides — here's how."
 -->
 
 ---
@@ -256,7 +269,14 @@ td.c,th.c{text-align:center}
 </style>
 
 <!--
-SAY: "Slice is that connection — a Web3 marketplace for revenue-based financing. The business raises from a crowd and repays a percentage of revenue under a Revenue Sharing Agreement: weak month, smaller payment; no collateral; it keeps a hundred percent of the company. Slice scores and verifies the business and routes every payout automatically. The investor enters with a small ticket and earns a floating yield from real revenue. We're honest about risk — the floor returns the principal through weak months, but a bankruptcy can still cost you. That's exactly why every ticket stays small: a risk no one would feel alone, capital a business can build on."
+**Delivery** — this is the core. Steady, confident, unhurried.
+
+Add (not on the slide):
+- In legal terms an RSA is a contractual claim on a share of revenue — not equity, not a fixed-term loan.
+- Naming the bankruptcy risk out loud is deliberate — a deck that admits the downside earns trust.
+- "Web3" here is plumbing: on-chain payouts and a tradable position — infrastructure, not ideology.
+
+**Next** → "that's the what — now the how."
 -->
 
 ---
@@ -290,7 +310,7 @@ layout: default
 <div class="grid grid-cols-[1.5fr_1fr_1fr] gap-4 mt-5 items-stretch">
   <div class="card acc">
     <div class="eyebrow">Revenue you can trust</div>
-    <p class="mt-1.5 text-sm">Revenue is never self-declared — it is cross-checked across independent rails: bank and Kaspi inflows, card acquiring, state fiscal data. From <strong>2026, e-invoicing is mandatory in Kazakhstan</strong> — RBF's hardest problem, solved by law.</p>
+    <p class="mt-1.5 text-sm">Revenue is never self-declared — it is cross-checked across independent rails: bank and payment-system inflows, card acquiring, state fiscal data. From <strong>2026, e-invoicing is mandatory in Kazakhstan</strong> — RBF's hardest problem, solved by law.</p>
     <p class="muted text-xs mt-2">Escrow holds the raise and releases it in tranches; the principal-protection floor extends the term until investors are repaid.</p>
   </div>
   <div class="text-center">
@@ -345,7 +365,14 @@ td.c,th.c{text-align:center}
 </style>
 
 <!--
-SAY: "How it works, two tracks. The business: digital scoring on verified revenue, a review by independent lawyers and financiers, signs the RSA, then an all-or-nothing raise and weekly revenue-share payouts. The investor: browse campaigns — each one risk-scored — invest a small ticket, receive weekly payouts, and exit early on the secondary market. And the foundation under all of it: revenue is never self-declared. We cross-check it across independent rails, and from 2026 e-invoicing becomes mandatory in Kazakhstan — the hardest problem in RBF, solved by law."
+**Delivery** — walk the two tracks left-to-right; don't read every step aloud.
+
+Add (not on the slide):
+- Verification is the hard part of RBF — dwell here; everything else is mechanics.
+- The 2026 e-invoicing mandate is the unlock: revenue becomes independently checkable — without it this wouldn't be safe.
+- The screenshots matter — this is a built product, not a concept. Say that.
+
+**Next** → "the model works — is the market big enough?"
 -->
 
 ---
@@ -375,7 +402,7 @@ layout: default
 <div class="grid grid-cols-2 gap-5 mt-4">
   <div class="card">
     <div class="lbl">Demand is already proven</div>
-    <p class="mt-1.5 text-sm">At Kaspi, Merchant &amp; Micro-Business Finance is the <strong>fastest-growing credit product</strong> — about 19% of an 8.6-trillion-tenge finance book. Kazakhstan's businesses already pay, well, for working capital.</p>
+    <p class="mt-1.5 text-sm">At a leading local fintech, embedded merchant lending is the <strong>fastest-growing credit product</strong> — a large, fast-growing slice of a multi-trillion-tenge book. Kazakhstan's businesses already pay, well, for working capital.</p>
   </div>
   <div class="card">
     <div class="lbl">The window is open</div>
@@ -427,7 +454,15 @@ td.c,th.c{text-align:center}
 </style>
 
 <!--
-SAY: "The market. The TAM is the scale of the problem — a five point seven trillion dollar global funding gap. Our serviceable market is Kazakhstan: two point two million SMBs, and the ones we can serve today are those with regular, verifiable digital revenue. The beachhead is small and bottom-up — around five deals a month gets us to break-even. Then Central Asia, then global. And demand is not hypothetical: at Kaspi, merchant finance is the single fastest-growing credit product. Businesses here already pay — and pay well — for working capital."
+**Delivery** — ~40s, unhurried. Point at the big number; don't recite it.
+
+Add (not on the slide):
+- TAM is context, not our target — say so explicitly; we don't claim it.
+- The real filter is verifiable digital revenue — that's what keeps underwriting honest and the SAM realistic.
+- Break-even is a handful of deals a month against a market this size — the opposite of a moonshot.
+- Demand isn't hypothetical — embedded merchant lending already scaled here; we redirect behaviour, not invent it.
+
+**Next** → "the market's real — so who else is in it?"
 -->
 
 ---
@@ -493,7 +528,14 @@ td.c,th.c{text-align:center}
 </style>
 
 <!--
-SAY: "Pure RBF stalled everywhere — Pipe, Capchase, Uncapped, Clearco all pivoted away from revenue-share. They funded only from institutional balance sheets: no retail investors, no liquidity for a position. In Kazakhstan there are crowdfunding platforms, but none of them do RBF. Across this matrix, only Slice combines all five — RBF mechanics, retail funding, a secondary market, multi-source verification, and on-chain transparency. The moat isn't one feature; it's the combination — and verification is hardest to copy where the revenue data is local."
+**Delivery** — the credibility slide. Slow down on the "why".
+
+Add (not on the slide):
+- Why pure RBF failed everywhere: institutional balance-sheet funding only — no retail, no liquidity, so a soured deal trapped the investor.
+- The moat isn't any single row — it's holding all five at once; each alone is copyable, the combination is not.
+- Local revenue data is the deepest moat — a foreign player can't verify Kazakhstani revenue from abroad.
+
+**Next** → "we can win it — so how do we make money?"
 -->
 
 ---
@@ -558,7 +600,14 @@ td.c,th.c{text-align:center}
 </style>
 
 <!--
-SAY: "We're a marketplace — we earn a fee on deals, not interest on a balance sheet. The business pays; investors join for free. Three streams: ten percent origination when a raise closes, two percent servicing on every payout, one percent on secondary trades. An average sixty-two-thousand-dollar deal nets about five thousand eight hundred dollars after appraisal and review — a nine-percent take-rate. Break-even is roughly five deals a month — and servicing recurs and compounds as the book of active deals grows."
+**Delivery** — confident, numbers-forward, but brief.
+
+Add (not on the slide):
+- We're a marketplace — we never lend our own balance sheet, so we carry no credit risk. That's a safer business than a lender.
+- Servicing is the real engine — it recurs on every payout and compounds with the book; origination just gets us moving.
+- The take-rate is stated honestly — we name the appraisal and review cost rather than burying it.
+
+**Next** → "and here's the plan to get there."
 -->
 
 ---
@@ -570,7 +619,7 @@ layout: default
 <div class="grid grid-cols-4 gap-3 mt-2">
   <div class="card acc"><div class="flex items-center gap-2"><span class="num">1</span><strong class="text-sm">Validate demand</strong></div><p class="mt-2 text-xs muted">A waitlist landing and letters of intent from pilot SMBs and investors. No live deals before a licence — proving demand, not breaking the law.</p></div>
   <div class="card"><div class="flex items-center gap-2"><span class="num">2</span><strong class="text-sm">Pre-Seed</strong></div><p class="mt-2 text-xs muted">Raise $200–700k. Build the product, audit the smart contracts, secure the AFSA crowdfunding licence.</p></div>
-  <div class="card"><div class="flex items-center gap-2"><span class="num">3</span><strong class="text-sm">Go-to-market · KZ</strong></div><p class="mt-2 text-xs muted">Bank, Kaspi and fiscal-data integrations; the first live campaigns running in Kazakhstan.</p></div>
+  <div class="card"><div class="flex items-center gap-2"><span class="num">3</span><strong class="text-sm">Go-to-market · KZ</strong></div><p class="mt-2 text-xs muted">Integrations with banks, payment systems, marketplaces and fiscal data; the first live campaigns running in Kazakhstan.</p></div>
   <div class="card"><div class="flex items-center gap-2"><span class="num">4</span><strong class="text-sm">Expand</strong></div><p class="mt-2 text-xs muted">Replicate the architecture across Central Asia, then global — swap the local entity and regulatory wrapper.</p></div>
 </div>
 
@@ -625,7 +674,14 @@ td.c,th.c{text-align:center}
 </style>
 
 <!--
-SAY: "The plan is staged, and each step earns the next. First, validate demand — a waitlist and letters of intent from pilot businesses and investors. No live deals before a licence: that would be illegal, so we prove demand instead. Then a pre-seed round to build the product, audit the contracts and secure the AFSA licence. Then go-to-market in Kazakhstan, then expand across the region. The risks we name openly — default, the shadow economy, regulatory classification — each with a concrete answer. Every stage is funded only once the previous one delivers."
+**Delivery** — steady; emphasise the discipline.
+
+Add (not on the slide):
+- The legal reason for "no deals before a licence": running an unlicensed platform here is a criminal risk — we won't.
+- Staged funding is the investor-protection story — capital goes in only after the prior milestone is proven.
+- Naming risks openly is deliberate — each one listed has a concrete mitigation, not a hand-wave.
+
+**Next** → "and here's what the next stage would cost."
 -->
 
 ---
@@ -646,20 +702,20 @@ layout: default
 
   <div>
     <div class="stack">
-      <div class="seg" style="width:42%;background:#1d4ed8"></div>
-      <div class="seg" style="width:14%;background:#3b6ef0"></div>
-      <div class="seg" style="width:13%;background:#4f9bf5"></div>
-      <div class="seg" style="width:11%;background:#38bdf8"></div>
-      <div class="seg" style="width:10%;background:#6cc6f0"></div>
-      <div class="seg" style="width:10%;background:#9ad8f5"></div>
+      <div class="seg" style="width:42%;background:#38bdf8"></div>
+      <div class="seg" style="width:14%;background:#2563eb"></div>
+      <div class="seg" style="width:13%;background:#22c55e"></div>
+      <div class="seg" style="width:11%;background:#f5a524"></div>
+      <div class="seg" style="width:10%;background:#a855f7"></div>
+      <div class="seg" style="width:10%;background:#ec4899"></div>
     </div>
     <div class="grid grid-cols-2 gap-x-6 gap-y-2 mt-3">
-      <div class="leg"><span class="dot" style="background:#1d4ed8"></span><span class="leg-name">Engineering — core team</span><strong>42%</strong></div>
-      <div class="leg"><span class="dot" style="background:#3b6ef0"></span><span class="leg-name">External specialists</span><strong>14%</strong></div>
-      <div class="leg"><span class="dot" style="background:#4f9bf5"></span><span class="leg-name">Marketing &amp; growth</span><strong>13%</strong></div>
-      <div class="leg"><span class="dot" style="background:#38bdf8"></span><span class="leg-name">Smart-contract audit</span><strong>11%</strong></div>
-      <div class="leg"><span class="dot" style="background:#6cc6f0"></span><span class="leg-name">AFSA licensing</span><strong>10%</strong></div>
-      <div class="leg"><span class="dot" style="background:#9ad8f5"></span><span class="leg-name">Infrastructure &amp; overhead</span><strong>10%</strong></div>
+      <div class="leg"><span class="dot" style="background:#38bdf8"></span><span class="leg-name">Engineering — core team</span><strong>42%</strong></div>
+      <div class="leg"><span class="dot" style="background:#2563eb"></span><span class="leg-name">External specialists</span><strong>14%</strong></div>
+      <div class="leg"><span class="dot" style="background:#22c55e"></span><span class="leg-name">Marketing &amp; growth</span><strong>13%</strong></div>
+      <div class="leg"><span class="dot" style="background:#f5a524"></span><span class="leg-name">Smart-contract audit</span><strong>11%</strong></div>
+      <div class="leg"><span class="dot" style="background:#a855f7"></span><span class="leg-name">AFSA licensing</span><strong>10%</strong></div>
+      <div class="leg"><span class="dot" style="background:#ec4899"></span><span class="leg-name">Infrastructure &amp; overhead</span><strong>10%</strong></div>
     </div>
   </div>
 
@@ -714,7 +770,14 @@ td.c,th.c{text-align:center}
 </style>
 
 <!--
-SAY: "Use of funds — and to be clear, we're not raising today; this is the financial model. A realistic pre-seed is around four hundred thousand dollars — modelled from two hundred to seven hundred K across three scenarios — for twelve to eighteen months of runway. Where does it go? Engineering is the core cost at forty-two percent: we build everything in-house. The rest splits across external specialists, marketing, the smart-contract audit, the AFSA licence and infrastructure. And it's staged — each tranche unlocks only when the previous milestone is delivered."
+**Delivery** — matter-of-fact. This is a model, not a hard ask.
+
+Add (not on the slide):
+- Say it plainly — we're not raising today; this shows the round is viable, not that we're collecting.
+- Engineering dominates because we build in-house — the spend becomes a product asset, not consultancy fees.
+- "Staged tranches" ties back to the roadmap — same discipline: each unlock earns the next.
+
+**Next** → "and the team that would spend it."
 -->
 
 ---
@@ -731,8 +794,8 @@ layout: default
 
 <div class="lbl mt-5">Our development team</div>
 <div class="grid grid-cols-4 gap-4 mt-2">
-  <div class="card text-center"><div class="avatar">NB</div><div class="font-semibold mt-2">Nikita Bulygin</div><div class="muted text-sm mt-0.5">@Bulygin_Nik</div></div>
   <div class="card text-center"><div class="avatar">AK</div><div class="font-semibold mt-2">Almat Kismet</div><div class="muted text-sm mt-0.5">@almatkismet</div></div>
+  <div class="card text-center"><div class="avatar">NB</div><div class="font-semibold mt-2">Nikita Bulygin</div><div class="muted text-sm mt-0.5">@Bulygin_Nik</div></div>
   <div class="card text-center"><div class="avatar">MS</div><div class="font-semibold mt-2">Muslim Shady</div><div class="muted text-sm mt-0.5">@musl1m_shady</div></div>
   <div class="card text-center"><div class="avatar">F</div><div class="font-semibold mt-2">Fekiss</div><div class="muted text-sm mt-0.5">@fek1ss</div></div>
 </div>
@@ -782,7 +845,14 @@ td.c,th.c{text-align:center}
 </style>
 
 <!--
-SAY: "The team. Our mission — make investing in a business as simple as buying something online, and give small businesses capital without giving up equity or posting collateral. Our development team is four engineers from Kazakhstan — team In Da Hack. We designed and built the product you've just seen end-to-end: smart contracts, backend, frontend, integrations. Reach any of us on Telegram."
+**Delivery** — warm. This is people — slow down.
+
+Add (not on the slide):
+- A small, senior team means a low burn rate — that's exactly why the break-even maths works.
+- We built the product you've seen ourselves — no agency, no outsourced core.
+- The mission line is our "why" — deliver it as conviction, not as a tagline.
+
+**Next** → "so — what we're actually here for."
 -->
 
 ---
@@ -855,6 +925,12 @@ td.c,th.c{text-align:center}
 </style>
 
 <!--
-CLOSING — slow down, land each phrase. This is the drop-mic.
-SAY: "Let's land it. A market where demand is already proven. A regulatory trigger that makes revenue verifiable by law. A moat of five things no competitor combines. And a lean, staged plan. We're not here to ask for a cheque — what we want today is sharp expert feedback, and an advisory board. Little drops of water make a mighty ocean. Find us on Telegram, at almatkismet. Thank you."
+**Delivery** — slow; land each phrase. This is the close.
+
+Add (not on the slide):
+- Be explicit — we're not asking for a cheque; we want sharp expert feedback and an advisory board.
+- The proverb bookends the deck — it opened the hook, it closes here. Let the room feel the loop.
+- End on the contact, then stop talking — let the QR sit in silence.
+
+**Close** — pause, then thank the room.
 -->
