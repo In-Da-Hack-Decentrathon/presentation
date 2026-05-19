@@ -14,18 +14,15 @@ layout: default
 class: text-left
 ---
 
-<div class="h-full flex flex-col justify-center">
+<div class="h-full flex flex-col justify-center items-start">
 
-  <div class="hook-mark mb-3">
-    <img src="/slice-logo-cyan.svg" class="hook-logo" alt="Slice" />
-    <span>Slice</span>
-  </div>
+  <img src="/slice-logo-full.svg" class="hook-wordmark mb-6" alt="Slice" />
 
   <div class="eyebrow mb-3">Revenue-Based Financing · Kazakhstan</div>
 
-  <p class="hook-proverb g mb-5">Little drops of water make a mighty ocean.</p>
+  <p class="mb-8" style="font-size:2.3rem;font-weight:600;line-height:1.25;letter-spacing:-.02em;color:#e8ecf4">Small businesses generate revenue every day.<br/><span class="g">But almost nobody can invest in them.</span></p>
 
-  <div class="flex items-center gap-6 mb-4">
+  <div class="hook-vis">
     <div class="no-wrap">
       <pre class="ascii-no" v-pre>
 ██   ██   █████ 
@@ -37,22 +34,11 @@ class: text-left
 </pre>
       <div class="no-strike"></div>
     </div>
-    <p class="hook-cap">One bank. One form. One <span class="down">&ldquo;no&rdquo;</span> &mdash; and <strong>small and medium businesses</strong> never get to grow.</p>
+    <span class="vis-arrow">&rarr;</span>
+    <div class="yes-crowd">yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes</div>
   </div>
 
-  <pre class="ascii-yes g" v-pre>
-yesyes                  yesyes   yesyesyesyesyesyesyes   yesyesyesyesyesyesyes
-   yesyes            yesyes      yesyes                  yesyes               
-      yesyes      yesyes         yesyes                  yesyes               
-         yesyesyesyes            yesyes                  yesyes               
-            yesyes               yesyesyesyesyesyesyes   yesyesyesyesyesyesyes
-            yesyes               yesyes                                 yesyes
-            yesyes               yesyes                                 yesyes
-            yesyes               yesyes                                 yesyes
-            yesyes               yesyesyesyesyesyesyes   yesyesyesyesyesyesyes
-</pre>
-
-  <p class="hook-cap mt-3">A thousand people, each a small <span class="up">&ldquo;yes&rdquo;</span> &mdash; the crowd that funds instead.</p>
+  <p class="hook-cap mt-5">One bank&rsquo;s &ldquo;<span class="down">no</span>&rdquo; stops a business cold &mdash; a crowd of small &ldquo;<span class="up">yes</span>&rdquo;es funds it instead.</p>
 
 </div>
 
@@ -95,20 +81,24 @@ td.c,th.c{text-align:center}
 .yes{color:#16c784;font-weight:700}
 .no{color:#5a657c}
 .deck-qr-label{color:#8b95a9}
-.ascii-no{font-family:'Geist Mono',ui-monospace,monospace;font-size:1.12rem;line-height:1;margin:0;color:#f1626b;opacity:.55;font-weight:700;white-space:pre}
+.hook-wordmark{display:block;height:52px;width:auto}
+.ascii-no{font-family:'Geist Mono',ui-monospace,monospace;font-size:.6rem;line-height:1;margin:0;color:#f1626b;opacity:.5;font-weight:700;white-space:pre}
 .no-wrap{position:relative;display:inline-block;flex:0 0 auto}
-.no-strike{position:absolute;left:-9%;right:-9%;top:50%;height:3px;background:#f1626b;border-radius:2px;transform:rotate(-8deg);opacity:.92}
-.ascii-yes{font-family:'Geist Mono',ui-monospace,monospace;font-size:1.12rem;line-height:1.08;margin:0;font-weight:700;white-space:pre}
-.hook-cap{font-size:.92rem;line-height:1.5;color:#8b95a9;max-width:33rem}
+.no-strike{position:absolute;left:-9%;right:-9%;top:50%;height:2px;background:#f1626b;border-radius:2px;transform:rotate(-8deg);opacity:.92}
+.ascii-yes{font-family:'Geist Mono',ui-monospace,monospace;font-size:.46rem;line-height:1.1;margin:0;font-weight:700;white-space:pre}
+.hook-cap{font-size:.95rem;line-height:1.55;color:#8b95a9;max-width:34rem}
+.hook-vis{display:flex;align-items:center;gap:1.4rem;margin-top:.4rem}
+.vis-arrow{color:#38bdf8;font-size:1.5rem;font-weight:700;flex:0 0 auto}
+.yes-crowd{color:#16c784;font-size:.82rem;font-weight:600;line-height:1.65;letter-spacing:.02em;max-width:22rem}
 </style>
 
 <!--
-**Delivery** — very slow. Let the NO sit in silence a beat before the YES builds.
+**Delivery** — slow. Let the first line land, then turn hard on "almost nobody."
 
 Add (not on the slide):
-- This slide sets the emotional frame for the whole deck — don't explain the model yet, just the feeling.
-- The "small yes": each person risks a sum they won't miss — that asymmetry is the whole idea.
-- One rejection vs a thousand small approvals — that's the pitch in a single image.
+- This sets the emotional frame for the whole deck — don't explain the model yet, just the gap.
+- A business takes money every day, yet an ordinary person has no way to back it — that asymmetry is the whole pitch.
+- One rejection vs a crowd of small "yes"es — the deck in a single image.
 
 **Next** → "so what is that 'no', really?"
 -->
@@ -124,7 +114,7 @@ layout: default
   <div class="card">
     <div class="lbl">Businesses that need capital</div>
     <h3 class="!mt-1">The bank says no to two in three.</h3>
-    <p class="mt-2 text-sm muted">A profitable small business simply doesn't fit the form. <strong>A loan</strong> — banks, crowd-lending — demands fixed monthly payments whatever the revenue, hard collateral and a credit history. <strong>Equity</strong> — angels, crowd-investing — takes a permanent share of the company.</p>
+    <p class="mt-2 text-sm muted">A profitable business doesn't fit the form. <strong>A loan</strong> demands fixed payments, collateral and credit history. <strong>Equity</strong> takes a permanent share of the company.</p>
     <div class="kpi down mt-3">67%</div>
     <p class="text-xs muted mt-1">of SMB loan applications in Kazakhstan are rejected.</p>
   </div>
@@ -132,14 +122,14 @@ layout: default
   <div class="card">
     <div class="lbl">People who would fund it</div>
     <h3 class="!mt-1">And nowhere to put their money.</h3>
-    <p class="mt-2 text-sm muted">An ordinary person has no simple way to earn from a real local business. A <strong>deposit</strong> loses to inflation, the <strong>stock market</strong> needs expertise, <strong>crypto</strong> is volatile, and <strong>crowdfunding</strong> hands back a product or a thank-you — never a share of the income.</p>
+    <p class="mt-2 text-sm muted">No simple way to earn from a real local business. <strong>Deposits</strong> lose to inflation, <strong>stocks</strong> need expertise, <strong>crypto</strong> swings, <strong>crowdfunding</strong> returns a perk — never a share of the income.</p>
     <div class="kpi g mt-3">$5.7T</div>
     <p class="text-xs muted mt-1">global SMB funding gap — demand the system never meets.</p>
   </div>
 
 </div>
 
-<p class="mt-5">Between a rigid loan and selling the company lies a chasm — and <strong>no marketplace connects the business that needs capital with the crowd that would fund it.</strong></p>
+<p class="mt-5">Between a rigid loan and selling the company lies a chasm — and <strong>no marketplace bridges it.</strong></p>
 
 <style>
 .slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
@@ -206,7 +196,7 @@ layout: default
 <div class="flex flex-col gap-2.5">
   <div class="card">
     <div class="chip mb-1.5">Business</div>
-    <p class="text-sm">Raises from a crowd. Repays a <strong>% of revenue</strong> under a Revenue Sharing Agreement — not a fixed loan, not equity. Weak month, smaller payment. No hard collateral, keeps 100% ownership.</p>
+    <p class="text-sm">Raises from a crowd, repays a <strong>% of revenue</strong> under a Revenue Sharing Agreement — not a loan, not equity. Weak month, smaller payment; no collateral, 100% ownership kept.</p>
   </div>
   <div class="card acc">
     <div class="chip mb-1.5" style="border-color:#38bdf8;color:#7cc6f5">Slice</div>
@@ -214,7 +204,7 @@ layout: default
   </div>
   <div class="card">
     <div class="chip mb-1.5">Investor</div>
-    <p class="text-sm">Enters from a <strong>small ticket</strong> and earns a floating yield from real revenue — a principal-protection floor on weak months, uncapped on strong ones — and can exit early on the secondary market.</p>
+    <p class="text-sm">Enters from a <strong>small ticket</strong> and earns a share of real revenue — more in strong months, less in weak ones, nothing if revenue is zero. Can exit early on the secondary market.</p>
   </div>
 </div>
 
@@ -225,7 +215,7 @@ layout: default
 
 </div>
 
-<p class="muted text-sm mt-4">Honest on risk: the floor returns the principal through weak revenue, but a bankruptcy can still cost an investor — which is why every ticket stays small. <strong>A risk no one would feel alone; capital a business can build on.</strong></p>
+<p class="muted text-sm mt-4">Honest on risk: returns rise and fall with the business — a weak or zero-revenue month pays little or nothing, and bankruptcy can lose the principal. That's why every ticket stays small — <strong>a risk no one would feel alone; capital a business can build on.</strong></p>
 
 <style>
 .slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
@@ -310,8 +300,8 @@ layout: default
 <div class="grid grid-cols-[1.5fr_1fr_1fr] gap-4 mt-5 items-stretch">
   <div class="card acc">
     <div class="eyebrow">Revenue you can trust</div>
-    <p class="mt-1.5 text-sm">Revenue is never self-declared — it is cross-checked across independent rails: bank and payment-system inflows, card acquiring, state fiscal data. From <strong>2026, e-invoicing is mandatory in Kazakhstan</strong> — RBF's hardest problem, solved by law.</p>
-    <p class="muted text-xs mt-2">Escrow holds the raise and releases it in tranches; the principal-protection floor extends the term until investors are repaid.</p>
+    <p class="mt-1.5 text-sm">Revenue is never self-declared — it's cross-checked across independent rails: bank inflows, card acquiring, state fiscal data. From <strong>2026, e-invoicing is mandatory in Kazakhstan</strong> — RBF's hardest problem, solved by law.</p>
+    <p class="muted text-xs mt-2">Escrow holds the raise and releases it in tranches; every revenue-share payout is computed and routed automatically, on-chain.</p>
   </div>
   <div class="text-center">
     <img src="/slice/14-calculator.png" class="phone" style="max-height:230px;margin:0 auto" />
@@ -389,24 +379,24 @@ layout: default
   </div>
   <div class="card">
     <div class="lbl">SAM · Kazakhstan</div>
-    <div class="kpi mt-1.5">~2.2M</div>
-    <p class="text-sm mt-1.5 muted">SMBs, ~40% of value added. Addressable today: those with regular, verifiable digital revenue — online merchants and SME legal entities.</p>
+    <div class="kpi mt-1.5">~$42B</div>
+    <p class="text-sm mt-1.5 muted">Unmet SMB financing demand — bank credit meets under a fifth of it. Across ~2.2M SMBs; Slice serves those with verifiable digital revenue.</p>
   </div>
   <div class="card acc">
     <div class="lbl">SOM · the beachhead</div>
-    <div class="kpi up mt-1.5">~5 / mo</div>
-    <p class="text-sm mt-1.5 muted">Deals a month to reach break-even — a modest, bottom-up target among KZ online-revenue SMBs. Then Central Asia, then global.</p>
+    <div class="kpi up mt-1.5">~$3.7M</div>
+    <p class="text-sm mt-1.5 muted">A year of financing facilitated at break-even — ~5 deals a month, a bottom-up KZ target. Then Central Asia, then global.</p>
   </div>
 </div>
 
 <div class="grid grid-cols-2 gap-5 mt-4">
   <div class="card">
     <div class="lbl">Demand is already proven</div>
-    <p class="mt-1.5 text-sm">At a leading local fintech, embedded merchant lending is the <strong>fastest-growing credit product</strong> — a large, fast-growing slice of a multi-trillion-tenge book. Kazakhstan's businesses already pay, well, for working capital.</p>
+    <p class="mt-1.5 text-sm">At a leading local fintech, embedded merchant lending is the <strong>fastest-growing credit product</strong>. Kazakhstan's businesses already pay — well — for working capital.</p>
   </div>
   <div class="card">
     <div class="lbl">The window is open</div>
-    <p class="mt-1.5 text-sm muted">E-commerce reached <strong class="up">~1.7T ₸</strong> in the first half of 2025 — up 19% year on year. More SMB revenue runs through traceable digital rails every quarter — exactly what RBF needs.</p>
+    <p class="mt-1.5 text-sm muted">E-commerce hit <strong class="up">~1.7T ₸</strong> in H1 2025, up 19% year on year. More SMB revenue runs on traceable digital rails every quarter — exactly what RBF needs.</p>
   </div>
 </div>
 
@@ -617,15 +607,15 @@ layout: default
 # Roadmap — each step earns the next
 
 <div class="grid grid-cols-4 gap-3 mt-2">
-  <div class="card acc"><div class="flex items-center gap-2"><span class="num">1</span><strong class="text-sm">Validate demand</strong></div><p class="mt-2 text-xs muted">A waitlist landing and letters of intent from pilot SMBs and investors. No live deals before a licence — proving demand, not breaking the law.</p></div>
-  <div class="card"><div class="flex items-center gap-2"><span class="num">2</span><strong class="text-sm">Pre-Seed</strong></div><p class="mt-2 text-xs muted">Raise $200–700k. Build the product, audit the smart contracts, secure the AFSA crowdfunding licence.</p></div>
-  <div class="card"><div class="flex items-center gap-2"><span class="num">3</span><strong class="text-sm">Go-to-market · KZ</strong></div><p class="mt-2 text-xs muted">Integrations with banks, payment systems, marketplaces and fiscal data; the first live campaigns running in Kazakhstan.</p></div>
+  <div class="card acc"><div class="flex items-center gap-2"><span class="num">1</span><strong class="text-sm">Validate demand</strong></div><p class="mt-2 text-xs muted">A waitlist landing and letters of intent from pilot SMBs and investors — proving demand. No live deals before a licence.</p></div>
+  <div class="card"><div class="flex items-center gap-2"><span class="num">2</span><strong class="text-sm">Pre-Seed · $100k</strong></div><p class="mt-2 text-xs muted">10–12 months of runway: build the product, audit the smart contracts, secure the AFSA crowdfunding licence.</p></div>
+  <div class="card"><div class="flex items-center gap-2"><span class="num">3</span><strong class="text-sm">Seed · $500k</strong></div><p class="mt-2 text-xs muted">Go to market in Kazakhstan: integrations with banks, payment systems, marketplaces and fiscal data; the first live campaigns.</p></div>
   <div class="card"><div class="flex items-center gap-2"><span class="num">4</span><strong class="text-sm">Expand</strong></div><p class="mt-2 text-xs muted">Replicate the architecture across Central Asia, then global — swap the local entity and regulatory wrapper.</p></div>
 </div>
 
 <div class="lbl mt-5">Risks, named honestly</div>
 <div class="grid grid-cols-3 gap-3 mt-2">
-  <div class="card"><p class="text-xs"><strong>Business default</strong> — the floor returns the principal through weak revenue; a bankruptcy can still lose money, but every ticket is small enough to absorb.</p></div>
+  <div class="card"><p class="text-xs"><strong>Revenue risk</strong> — payouts shrink or stop with the business, and bankruptcy can lose the principal. Every ticket is small, spread across many deals.</p></div>
   <div class="card"><p class="text-xs"><strong>Shadow economy</strong> — we target SMBs with near-100% online revenue and reconcile it across independent sources.</p></div>
   <div class="card"><p class="text-xs"><strong>Regulatory</strong> — an AFSA licence and a revenue-share classification opinion before a single live deal.</p></div>
 </div>
@@ -681,103 +671,7 @@ Add (not on the slide):
 - Staged funding is the investor-protection story — capital goes in only after the prior milestone is proven.
 - Naming risks openly is deliberate — each one listed has a concrete mitigation, not a hand-wave.
 
-**Next** → "and here's what the next stage would cost."
--->
-
----
-layout: default
----
-
-# Use of funds — what a pre-seed funds
-
-<p class="muted mt-1">Slice isn't raising capital today — this is the financial model: what a pre-seed round would fund, and how it splits.</p>
-
-<div class="grid grid-cols-[1fr_1.85fr] gap-6 mt-4 items-center">
-
-  <div class="card acc">
-    <div class="lbl">Pre-seed · realistic scenario</div>
-    <div class="kpi g mt-1.5">~$400k</div>
-    <p class="text-sm muted mt-2"><strong>12–18 months</strong> of runway to product launch and first revenue. Modelled as <strong>$200k–700k</strong> across three scenarios — pessimistic, realistic, optimistic.</p>
-  </div>
-
-  <div>
-    <div class="stack">
-      <div class="seg" style="width:42%;background:#38bdf8"></div>
-      <div class="seg" style="width:14%;background:#2563eb"></div>
-      <div class="seg" style="width:13%;background:#22c55e"></div>
-      <div class="seg" style="width:11%;background:#f5a524"></div>
-      <div class="seg" style="width:10%;background:#a855f7"></div>
-      <div class="seg" style="width:10%;background:#ec4899"></div>
-    </div>
-    <div class="grid grid-cols-2 gap-x-6 gap-y-2 mt-3">
-      <div class="leg"><span class="dot" style="background:#38bdf8"></span><span class="leg-name">Engineering — core team</span><strong>42%</strong></div>
-      <div class="leg"><span class="dot" style="background:#2563eb"></span><span class="leg-name">External specialists</span><strong>14%</strong></div>
-      <div class="leg"><span class="dot" style="background:#22c55e"></span><span class="leg-name">Marketing &amp; growth</span><strong>13%</strong></div>
-      <div class="leg"><span class="dot" style="background:#f5a524"></span><span class="leg-name">Smart-contract audit</span><strong>11%</strong></div>
-      <div class="leg"><span class="dot" style="background:#a855f7"></span><span class="leg-name">AFSA licensing</span><strong>10%</strong></div>
-      <div class="leg"><span class="dot" style="background:#ec4899"></span><span class="leg-name">Infrastructure &amp; overhead</span><strong>10%</strong></div>
-    </div>
-  </div>
-
-</div>
-
-<p class="muted text-sm mt-5">Engineering is the core cost — the team builds revenue verification, campaign mechanics, dashboards and the secondary market in-house. Staged: each tranche unlocks only when the previous milestone is delivered.</p>
-
-<style>
-.slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
-.slidev-layout h1{color:#e8ecf4 !important;font-weight:600;font-size:1.85rem;letter-spacing:-.015em;margin-bottom:.5rem}
-.slidev-layout h3{color:#e8ecf4 !important;font-weight:600;margin:.15rem 0}
-.slidev-layout p{line-height:1.5;margin:0}
-.slidev-layout strong{color:#e8ecf4;font-weight:600}
-.eyebrow{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#38bdf8;font-weight:600}
-.lbl{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#8b95a9;font-weight:600}
-.g{background:linear-gradient(120deg,#60a5fa,#38bdf8);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.muted{color:#8b95a9}
-.up{color:#16c784 !important}
-.down{color:#f1626b !important}
-.card{background:#111726;border:1px solid #1e2638;border-radius:13px;padding:.85rem 1rem}
-.card.acc{border-color:#38bdf8;background:linear-gradient(160deg,rgba(29,78,216,.15),rgba(17,23,38,.55))}
-.chip{display:inline-block;background:#161d2e;border:1px solid #2a3550;border-radius:999px;padding:.13rem .62rem;font-size:.72rem;color:#c4ccda}
-.kpi{font-size:2.3rem;font-weight:700;line-height:1;color:#e8ecf4}
-.brandbar{height:3px;width:3.2rem;background:linear-gradient(90deg,#1d4ed8,#38bdf8);border-radius:2px}
-.phone{border-radius:20px;border:1px solid #1e2638;box-shadow:0 24px 60px -22px rgba(0,0,0,.85)}
-.num{display:inline-grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:7px;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:.8rem;font-weight:700;flex:0 0 auto}
-.arrow{color:#38bdf8;font-weight:700}
-.hook-mark{display:flex;align-items:center;gap:.5rem;font-size:1.05rem;font-weight:600;color:#e8ecf4}
-.hook-logo{width:30px;height:30px}
-.hook-h{color:#e8ecf4;font-weight:600;font-size:2.5rem;line-height:1.13;letter-spacing:-.02em}
-.hook-lead{font-size:1.02rem;line-height:1.55;color:#c4ccda;max-width:47rem}
-.hook-rule{height:1px;width:100%;background:linear-gradient(90deg,#1e2638,rgba(30,38,56,0))}
-.hook-turn{font-size:1.12rem;line-height:1.5;color:#e8ecf4;font-weight:500;max-width:45rem}
-.hook-proverb{font-size:1.5rem;font-weight:600;letter-spacing:-.01em}
-.flow-track{display:flex;align-items:stretch;gap:.4rem}
-.flow-side{display:flex;align-items:center;justify-content:center;background:#0d1320;border:1px solid #1e2638;border-radius:10px;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:#8b95a9;font-weight:700;padding:0 .6rem;flex:0 0 5rem;text-align:center}
-.flow-step{display:flex;align-items:center;gap:.5rem;background:#111726;border:1px solid #1e2638;border-radius:10px;padding:.5rem .7rem;font-size:.78rem;flex:1;line-height:1.28}
-.flow-step.acc{border-color:#38bdf8;background:linear-gradient(160deg,rgba(29,78,216,.18),rgba(17,23,38,.55))}
-.flow-sep{display:flex;align-items:center;color:#38bdf8;font-weight:700;flex:0 0 auto;font-size:.9rem}
-table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.4rem}
-th,td{border:1px solid #1e2638;padding:.46rem .7rem;text-align:left;vertical-align:top}
-th{color:#8b95a9;font-weight:600;background:#0d1320}
-td.c,th.c{text-align:center}
-.yes{color:#16c784;font-weight:700}
-.no{color:#5a657c}
-.deck-qr-label{color:#8b95a9}
-.stack{display:flex;width:100%;height:1.65rem;border-radius:8px;overflow:hidden;border:1px solid #1e2638}
-.seg{height:100%;box-sizing:border-box;border-right:2px solid #0a0e1a}
-.leg{display:flex;align-items:center;gap:.5rem;font-size:.8rem}
-.leg-name{flex:1}
-.dot{width:.72rem;height:.72rem;border-radius:3px;flex:0 0 auto}
-</style>
-
-<!--
-**Delivery** — matter-of-fact. This is a model, not a hard ask.
-
-Add (not on the slide):
-- Say it plainly — we're not raising today; this shows the round is viable, not that we're collecting.
-- Engineering dominates because we build in-house — the spend becomes a product asset, not consultancy fees.
-- "Staged tranches" ties back to the roadmap — same discipline: each unlock earns the next.
-
-**Next** → "and the team that would spend it."
+**Next** → "and the team that would build it."
 -->
 
 ---
@@ -792,15 +686,15 @@ layout: default
   <p class="muted text-sm mt-1.5">And give small businesses growth capital — without giving up equity, without posting collateral.</p>
 </div>
 
-<div class="lbl mt-5">Our development team</div>
+<div class="lbl mt-5">The founding team</div>
 <div class="grid grid-cols-4 gap-4 mt-2">
-  <div class="card text-center"><div class="avatar">AK</div><div class="font-semibold mt-2">Almat Kismet</div><div class="muted text-sm mt-0.5">@almatkismet</div></div>
-  <div class="card text-center"><div class="avatar">NB</div><div class="font-semibold mt-2">Nikita Bulygin</div><div class="muted text-sm mt-0.5">@Bulygin_Nik</div></div>
-  <div class="card text-center"><div class="avatar">MS</div><div class="font-semibold mt-2">Muslim Shady</div><div class="muted text-sm mt-0.5">@musl1m_shady</div></div>
-  <div class="card text-center"><div class="avatar">F</div><div class="font-semibold mt-2">Fekiss</div><div class="muted text-sm mt-0.5">@fek1ss</div></div>
+  <div class="card text-center"><div class="avatar">AK</div><div class="font-semibold mt-2">Almat Kismet</div><div class="role">Product Manager</div><div class="muted text-xs mt-1">@almatkismet</div></div>
+  <div class="card text-center"><div class="avatar">NB</div><div class="font-semibold mt-2">Nikita Bulygin</div><div class="role">CTO</div><div class="muted text-xs mt-1">@Bulygin_Nik</div></div>
+  <div class="card text-center"><div class="avatar">MS</div><div class="font-semibold mt-2">Muslim Shady</div><div class="role">UX / UI Designer</div><div class="muted text-xs mt-1">@musl1m_shady</div></div>
+  <div class="card text-center"><div class="avatar">F</div><div class="font-semibold mt-2">Fekiss</div><div class="role">Developer</div><div class="muted text-xs mt-1">@fek1ss</div></div>
 </div>
 
-<p class="muted mt-5">In Da Hack — four engineers from Kazakhstan who design, build and ship the product end-to-end: smart contracts, backend, frontend and integrations.</p>
+<p class="muted mt-5">A four-person team from Kazakhstan — product, design and engineering. We build and ship Slice end-to-end: smart contracts, backend, frontend and integrations.</p>
 
 <style>
 .slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
@@ -842,6 +736,7 @@ td.c,th.c{text-align:center}
 .no{color:#5a657c}
 .deck-qr-label{color:#8b95a9}
 .avatar{width:2.7rem;height:2.7rem;border-radius:50%;display:grid;place-items:center;margin:0 auto;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-weight:700;font-size:.95rem}
+.role{font-size:.62rem;letter-spacing:.07em;text-transform:uppercase;color:#38bdf8;font-weight:600;margin-top:.3rem}
 </style>
 
 <!--
@@ -929,7 +824,7 @@ td.c,th.c{text-align:center}
 
 Add (not on the slide):
 - Be explicit — we're not asking for a cheque; we want sharp expert feedback and an advisory board.
-- The proverb bookends the deck — it opened the hook, it closes here. Let the room feel the loop.
+- The proverb closes the deck — a quiet, human note to land after the numbers.
 - End on the contact, then stop talking — let the QR sit in silence.
 
 **Close** — pause, then thank the room.

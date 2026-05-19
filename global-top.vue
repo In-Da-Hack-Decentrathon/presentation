@@ -13,14 +13,13 @@ onMounted(() => {
 
 <template>
   <div class="slice-header">
-    <img v-if="isSummit" src="/slice-logo-cyan.svg" class="slice-header-logo" alt="Slice" />
+    <img v-if="isSummit" src="/slice-mark.svg" class="slice-header-logo" alt="Slice" />
     <template v-else>
       <img src="/slice-logo.svg" class="slice-header-logo dark:hidden" alt="Slice" />
       <img src="/slice-logo-dark.svg" class="slice-header-logo hidden dark:block" alt="Slice" />
     </template>
     <div class="slice-header-text">
       <div class="slice-header-brand">Slice <span v-if="lang && !isSummit" class="slice-header-lang">{{ lang }}</span></div>
-      <div class="slice-header-team">In Da Hack</div>
     </div>
   </div>
 </template>
@@ -50,10 +49,6 @@ onMounted(() => {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--df-foreground);
-}
-.slice-header-team {
-  font-size: 0.65rem;
-  color: var(--df-muted-foreground);
 }
 .slice-header-lang {
   font-size: 0.6rem;
