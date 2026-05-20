@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NO -> YES</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+  body {
+    display: inline-block;
+    padding: 28px;
+    font-family: ui-monospace, 'Geist Mono', 'Courier New', Consolas, monospace;
+    font-weight: 700;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+  }
+  .no-wrap {
+    position: relative;
+    display: inline-block;
+  }
+  pre {
+    margin: 0;
+    line-height: 1.0;
+    white-space: pre;
+    font-family: inherit;
+  }
+  .no {
+    color: #f1626b;
+    opacity: 0.68;
+    font-size: 18px;
+  }
+  .strike {
+    position: absolute;
+    left: -4%;
+    right: -4%;
+    top: 50%;
+    height: 5px;
+    background: #f1626b;
+    border-radius: 3px;
+    transform: rotate(-7deg);
+    opacity: 0.95;
+  }
+  .arrow {
+    color: #38bdf8;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .yes {
+    color: #16c784;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="no-wrap">
+    <pre class="no">██        ██      █████
+███       ██    ██     ██
+████      ██   ██       ██
+██ ██     ██   ██       ██
+██  ██    ██   ██       ██
+██   ██   ██   ██       ██
+██    ██  ██   ██       ██
+██     ██ ██   ██       ██
+██      ████    ██     ██
+██       ███      █████   </pre>
+    <div class="strike"></div>
+  </div>
+  <span class="arrow">&rarr;</span>
+  <pre class="yes">yesyes                    yesyes     yesyesyesyesyesyesyes     yesyesyesyesyesyesyes
+  yesyes                yesyes       yesyes                    yesyes
+    yesyes            yesyes         yesyes                    yesyes
+      yesyes        yesyes           yesyes                    yesyes
+        yesyes    yesyes             yesyes                    yesyes
+          yesyesyesyes               yesyesyesyesyes            yesyesyesyesyesyesyes
+             yesyes                  yesyes                                    yesyes
+             yesyes                  yesyes                                    yesyes
+             yesyes                  yesyes                                    yesyes
+             yesyes                  yesyes                                    yesyes
+             yesyes                  yesyes                                    yesyes
+             yesyes                  yesyesyesyesyesyesyes     yesyesyesyesyesyesyes</pre>
+</div>
+</body>
+</html>
