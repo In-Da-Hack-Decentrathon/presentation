@@ -706,32 +706,24 @@ layout: default
 
 <div class="grid grid-cols-4 gap-4 mt-8 anim-rise d-1">
 
-  <div class="card text-center">
-    <div class="avatar">AK</div>
-    <div class="font-semibold mt-3">Almat Kismet</div>
-    <div class="role">CEO</div>
-    <div class="muted text-xs mt-1">@almatkismet</div>
+  <div class="card text-center py-6">
+    <div class="font-semibold">Almat Kismet</div>
+    <div class="role mt-2">CEO</div>
   </div>
 
-  <div class="card text-center">
-    <div class="avatar">NB</div>
-    <div class="font-semibold mt-3">Nikita Bulygin</div>
-    <div class="role">CTO</div>
-    <div class="muted text-xs mt-1">@Bulygin_Nik</div>
+  <div class="card text-center py-6">
+    <div class="font-semibold">Nikita Bulygin</div>
+    <div class="role mt-2">CTO</div>
   </div>
 
-  <div class="card text-center">
-    <div class="avatar">IY</div>
-    <div class="font-semibold mt-3">Ismailkhan Yestleu</div>
-    <div class="role">Head of Design</div>
-    <div class="muted text-xs mt-1">@musl1m_shady</div>
+  <div class="card text-center py-6">
+    <div class="font-semibold">Ismailkhan Yestleu</div>
+    <div class="role mt-2">Head of Design</div>
   </div>
 
-  <div class="card text-center">
-    <div class="avatar">DK</div>
-    <div class="font-semibold mt-3">Damir Kairzhanov</div>
-    <div class="role">Head of Frontend</div>
-    <div class="muted text-xs mt-1">@fek1ss</div>
+  <div class="card text-center py-6">
+    <div class="font-semibold">Damir Kairzhanov</div>
+    <div class="role mt-2">Head of Frontend</div>
   </div>
 
 </div>
