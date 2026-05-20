@@ -48,7 +48,10 @@ onMounted(() => {
 .slice-header-brand {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--df-foreground);
+  color: #38bdf8;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 .slice-header-lang {
   font-size: 0.6rem;

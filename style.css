@@ -292,3 +292,12 @@ html.dark {
     animation: none !important;
   }
 }
+
+/* Summit brand mark — every visible "Slice" text wears this. */
+.brand {
+  color: #38bdf8;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  font-weight: 600;
+}

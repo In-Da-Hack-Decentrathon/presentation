@@ -4,9 +4,11 @@ import { ref, onMounted } from 'vue'
 const props = withDefaults(defineProps<{
   size?: number
   label?: string
+  data?: string
 }>(), {
   size: 120,
   label: 'Открыть на телефоне',
+  data: undefined,
 })
 
 const qrSrc = ref('')
@@ -14,15 +16,18 @@ const deckUrl = ref('')
 
 onMounted(() => {
   if (typeof window === 'undefined') return
-  const path = window.location.pathname
-  let base = '/'
-  if (path.startsWith('/en/pitch')) base = '/en/pitch/'
-  else if (path.startsWith('/en')) base = '/en/'
-  else if (path.startsWith('/pitch')) base = '/pitch/'
-  else if (path.startsWith('/summit')) base = '/summit/'
-  const url = window.location.origin + base
-  deckUrl.value = url
-  qrSrc.value = `https://api.qrserver.com/v1/create-qr-code/?size=${props.size * 2}x${props.size * 2}&data=${encodeURIComponent(url)}`
+  let target = props.data
+  if (!target) {
+    const path = window.location.pathname
+    let base = '/'
+    if (path.startsWith('/en/pitch')) base = '/en/pitch/'
+    else if (path.startsWith('/en')) base = '/en/'
+    else if (path.startsWith('/pitch')) base = '/pitch/'
+    else if (path.startsWith('/summit')) base = '/summit/'
+    target = window.location.origin + base
+  }
+  deckUrl.value = target
+  qrSrc.value = `https://api.qrserver.com/v1/create-qr-code/?size=${props.size * 2}x${props.size * 2}&data=${encodeURIComponent(target)}`
 })
 </script>
 

@@ -18,9 +18,9 @@ class: text-left
 
   <img src="/slice-logo-full.svg" class="hook-wordmark mb-7 anim-rise" alt="Slice" />
 
-  <div class="eyebrow mb-4 anim-rise d-1">Revenue-Based Financing · Kazakhstan</div>
+  <div class="eyebrow mb-4 anim-rise">Revenue-Based Financing · Kazakhstan</div>
 
-  <p class="anim-rise d-2" style="font-size:2.65rem;font-weight:600;line-height:1.2;letter-spacing:-.022em;color:#e8ecf4;max-width:58rem">Anyone can invest in a listed corporation.<br/><span class="g anim-shimmer">Almost nobody can invest in the profitable small business next door.</span></p>
+  <p class="anim-rise d-1" style="font-size:2.65rem;font-weight:600;line-height:1.2;letter-spacing:-.022em;color:#e8ecf4;max-width:58rem">Anyone can invest in a listed corporation.<br/><span class="g">Almost nobody can invest in the profitable small business next door.</span></p>
 
 </div>
 
@@ -84,23 +84,23 @@ layout: default
 
 # The gap
 
-<div class="grid grid-cols-2 gap-6 mt-6">
+<div class="grid grid-cols-2 gap-6 mt-6 anim-rise">
 
-  <div class="card stat anim-rise">
-    <ph-bank-bold class="text-4xl text-rose-400 mb-3 anim-float" />
-    <div class="kpi down anim-pulse">67%</div>
+  <div class="card stat">
+    <ph-bank-bold class="text-4xl text-rose-400 mb-3" />
+    <div class="kpi down">67%</div>
     <div class="lbl mt-2">SMB loans rejected in Kazakhstan</div>
   </div>
 
-  <div class="card stat anim-rise d-1">
+  <div class="card stat">
     <ph-coins-bold class="text-4xl text-cyan-400 mb-3" />
-    <div class="kpi g anim-shimmer">$5.7T</div>
+    <div class="kpi g">$5.7T</div>
     <div class="lbl mt-2">Global SMB funding gap</div>
   </div>
 
 </div>
 
-<p class="text-lg mt-8 text-center anim-rise d-2" style="color:#c4ccda">Between a rigid loan and selling the company lies a chasm — <strong>no marketplace bridges it.</strong></p>
+<p class="text-lg mt-8 text-center anim-rise d-1" style="color:#c4ccda">Between a rigid loan and selling the company lies a chasm — <strong>no marketplace bridges it.</strong></p>
 
 <style>
 .slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
@@ -158,26 +158,26 @@ Add (not on the slide):
 layout: default
 ---
 
-# Slice RBF
+# <span class="brand">Slice</span> RBF
 
 <div class="grid grid-cols-[1.55fr_1fr] gap-7 mt-6 items-center">
 
-<div class="flex flex-col gap-3">
-  <div class="card anim-rise">
+<div class="flex flex-col gap-3 anim-rise">
+  <div class="card">
     <div class="flex items-center gap-3">
       <ph-storefront-bold class="text-3xl text-cyan-400" />
       <div class="font-semibold text-base">Business</div>
     </div>
     <p class="text-sm mt-2 muted">Raises from a crowd. Repays a <strong>% of revenue</strong>. No collateral, 100% ownership kept.</p>
   </div>
-  <div class="card acc anim-rise d-1 anim-glow">
+  <div class="card">
     <div class="flex items-center gap-3">
       <ph-handshake-bold class="text-3xl text-cyan-300" />
-      <div class="font-semibold text-base">Slice</div>
+      <div class="font-semibold text-base"><span class="brand">Slice</span></div>
     </div>
     <p class="text-sm mt-2 muted">Marketplace. Wraps every deal in an <strong>RSA</strong>, routes payouts on-chain.</p>
   </div>
-  <div class="card anim-rise d-2">
+  <div class="card">
     <div class="flex items-center gap-3">
       <ph-users-three-bold class="text-3xl text-cyan-400" />
       <div class="font-semibold text-base">Investor</div>
@@ -186,7 +186,7 @@ layout: default
   </div>
 </div>
 
-<div class="text-center anim-rise d-3">
+<div class="text-center anim-rise d-1">
   <img src="/slice/04-campaign.png" class="phone" style="max-height:380px;margin:0 auto" />
   <div class="lbl mt-2">A live campaign in the app</div>
 </div>
@@ -251,28 +251,28 @@ layout: default
 
 # How it works
 
-<div class="grid grid-cols-4 gap-4 mt-8">
+<div class="grid grid-cols-4 gap-4 mt-8 anim-rise">
 
-  <div class="card step anim-rise">
+  <div class="card step">
     <ph-magnifying-glass-bold class="text-3xl text-cyan-400" />
     <div class="font-semibold mt-3">1 · Score revenue</div>
     <p class="text-xs muted mt-1.5">Cross-checked across bank, card and fiscal rails. 2026 KZ e-invoicing makes this bulletproof.</p>
   </div>
 
-  <div class="card step anim-rise d-1">
+  <div class="card step">
     <ph-receipt-bold class="text-3xl text-cyan-400" />
     <div class="font-semibold mt-3">2 · Sign the RSA</div>
     <p class="text-xs muted mt-1.5">Independent legal and financial review before any raise opens.</p>
   </div>
 
-  <div class="card step anim-rise d-2">
+  <div class="card step">
     <ph-users-three-bold class="text-3xl text-cyan-400" />
     <div class="font-semibold mt-3">3 · Raise from the crowd</div>
     <p class="text-xs muted mt-1.5">All-or-nothing, small tickets, escrowed and released in tranches.</p>
   </div>
 
-  <div class="card acc step anim-rise d-3 anim-glow">
-    <ph-arrows-clockwise-bold class="text-3xl text-cyan-300 anim-spin-slow" />
+  <div class="card step">
+    <ph-arrows-clockwise-bold class="text-3xl text-cyan-300" />
     <div class="font-semibold mt-3">4 · Pay back from revenue</div>
     <p class="text-xs muted mt-1.5">Weekly on-chain payouts. Investors can exit early on the secondary market.</p>
   </div>
@@ -337,31 +337,31 @@ layout: default
 
 # The market — Kazakhstan first
 
-<div class="grid grid-cols-4 gap-4 mt-8 items-stretch">
+<div class="grid grid-cols-4 gap-4 mt-8 items-stretch anim-rise">
 
-  <div class="card stat anim-rise">
+  <div class="card stat">
     <ph-globe-bold class="text-3xl text-cyan-400" />
     <div class="lbl mt-3">TAM</div>
-    <div class="kpi g anim-shimmer mt-1">$5.7T</div>
+    <div class="kpi g mt-1">$5.7T</div>
     <p class="text-xs muted mt-2">Global SMB funding gap.</p>
   </div>
 
-  <div class="card stat anim-rise d-1">
+  <div class="card stat">
     <ph-map-pin-bold class="text-3xl text-cyan-400" />
     <div class="lbl mt-3">SAM</div>
     <div class="kpi mt-1">~$42B</div>
     <p class="text-xs muted mt-2">Unmet SMB demand in Kazakhstan.</p>
   </div>
 
-  <div class="card stat anim-rise d-2">
+  <div class="card stat">
     <ph-target-bold class="text-3xl text-cyan-400" />
     <div class="lbl mt-3">SOM</div>
     <div class="kpi up mt-1">~$3.7M</div>
     <p class="text-xs muted mt-2">A year at break-even (~5 deals/mo).</p>
   </div>
 
-  <div class="card acc stat anim-rise d-3 anim-glow">
-    <ph-flag-pennant-bold class="text-3xl text-cyan-300 anim-pulse" />
+  <div class="card stat">
+    <ph-flag-pennant-bold class="text-3xl text-cyan-300" />
     <div class="lbl mt-3">Why now</div>
     <div class="text-base font-semibold mt-1" style="color:#e8ecf4">2026 e-invoicing</div>
     <p class="text-xs muted mt-2">Mandatory in KZ — RBF's verification problem, solved by law.</p>
@@ -428,9 +428,9 @@ layout: default
 
 # The landscape
 
-<div class="grid grid-cols-2 gap-5 mt-8">
+<div class="grid grid-cols-2 gap-5 mt-8 anim-rise">
 
-  <div class="card anim-rise">
+  <div class="card">
     <div class="flex items-center gap-3">
       <ph-bank-bold class="text-2xl text-cyan-400" />
       <div class="font-semibold">Pure RBF</div>
@@ -439,7 +439,7 @@ layout: default
     <p class="text-sm mt-2 muted">Institutional funding only. All pivoted away from pure revenue-share.</p>
   </div>
 
-  <div class="card anim-rise d-1">
+  <div class="card">
     <div class="flex items-center gap-3">
       <ph-users-bold class="text-2xl text-cyan-400" />
       <div class="font-semibold">KZ crowdfunding</div>
@@ -448,7 +448,7 @@ layout: default
     <p class="text-sm mt-2 muted">Retail investors, but no RBF mechanics — fixed-rate loans only.</p>
   </div>
 
-  <div class="card anim-rise d-2">
+  <div class="card">
     <div class="flex items-center gap-3">
       <ph-coin-vertical-bold class="text-2xl text-cyan-400" />
       <div class="font-semibold">RWA tokenization</div>
@@ -457,10 +457,10 @@ layout: default
     <p class="text-sm mt-2 muted">Tradable on-chain, but assets are real estate — not revenue-based.</p>
   </div>
 
-  <div class="card acc anim-rise d-3 anim-glow">
+  <div class="card">
     <div class="flex items-center gap-3">
       <ph-puzzle-piece-bold class="text-2xl text-cyan-300" />
-      <div class="font-semibold">Slice</div>
+      <div class="font-semibold"><span class="brand">Slice</span></div>
     </div>
     <div class="muted text-xs mt-1">Kazakhstan-first</div>
     <p class="text-sm mt-2 muted">RBF + retail funding + on-chain + secondary market — the gap in the map.</p>
@@ -526,30 +526,30 @@ layout: default
 
 # The business model
 
-<div class="grid grid-cols-4 gap-4 mt-8 items-stretch">
+<div class="grid grid-cols-4 gap-4 mt-8 items-stretch anim-rise">
 
-  <div class="card stat anim-rise">
+  <div class="card stat">
     <ph-coins-bold class="text-3xl text-cyan-400" />
     <div class="lbl mt-3">Origination · 10%</div>
     <div class="kpi !text-2xl mt-1">~$6.2k</div>
     <p class="text-xs muted mt-2">One-off, per closed raise.</p>
   </div>
 
-  <div class="card stat anim-rise d-1">
-    <ph-arrows-clockwise-bold class="text-3xl text-cyan-400 anim-spin-slow" />
+  <div class="card stat">
+    <ph-arrows-clockwise-bold class="text-3xl text-cyan-400" />
     <div class="lbl mt-3">Servicing · 2%</div>
     <div class="kpi !text-2xl mt-1">~$1.5k</div>
     <p class="text-xs muted mt-2">Recurring on every payout.</p>
   </div>
 
-  <div class="card stat anim-rise d-2">
+  <div class="card stat">
     <ph-arrows-left-right-bold class="text-3xl text-cyan-400" />
     <div class="lbl mt-3">Secondary · +1%</div>
     <div class="kpi !text-2xl mt-1">on trades</div>
     <p class="text-xs muted mt-2">On every secondary-market swap.</p>
   </div>
 
-  <div class="card acc stat anim-rise d-3 anim-glow">
+  <div class="card stat">
     <ph-currency-circle-dollar-bold class="text-3xl text-cyan-300" />
     <div class="lbl mt-3">Net per deal</div>
     <div class="kpi !text-2xl up mt-1">~$5.8k</div>
@@ -616,27 +616,27 @@ layout: default
 
 # Roadmap — each step earns the next
 
-<div class="grid grid-cols-4 gap-4 mt-8">
+<div class="grid grid-cols-4 gap-4 mt-8 anim-rise">
 
-  <div class="card step anim-rise">
+  <div class="card step">
     <ph-clipboard-text-bold class="text-3xl text-cyan-400" />
     <div class="font-semibold mt-3">Validate demand</div>
     <p class="text-xs muted mt-1.5">Waitlist + letters of intent. No live deals before a licence.</p>
   </div>
 
-  <div class="card step anim-rise d-1">
+  <div class="card step">
     <ph-coins-bold class="text-3xl text-cyan-400" />
     <div class="font-semibold mt-3">Pre-Seed · $100k</div>
     <p class="text-xs muted mt-1.5">10–12 mo runway: product, smart-contract audit, AFSA licence.</p>
   </div>
 
-  <div class="card acc step anim-rise d-2 anim-glow">
-    <ph-rocket-launch-bold class="text-3xl text-cyan-300 anim-float" />
+  <div class="card step">
+    <ph-rocket-launch-bold class="text-3xl text-cyan-300" />
     <div class="font-semibold mt-3">Seed · $500k</div>
     <p class="text-xs muted mt-1.5">Go-to-market in Kazakhstan. First live campaigns.</p>
   </div>
 
-  <div class="card step anim-rise d-3">
+  <div class="card step">
     <ph-globe-bold class="text-3xl text-cyan-400" />
     <div class="font-semibold mt-3">Expand</div>
     <p class="text-xs muted mt-1.5">Central Asia, then global — swap the local regulatory wrapper.</p>
@@ -702,32 +702,32 @@ layout: default
 
 # The team
 
-<p class="g anim-shimmer text-lg font-semibold mt-2 anim-rise" style="letter-spacing:-.01em">Make investing in a business as simple as buying something online.</p>
+<p class="g text-lg font-semibold mt-2 anim-rise" style="letter-spacing:-.01em">Make investing in a business as simple as buying something online.</p>
 
-<div class="grid grid-cols-4 gap-4 mt-8">
+<div class="grid grid-cols-4 gap-4 mt-8 anim-rise d-1">
 
-  <div class="card text-center anim-rise d-1">
+  <div class="card text-center">
     <div class="avatar">AK</div>
     <div class="font-semibold mt-3">Almat Kismet</div>
     <div class="role">CEO</div>
     <div class="muted text-xs mt-1">@almatkismet</div>
   </div>
 
-  <div class="card text-center anim-rise d-2">
+  <div class="card text-center">
     <div class="avatar">NB</div>
     <div class="font-semibold mt-3">Nikita Bulygin</div>
     <div class="role">CTO</div>
     <div class="muted text-xs mt-1">@Bulygin_Nik</div>
   </div>
 
-  <div class="card text-center anim-rise d-3">
+  <div class="card text-center">
     <div class="avatar">IY</div>
     <div class="font-semibold mt-3">Ismailkhan Yestleu</div>
     <div class="role">Head of Design</div>
     <div class="muted text-xs mt-1">@musl1m_shady</div>
   </div>
 
-  <div class="card text-center anim-rise d-4">
+  <div class="card text-center">
     <div class="avatar">DK</div>
     <div class="font-semibold mt-3">Damir Kairzhanov</div>
     <div class="role">Head of Frontend</div>
@@ -796,21 +796,14 @@ class: text-left
 ---
 
 <div class="h-full flex flex-col justify-center">
-  <div class="brandbar mb-5 anim-rise"></div>
-  <h1 class="!text-4xl !font-semibold !leading-tight anim-rise d-1">Little drops of water<br/>make a <span class="g anim-shimmer">mighty ocean</span>.</h1>
+  <div class="brandbar mb-5"></div>
+  <h1 class="!text-4xl !font-semibold !leading-tight anim-rise">Little drops of water<br/>make a <span class="g">mighty ocean</span>.</h1>
 
-  <div class="grid grid-cols-[1.7fr_1fr] gap-8 mt-10 items-center">
-    <div class="card acc anim-rise d-2 anim-glow">
-      <div class="flex items-center gap-3">
-        <ph-chat-circle-dots-bold class="text-2xl text-cyan-300 anim-pulse" />
-        <div class="eyebrow !mb-0">The ask</div>
-      </div>
-      <p class="mt-2.5 text-sm">We're not here for a cheque. What we want today is <strong>sharp expert feedback</strong> — and an advisory board in fintech, Web3 and MFCA law.</p>
-      <p class="muted text-sm mt-2">Talk to us — Telegram <strong style="color:#e8ecf4">@almatkismet</strong>.</p>
-    </div>
-    <div class="flex justify-center anim-rise d-3">
-      <DeckQr :size="150" label="Open the deck" />
-    </div>
+  <p class="muted text-sm mt-5 anim-rise" style="max-width:42rem">We're not raising — we want <strong style="color:#e8ecf4">sharp expert feedback</strong> and advisors in fintech, Web3 and MFCA law.</p>
+
+  <div class="flex justify-center gap-14 mt-10 anim-rise d-1">
+    <DeckQr :size="150" label="Open the deck" class="anim-pulse" />
+    <DeckQr :size="150" label="Telegram @almatkismet" data="https://t.me/almatkismet" class="anim-pulse" />
   </div>
 </div>
 
