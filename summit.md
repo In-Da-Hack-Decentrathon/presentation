@@ -23,38 +23,32 @@ class: text-left
   <p class="mb-8" style="font-size:2.3rem;font-weight:600;line-height:1.25;letter-spacing:-.02em;color:#e8ecf4">Small businesses generate revenue every day.<br/><span class="g">But almost nobody can invest in them.</span></p>
 
   <div class="hook-vis">
-    <svg class="vis-no" viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg" aria-label="NO, struck through">
-      <g fill="#f1626b" fill-opacity="0.6">
-        <rect x="0" y="5" width="14" height="80" />
-        <rect x="46" y="5" width="14" height="80" />
-        <polygon points="14,5 28,5 60,85 46,85" />
-        <path d="M 110 5 a 30 40 0 1 0 0 80 a 30 40 0 1 0 0 -80 z M 110 19 a 18 28 0 1 0 0 52 a 18 28 0 1 0 0 -52 z" fill-rule="evenodd" />
+    <svg class="vis-no" viewBox="0 0 140 96" xmlns="http://www.w3.org/2000/svg" aria-label="NO, struck through">
+      <g stroke="#f1626b" stroke-opacity="0.7" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <path d="M 14 84 V 14 L 56 84 V 14" />
+        <ellipse cx="100" cy="49" rx="22" ry="35" />
       </g>
-      <line x1="0" y1="68" x2="140" y2="22" stroke="#f1626b" stroke-width="4" stroke-linecap="round" opacity="0.92" />
+      <line x1="2" y1="70" x2="138" y2="24" stroke="#f1626b" stroke-width="5" stroke-linecap="round" opacity="0.95" />
     </svg>
     <span class="vis-arrow">&rarr;</span>
-    <svg class="vis-yes" viewBox="0 0 200 90" xmlns="http://www.w3.org/2000/svg" aria-label="YES — letters built from many small yeses">
+    <svg class="vis-yes" viewBox="0 0 210 96" xmlns="http://www.w3.org/2000/svg" aria-label="YES — built from many small yeses">
       <defs>
-        <clipPath id="s1-yes-clip">
-          <rect x="23" y="38" width="14" height="42" />
-          <polygon points="0,0 14,0 37,38 23,38" />
-          <polygon points="46,0 60,0 37,38 23,38" />
-          <rect x="70" y="0" width="14" height="80" />
-          <rect x="70" y="0" width="50" height="14" />
-          <rect x="70" y="33" width="40" height="14" />
-          <rect x="70" y="66" width="50" height="14" />
-          <rect x="130" y="0" width="50" height="14" />
-          <rect x="130" y="0" width="14" height="33" />
-          <rect x="130" y="33" width="50" height="14" />
-          <rect x="166" y="33" width="14" height="47" />
-          <rect x="130" y="66" width="50" height="14" />
-        </clipPath>
         <pattern id="s1-yes-pat" patternUnits="userSpaceOnUse" width="22" height="11">
-          <text x="0" y="9" font-family="ui-monospace, 'Geist Mono', 'Courier New', monospace" font-size="10" font-weight="700" fill="#0e2418">yes</text>
+          <text x="0" y="9" font-family="ui-monospace, 'Geist Mono', 'Courier New', monospace" font-size="10" font-weight="700" fill="#073522">yes</text>
         </pattern>
       </defs>
-      <rect x="0" y="0" width="200" height="90" fill="#16c784" clip-path="url(#s1-yes-clip)" />
-      <rect x="0" y="0" width="200" height="90" fill="url(#s1-yes-pat)" clip-path="url(#s1-yes-clip)" />
+      <g stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <g stroke="#16c784">
+          <path d="M 10 14 L 32 48 L 54 14 M 32 48 V 84" />
+          <path d="M 116 84 H 76 V 14 H 116 M 76 49 H 110" />
+          <path d="M 195 26 C 195 14 185 14 175 14 L 165 14 C 150 14 150 40 165 40 L 185 40 C 200 40 200 64 185 64 L 165 64 C 150 64 150 84 165 84 L 175 84 C 185 84 195 80 195 70" />
+        </g>
+        <g stroke="url(#s1-yes-pat)">
+          <path d="M 10 14 L 32 48 L 54 14 M 32 48 V 84" />
+          <path d="M 116 84 H 76 V 14 H 116 M 76 49 H 110" />
+          <path d="M 195 26 C 195 14 185 14 175 14 L 165 14 C 150 14 150 40 165 40 L 185 40 C 200 40 200 64 185 64 L 165 64 C 150 64 150 84 165 84 L 175 84 C 185 84 195 80 195 70" />
+        </g>
+      </g>
     </svg>
   </div>
 
@@ -105,8 +99,8 @@ td.c,th.c{text-align:center}
 .hook-cap{font-size:.95rem;line-height:1.55;color:#8b95a9;max-width:34rem}
 .hook-vis{display:flex;align-items:center;gap:1.4rem;margin-top:.4rem}
 .vis-arrow{color:#38bdf8;font-size:1.5rem;font-weight:700;flex:0 0 auto}
-.vis-no{height:64px;width:auto;display:block;flex:0 0 auto}
-.vis-yes{height:72px;width:auto;display:block;flex:0 0 auto}
+.vis-no{height:72px;width:auto;display:block;flex:0 0 auto}
+.vis-yes{height:80px;width:auto;display:block;flex:0 0 auto}
 </style>
 
 <!--
