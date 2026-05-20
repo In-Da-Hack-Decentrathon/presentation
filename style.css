@@ -224,3 +224,71 @@ html.dark {
   max-height: 60vh;
   object-fit: contain;
 }
+
+/* ==========================================================================
+   Summit deck — CSS-only animation utilities
+   Used by summit.md via .anim-* / .d-N class additions on existing elements.
+   Other decks don't reference these classes — keyframes sit unused.
+   ========================================================================== */
+
+@keyframes anim-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes anim-pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.045); }
+}
+@keyframes anim-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 1px rgba(56,189,248,.35), 0 0 22px -8px rgba(56,189,248,.25);
+  }
+  50% {
+    box-shadow: 0 0 0 1px rgba(56,189,248,.75), 0 0 38px -2px rgba(56,189,248,.55);
+  }
+}
+@keyframes anim-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-5px); }
+}
+@keyframes anim-shimmer {
+  0%   { background-position: -120% 0; }
+  100% { background-position: 220% 0; }
+}
+@keyframes anim-spin-slow {
+  to { transform: rotate(360deg); }
+}
+
+.anim-rise      { animation: anim-rise .6s cubic-bezier(.2,.7,.2,1) both; }
+.anim-pulse     { animation: anim-pulse 2.4s ease-in-out infinite; transform-origin: center; }
+.anim-glow      { animation: anim-glow 3s ease-in-out infinite; }
+.anim-float     { animation: anim-float 3.6s ease-in-out infinite; }
+.anim-spin-slow { animation: anim-spin-slow 12s linear infinite; transform-origin: center; }
+
+/* Shimmer assumes the element already has a linear-gradient background
+   (e.g. summit's .g gradient text). We widen the gradient and slide it. */
+.anim-shimmer { background-size: 220% auto; animation: anim-shimmer 4.5s linear infinite; }
+
+/* Bake a brighter highlight stop into the gradient when shimmering .g text
+   so the moving sheen is actually visible (default .g is two near-cyans). */
+.g.anim-shimmer {
+  background-image: linear-gradient(120deg, #60a5fa 0%, #bae6fd 35%, #ffffff 50%, #bae6fd 65%, #38bdf8 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.d-1 { animation-delay: .08s; }
+.d-2 { animation-delay: .16s; }
+.d-3 { animation-delay: .24s; }
+.d-4 { animation-delay: .32s; }
+.d-5 { animation-delay: .40s; }
+.d-6 { animation-delay: .48s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-rise, .anim-pulse, .anim-glow, .anim-float,
+  .anim-shimmer, .anim-spin-slow,
+  .d-1, .d-2, .d-3, .d-4, .d-5, .d-6 {
+    animation: none !important;
+  }
+}
