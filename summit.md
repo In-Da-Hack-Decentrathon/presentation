@@ -23,19 +23,39 @@ class: text-left
   <p class="mb-8" style="font-size:2.3rem;font-weight:600;line-height:1.25;letter-spacing:-.02em;color:#e8ecf4">Small businesses generate revenue every day.<br/><span class="g">But almost nobody can invest in them.</span></p>
 
   <div class="hook-vis">
-    <div class="no-wrap">
-      <pre class="ascii-no" v-pre>
-██   ██   █████ 
-███  ██  ██   ██
-████ ██  ██   ██
-██ ████  ██   ██
-██  ███  ██   ██
-██   ██   █████ 
-</pre>
-      <div class="no-strike"></div>
-    </div>
+    <svg class="vis-no" viewBox="0 0 140 90" xmlns="http://www.w3.org/2000/svg" aria-label="NO, struck through">
+      <g fill="#f1626b" fill-opacity="0.6">
+        <rect x="0" y="5" width="14" height="80" />
+        <rect x="46" y="5" width="14" height="80" />
+        <polygon points="14,5 28,5 60,85 46,85" />
+        <path d="M 110 5 a 30 40 0 1 0 0 80 a 30 40 0 1 0 0 -80 z M 110 19 a 18 28 0 1 0 0 52 a 18 28 0 1 0 0 -52 z" fill-rule="evenodd" />
+      </g>
+      <line x1="0" y1="68" x2="140" y2="22" stroke="#f1626b" stroke-width="4" stroke-linecap="round" opacity="0.92" />
+    </svg>
     <span class="vis-arrow">&rarr;</span>
-    <div class="yes-crowd">yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes</div>
+    <svg class="vis-yes" viewBox="0 0 200 90" xmlns="http://www.w3.org/2000/svg" aria-label="YES — letters built from many small yeses">
+      <defs>
+        <clipPath id="s1-yes-clip">
+          <rect x="23" y="38" width="14" height="42" />
+          <polygon points="0,0 14,0 37,38 23,38" />
+          <polygon points="46,0 60,0 37,38 23,38" />
+          <rect x="70" y="0" width="14" height="80" />
+          <rect x="70" y="0" width="50" height="14" />
+          <rect x="70" y="33" width="40" height="14" />
+          <rect x="70" y="66" width="50" height="14" />
+          <rect x="130" y="0" width="50" height="14" />
+          <rect x="130" y="0" width="14" height="33" />
+          <rect x="130" y="33" width="50" height="14" />
+          <rect x="166" y="33" width="14" height="47" />
+          <rect x="130" y="66" width="50" height="14" />
+        </clipPath>
+        <pattern id="s1-yes-pat" patternUnits="userSpaceOnUse" width="22" height="11">
+          <text x="0" y="9" font-family="ui-monospace, 'Geist Mono', 'Courier New', monospace" font-size="10" font-weight="700" fill="#0e2418">yes</text>
+        </pattern>
+      </defs>
+      <rect x="0" y="0" width="200" height="90" fill="#16c784" clip-path="url(#s1-yes-clip)" />
+      <rect x="0" y="0" width="200" height="90" fill="url(#s1-yes-pat)" clip-path="url(#s1-yes-clip)" />
+    </svg>
   </div>
 
   <p class="hook-cap mt-5">One bank&rsquo;s &ldquo;<span class="down">no</span>&rdquo; stops a business cold &mdash; a crowd of small &ldquo;<span class="up">yes</span>&rdquo;es funds it instead.</p>
@@ -82,14 +102,11 @@ td.c,th.c{text-align:center}
 .no{color:#5a657c}
 .deck-qr-label{color:#8b95a9}
 .hook-wordmark{display:block;height:52px;width:auto}
-.ascii-no{font-family:'Geist Mono',ui-monospace,monospace;font-size:.6rem;line-height:1;margin:0;color:#f1626b;opacity:.5;font-weight:700;white-space:pre}
-.no-wrap{position:relative;display:inline-block;flex:0 0 auto}
-.no-strike{position:absolute;left:-9%;right:-9%;top:50%;height:2px;background:#f1626b;border-radius:2px;transform:rotate(-8deg);opacity:.92}
-.ascii-yes{font-family:'Geist Mono',ui-monospace,monospace;font-size:.46rem;line-height:1.1;margin:0;font-weight:700;white-space:pre}
 .hook-cap{font-size:.95rem;line-height:1.55;color:#8b95a9;max-width:34rem}
 .hook-vis{display:flex;align-items:center;gap:1.4rem;margin-top:.4rem}
 .vis-arrow{color:#38bdf8;font-size:1.5rem;font-weight:700;flex:0 0 auto}
-.yes-crowd{color:#16c784;font-size:.82rem;font-weight:600;line-height:1.65;letter-spacing:.02em;max-width:22rem}
+.vis-no{height:64px;width:auto;display:block;flex:0 0 auto}
+.vis-yes{height:72px;width:auto;display:block;flex:0 0 auto}
 </style>
 
 <!--
@@ -687,14 +704,13 @@ layout: default
 </div>
 
 <div class="lbl mt-5">The founding team</div>
-<div class="grid grid-cols-4 gap-4 mt-2">
+<div class="grid grid-cols-3 gap-4 mt-2">
   <div class="card text-center"><div class="avatar">AK</div><div class="font-semibold mt-2">Almat Kismet</div><div class="role">Product Manager</div><div class="muted text-xs mt-1">@almatkismet</div></div>
   <div class="card text-center"><div class="avatar">NB</div><div class="font-semibold mt-2">Nikita Bulygin</div><div class="role">CTO</div><div class="muted text-xs mt-1">@Bulygin_Nik</div></div>
   <div class="card text-center"><div class="avatar">MS</div><div class="font-semibold mt-2">Muslim Shady</div><div class="role">UX / UI Designer</div><div class="muted text-xs mt-1">@musl1m_shady</div></div>
-  <div class="card text-center"><div class="avatar">F</div><div class="font-semibold mt-2">Fekiss</div><div class="role">Developer</div><div class="muted text-xs mt-1">@fek1ss</div></div>
 </div>
 
-<p class="muted mt-5">A four-person team from Kazakhstan — product, design and engineering. We build and ship Slice end-to-end: smart contracts, backend, frontend and integrations.</p>
+<p class="muted mt-5">A three-person team from Kazakhstan — product, design and engineering. We build and ship Slice end-to-end: smart contracts, backend, frontend and integrations.</p>
 
 <style>
 .slidev-layout{background:#0a0e1a !important;color:#e8ecf4 !important;font-family:'Geist',ui-sans-serif,system-ui,sans-serif;padding:2rem 2.6rem}
