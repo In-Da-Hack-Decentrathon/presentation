@@ -88,7 +88,7 @@ layout: default
 
   <div class="card stat">
     <ph-bank-bold class="text-4xl text-rose-400 mb-3" />
-    <div class="kpi down">67%</div>
+    <div class="kpi down">~60%</div>
     <div class="lbl mt-2">SMB loans rejected in Kazakhstan</div>
   </div>
 
@@ -337,34 +337,27 @@ layout: default
 
 # The market — Kazakhstan first
 
-<div class="grid grid-cols-4 gap-4 mt-8 items-stretch anim-rise">
+<div class="grid grid-cols-3 gap-4 mt-8 items-stretch anim-rise">
 
   <div class="card stat">
     <ph-globe-bold class="text-3xl text-cyan-400" />
-    <div class="lbl mt-3">TAM</div>
-    <div class="kpi g mt-1">$5.7T</div>
-    <p class="text-xs muted mt-2">Global SMB funding gap.</p>
+    <div class="lbl mt-3">TAM · Total Addressable</div>
+    <div class="kpi g mt-1">$10–13B</div>
+    <p class="text-xs muted mt-2">SMB funding gap in Kazakhstan — 15–20% of SMB GDP.</p>
   </div>
 
   <div class="card stat">
     <ph-map-pin-bold class="text-3xl text-cyan-400" />
-    <div class="lbl mt-3">SAM</div>
-    <div class="kpi mt-1">~$42B</div>
-    <p class="text-xs muted mt-2">Unmet SMB demand in Kazakhstan.</p>
+    <div class="lbl mt-3">SAM · Serviceable Available</div>
+    <div class="kpi mt-1">~$800M</div>
+    <p class="text-xs muted mt-2">Online-first SMBs in KZ (marketplace sellers, SaaS, services) — our ICP.</p>
   </div>
 
   <div class="card stat">
     <ph-target-bold class="text-3xl text-cyan-400" />
-    <div class="lbl mt-3">SOM</div>
-    <div class="kpi up mt-1">~$3.7M</div>
-    <p class="text-xs muted mt-2">A year at break-even (~5 deals/mo).</p>
-  </div>
-
-  <div class="card stat">
-    <ph-flag-pennant-bold class="text-3xl text-cyan-300" />
-    <div class="lbl mt-3">Why now</div>
-    <div class="text-base font-semibold mt-1" style="color:#e8ecf4">2026 e-invoicing</div>
-    <p class="text-xs muted mt-2">Mandatory in KZ — RBF's verification problem, solved by law.</p>
+    <div class="lbl mt-3">SOM · Serviceable Obtainable</div>
+    <div class="kpi up mt-1">~$12M</div>
+    <p class="text-xs muted mt-2">Year 1 target: <strong>100 deals × $10k avg × 12 months</strong>.</p>
   </div>
 
 </div>
@@ -526,34 +519,27 @@ layout: default
 
 # The business model
 
-<div class="grid grid-cols-4 gap-4 mt-8 items-stretch anim-rise">
+<div class="grid grid-cols-3 gap-4 mt-8 items-stretch anim-rise">
 
   <div class="card stat">
     <ph-coins-bold class="text-3xl text-cyan-400" />
-    <div class="lbl mt-3">Origination · 10%</div>
-    <div class="kpi !text-2xl mt-1">~$6.2k</div>
+    <div class="lbl mt-3">Origination · 5%</div>
+    <div class="kpi !text-2xl mt-1">~$500</div>
     <p class="text-xs muted mt-2">One-off, per closed raise.</p>
   </div>
 
   <div class="card stat">
     <ph-arrows-clockwise-bold class="text-3xl text-cyan-400" />
-    <div class="lbl mt-3">Servicing · 2%</div>
-    <div class="kpi !text-2xl mt-1">~$1.5k</div>
-    <p class="text-xs muted mt-2">Recurring on every payout.</p>
+    <div class="lbl mt-3">Servicing · 1%</div>
+    <div class="kpi !text-2xl mt-1">~$1,800</div>
+    <p class="text-xs muted mt-2">Recurring on every payout (18 mo avg).</p>
   </div>
 
   <div class="card stat">
     <ph-arrows-left-right-bold class="text-3xl text-cyan-400" />
-    <div class="lbl mt-3">Secondary · +1%</div>
+    <div class="lbl mt-3">Secondary · 1%</div>
     <div class="kpi !text-2xl mt-1">on trades</div>
     <p class="text-xs muted mt-2">On every secondary-market swap.</p>
-  </div>
-
-  <div class="card stat">
-    <ph-currency-circle-dollar-bold class="text-3xl text-cyan-300" />
-    <div class="lbl mt-3">Net per deal</div>
-    <div class="kpi !text-2xl up mt-1">~$5.8k</div>
-    <p class="text-xs muted mt-2">≈ 9% take-rate. Break-even at 5 deals / mo.</p>
   </div>
 
 </div>
@@ -794,7 +780,6 @@ class: text-left
   <p class="muted text-sm mt-5 anim-rise" style="max-width:42rem">We're not raising — we want <strong style="color:#e8ecf4">sharp expert feedback</strong> and advisors in fintech, Web3 and MFCA law.</p>
 
   <div class="flex justify-center gap-14 mt-10 anim-rise d-1">
-    <DeckQr :size="150" label="Open the deck" class="anim-pulse" />
     <DeckQr :size="150" label="Telegram @almatkismet" data="https://t.me/almatkismet" class="anim-pulse" />
   </div>
 </div>
